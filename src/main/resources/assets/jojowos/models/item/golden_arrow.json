@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/goldenarrow",
+  "textures": {
+    "0": "jojowos:block/goldenarrow",
+    "particle": "jojowos:item/golden_arrow"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:StandArrow"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 1.0,
+    "knockback": 1,
+    "entityModel": "ModelStandArrowEntity",
+    "customModelTexture": "arrow_entity.png",
+    "onHitsBlock": {
+      "name": "RespawnStandArrow"
+    },
+    "onHitsEntity": {
+      "name": "StandArrowShot"
+    }
+  }
+}

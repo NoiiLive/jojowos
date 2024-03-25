@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:meteorite_ore"
+    },
+    "title": {
+      "translate": "advancements.meteorite_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.meteorite_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meteorite_achievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jojowos:meteorite_ore"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jojowos:jo_jo_world_of_stands_achievement"
+}

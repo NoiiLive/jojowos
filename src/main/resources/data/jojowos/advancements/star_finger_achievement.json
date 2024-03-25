@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_star_finger"
+    },
+    "title": {
+      "translate": "advancements.star_finger_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.star_finger_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "star_finger_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:bearing_shot_achievement"
+}

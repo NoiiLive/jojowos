@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/magiciansreddisc",
+  "textures": {
+    "0": "jojowos:block/magiciansreddisc",
+    "particle": "jojowos:item/standdisc"
+  }
+}

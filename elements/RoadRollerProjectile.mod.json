@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:AchievementRoadRoller"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 10.0,
+    "knockback": 1,
+    "entityModel": "ModelRoadRoller",
+    "customModelTexture": "roadroller_texture.png",
+    "onHitsBlock": {
+      "name": "RoadRollerGround"
+    },
+    "onHitsEntity": {
+      "name": "RoadRollerHit"
+    }
+  }
+}

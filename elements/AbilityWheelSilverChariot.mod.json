@@ -1,0 +1,159 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_grid.png",
+          "use1Xscale": false,
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_silverchariot_horarush",
+          "image": "silverchariot_horarush.png",
+          "hoveredImage": "silverchariot_horarush_h.png",
+          "onClick": {
+            "name": "HoraRushAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "HoraRushDisplay"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_silverchariot_swordlaunch",
+          "image": "silverchariot_swordlaunch.png",
+          "hoveredImage": "silverchariot_swordlaunch_h.png",
+          "onClick": {
+            "name": "SwordLaunchAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "SwordLaunchUnlockDisplay"
+          },
+          "x": 230,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_silverchariot_armoroff",
+          "image": "silverchariot_armoroff.png",
+          "hoveredImage": "silverchariot_armoroff_h.png",
+          "onClick": {
+            "name": "ArmorOffAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "ArmorOffUnlockDisplay"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_silverchariot_bladecyclone",
+          "image": "silverchariot_bladecyclone.png",
+          "hoveredImage": "silverchariot_bladecyclone_h.png",
+          "onClick": {
+            "name": "BladeCycloneAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "SwordCycloneUnlockDisplay"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_hora_rush",
+          "text": {
+            "fixedValue": "Hora Rush"
+          },
+          "displayCondition": {
+            "name": "HoraRushDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 198,
+          "y": 72
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sword_launch",
+          "text": {
+            "fixedValue": "Sword Launch"
+          },
+          "displayCondition": {
+            "name": "SwordLaunchUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 232,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_blade_cyclone",
+          "text": {
+            "fixedValue": "Blade Cyclone"
+          },
+          "displayCondition": {
+            "name": "SwordCycloneUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 164,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_armor_off",
+          "text": {
+            "fixedValue": "Armor Off"
+          },
+          "displayCondition": {
+            "name": "ArmorOffUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 198,
+          "y": 140
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

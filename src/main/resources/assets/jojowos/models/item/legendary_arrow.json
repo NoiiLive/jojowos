@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/legendaryarrow",
+  "textures": {
+    "0": "jojowos:block/legendaryarrow",
+    "particle": "jojowos:item/stone_arrow"
+  }
+}

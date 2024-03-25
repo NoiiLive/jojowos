@@ -1,0 +1,74 @@
+{
+  "_fv": 57,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "polnareff_earrings",
+    "enableBody": true,
+    "textureBody": "polnareff_top",
+    "enableLeggings": true,
+    "textureLeggings": "polnareff_pants",
+    "enableBoots": true,
+    "textureBoots": "polnareff_boots",
+    "creativeTab": {
+      "value": "CUSTOM:JoJoArmor"
+    },
+    "armorTextureFile": "empty_",
+    "helmetName": "Jean Pierre Polnareff's Earrings (Part 3)",
+    "bodyName": "Jean Pierre Polnareff's Top (Part 3)",
+    "leggingsName": "Jean Pierre Polnareff's Pants (Part 3)",
+    "bootsName": "Jean Pierre Polnareff's Boots (Part 3)",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelPolnareffEarrings",
+    "helmetModelPart": "head",
+    "helmetModelTexture": "polnareffarmortexture.png",
+    "bodyModelName": "ModelPolnareffTop",
+    "bodyModelPart": "torso",
+    "armsModelPartL": "left_arm",
+    "armsModelPartR": "right_arm",
+    "bodyModelTexture": "polnareffarmortexture.png",
+    "leggingsModelName": "ModelPolnareffPants",
+    "leggingsModelPartL": "left_leg",
+    "leggingsModelPartR": "right_leg",
+    "leggingsModelTexture": "polnareffarmortexture.png",
+    "bootsModelName": "ModelPolnareffBoots",
+    "bootsModelPartL": "left_boot",
+    "bootsModelPartR": "right_boot",
+    "bootsModelTexture": "polnareffarmortexture.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_life_detect"
+    },
+    "title": {
+      "translate": "advancements.life_detector_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.life_detector_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "life_detector_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:magicians_red_achievement"
+}

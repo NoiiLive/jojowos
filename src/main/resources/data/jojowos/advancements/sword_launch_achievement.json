@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_sword_launch"
+    },
+    "title": {
+      "translate": "advancements.sword_launch_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.sword_launch_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "sword_launch_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:silver_chariot_achievement"
+}

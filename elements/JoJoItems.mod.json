@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "JoJo Items",
+    "icon": {
+      "value": "CUSTOM:StandArrow"
+    },
+    "showSearch": false
+  }
+}

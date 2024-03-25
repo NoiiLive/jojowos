@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_bearing_shot"
+    },
+    "title": {
+      "translate": "advancements.bearing_shot_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.bearing_shot_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bearing_shot_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:inhale_achievement"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/ancientbow",
+  "textures": {
+    "1": "jojowos:block/ancientbow",
+    "particle": "jojowos:item/bow"
+  }
+}

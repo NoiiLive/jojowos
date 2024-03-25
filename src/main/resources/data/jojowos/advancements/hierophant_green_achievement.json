@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "jojowos:achievement_hierophant_green"
+    },
+    "title": {
+      "translate": "advancements.hierophant_green_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.hierophant_green_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "hierophant_green_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/hermitpurpledisc",
+  "textures": {
+    "0": "jojowos:block/hermitpurpledisc",
+    "particle": "jojowos:item/standdisc"
+  }
+}

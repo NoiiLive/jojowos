@@ -1,0 +1,223 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_theworld_barrage_h",
+          "image": "theworld_barrage.png",
+          "hoveredImage": "theworld_barrage_h.png",
+          "onClick": {
+            "name": "MudaBarrageAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "MudaBarrageDisplay"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_theworld_knifetoss_h",
+          "image": "theworld_knifetoss.png",
+          "hoveredImage": "theworld_knifetoss_h.png",
+          "onClick": {
+            "name": "KnifeTossAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "KnifeTossUnlockDisplay"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_theworld_kickbarrage_h",
+          "image": "theworld_kickbarrage.png",
+          "hoveredImage": "theworld_kickbarrage_h.png",
+          "onClick": {
+            "name": "MudaKickBarrageAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "MudaKickUnlockDisplay"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_theworld_timeskip_h",
+          "image": "theworld_timeskip.png",
+          "hoveredImage": "theworld_timeskip_h.png",
+          "onClick": {
+            "name": "WorldTimeSkipAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "WorldTimeSkipUnlockDisplay"
+          },
+          "x": 230,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_theworld_timestop_h",
+          "image": "theworld_timestop.png",
+          "hoveredImage": "theworld_timestop_h.png",
+          "onClick": {
+            "name": "WorldTimeStopAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "WorldTimeStopUnlockDisplay"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_theworld_roadroller_h",
+          "image": "theworld_roadroller.png",
+          "hoveredImage": "theworld_roadroller_h.png",
+          "onClick": {
+            "name": "RoadRollerAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "RoadRollerUnlockDisplay"
+          },
+          "x": 230,
+          "y": 137
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_muda_barrage",
+          "text": {
+            "fixedValue": "Muda Barrage"
+          },
+          "displayCondition": {
+            "name": "MudaBarrageDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 164,
+          "y": 72
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_knife_toss",
+          "text": {
+            "fixedValue": "Knife Toss"
+          },
+          "displayCondition": {
+            "name": "KnifeTossUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 198,
+          "y": 72
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_muda_kick_barrage",
+          "text": {
+            "fixedValue": "Muda Kick Barrage"
+          },
+          "displayCondition": {
+            "name": "MudaKickUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 164,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_skip1",
+          "text": {
+            "fixedValue": "Time Skip"
+          },
+          "displayCondition": {
+            "name": "WorldTimeSkipUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 232,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_stop1",
+          "text": {
+            "fixedValue": "Time Stop"
+          },
+          "displayCondition": {
+            "name": "WorldTimeStopUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 198,
+          "y": 140
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_road_roller",
+          "text": {
+            "fixedValue": "Road Roller"
+          },
+          "displayCondition": {
+            "name": "RoadRollerUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 232,
+          "y": 140
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_grid.png",
+          "use1Xscale": false,
+          "x": 161,
+          "y": 69
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

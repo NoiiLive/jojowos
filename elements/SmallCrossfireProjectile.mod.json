@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:AchievementCrossfireSpecial"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 2.0,
+    "damage": 2.0,
+    "knockback": 1,
+    "entityModel": "ModelSmallCrossfire",
+    "customModelTexture": "smallcossfire.png",
+    "onHitsBlock": {
+      "name": "CrossfireGroundFlame"
+    },
+    "onHitsEntity": {
+      "name": "CrossfireBurn"
+    },
+    "onFlyingTick": {
+      "name": "CrossfireFlames"
+    }
+  }
+}

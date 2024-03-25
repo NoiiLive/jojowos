@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/hierophantgreendisc",
+  "textures": {
+    "0": "jojowos:block/hierophantgreendisc",
+    "particle": "jojowos:item/standdisc"
+  }
+}

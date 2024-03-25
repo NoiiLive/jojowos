@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/silverchariotdisc",
+  "textures": {
+    "0": "jojowos:block/silverchariotdisc",
+    "particle": "jojowos:item/standdisc"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:HierophantGreen"
+      },
+      {
+        "value": "CUSTOM:HierophantGreenBlue"
+      },
+      {
+        "value": "CUSTOM:HierophantGreenManga"
+      },
+      {
+        "value": "CUSTOM:HierophantGreenOVA"
+      },
+      {
+        "value": "CUSTOM:MagiciansGreen"
+      },
+      {
+        "value": "CUSTOM:MagiciansRed"
+      },
+      {
+        "value": "CUSTOM:MagiciansRedASB"
+      },
+      {
+        "value": "CUSTOM:MagiciansRedManga"
+      },
+      {
+        "value": "CUSTOM:MagiciansRedOVA"
+      },
+      {
+        "value": "CUSTOM:SilverChariot"
+      },
+      {
+        "value": "CUSTOM:SilverChariotArmorless"
+      },
+      {
+        "value": "CUSTOM:SilverChariotGold"
+      },
+      {
+        "value": "CUSTOM:SilverChariotGoldArmorless"
+      },
+      {
+        "value": "CUSTOM:SilverChariotManga"
+      },
+      {
+        "value": "CUSTOM:SilverChariotMangaArmorless"
+      },
+      {
+        "value": "CUSTOM:SilverChariotOVA"
+      },
+      {
+        "value": "CUSTOM:SilverChariotOVAArmorless"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumBlue"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumGreen"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumManga"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumOVA"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumP3"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumP4"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumP6"
+      },
+      {
+        "value": "CUSTOM:TheWorld"
+      },
+      {
+        "value": "CUSTOM:TheWorldBlack"
+      },
+      {
+        "value": "CUSTOM:TheWorldManga"
+      },
+      {
+        "value": "CUSTOM:TheWorldOVA"
+      },
+      {
+        "value": "CUSTOM:TheWorldSilver"
+      },
+      {
+        "value": "CUSTOM:TheFool"
+      },
+      {
+        "value": "CUSTOM:TheFoolManga"
+      },
+      {
+        "value": "CUSTOM:TheFoolOVA"
+      },
+      {
+        "value": "CUSTOM:LifeDetector"
+      },
+      {
+        "value": "CUSTOM:StarPlatinumUltraInstinct"
+      },
+      {
+        "value": "CUSTOM:TheWorldImposter"
+      },
+      {
+        "value": "CUSTOM:EmeraldBarrier"
+      }
+    ],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "stand_mob",
+    "namespace": "mod"
+  }
+}

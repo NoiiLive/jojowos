@@ -1,0 +1,15 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LCONTROL",
+    "keyBindingName": "Stand Block",
+    "keyBindingCategoryKey": "jojowos",
+    "onKeyPressed": {
+      "name": "StandBlocking"
+    },
+    "onKeyReleased": {
+      "name": "StandUnblocking"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "jojowos:structure_feature",
+  "config": {
+    "structure": "jojowos:sand_dome",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

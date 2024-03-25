@@ -1,0 +1,74 @@
+{
+  "_fv": 57,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "jotarop3_hat",
+    "enableBody": true,
+    "textureBody": "jotarop3_coat",
+    "enableLeggings": true,
+    "textureLeggings": "jotarop3_pants",
+    "enableBoots": true,
+    "textureBoots": "jotarop3_shoes",
+    "creativeTab": {
+      "value": "CUSTOM:JoJoArmor"
+    },
+    "armorTextureFile": "empty_",
+    "helmetName": "Jotaro Kujo's Hat (Part 3)",
+    "bodyName": "Jotaro Kujo's Coat (Part 3)",
+    "leggingsName": "Jotaro Kujo's Pants (Part 3)",
+    "bootsName": "Jotaro Kujo's Shoes (Part 3)",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelJotaroHatHairless",
+    "helmetModelPart": "head",
+    "helmetModelTexture": "jotarohathairless.png",
+    "bodyModelName": "ModelJotaroKujoP3Coat",
+    "bodyModelPart": "torso",
+    "armsModelPartL": "left_arm",
+    "armsModelPartR": "right_arm",
+    "bodyModelTexture": "jotarokujop3armor.png",
+    "leggingsModelName": "ModelJotaroKujoP3Pants",
+    "leggingsModelPartL": "left_leg",
+    "leggingsModelPartR": "right_leg",
+    "leggingsModelTexture": "jotarokujop3armor.png",
+    "bootsModelName": "ModelJotaroKujoP3Shoes",
+    "bootsModelPartL": "left_shoe",
+    "bootsModelPartR": "right_shoe",
+    "bootsModelTexture": "jotarokujop3armor.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

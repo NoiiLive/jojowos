@@ -1,0 +1,18 @@
+{
+  "feature": "jojowos:sand_dome_feature",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1000000
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": -100
+        }
+      }
+    }
+  ]
+}

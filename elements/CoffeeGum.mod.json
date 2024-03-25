@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "coffee_gum",
+    "customModelName": "coffeegum:default",
+    "customProperties": {},
+    "states": [],
+    "name": "Coffee Gum",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:JoJoItems"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7§oCoffee Gum possesses the properties of both coffee and gum."
+      ]
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "isFood": true,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": "Items.PAPER"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "eat"
+  }
+}

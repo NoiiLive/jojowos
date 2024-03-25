@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:AchievementSwordLaunch"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 2.0,
+    "damage": 0.0,
+    "knockback": 1,
+    "entityModel": "ModelChariotSword",
+    "customModelTexture": "chariotswordgold.png",
+    "onHitsEntity": {
+      "name": "BarrageFistHit"
+    }
+  }
+}

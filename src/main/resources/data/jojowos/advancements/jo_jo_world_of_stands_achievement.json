@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "jojowos:textures/screens/jojowos_background.png",
+    "icon": {
+      "item": "jojowos:jotaro_kujo_p_3_clothes_helmet"
+    },
+    "title": {
+      "translate": "advancements.jo_jo_world_of_stands_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.jo_jo_world_of_stands_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "jo_jo_world_of_stands_achievement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

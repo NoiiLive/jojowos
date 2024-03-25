@@ -1,0 +1,392 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 184,
+          "y": 129
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 224,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 145,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_orange.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedASBIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_asb.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedASBIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_red.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedMangaIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedMangaIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_red.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedOVAIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedOVAIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_green.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedGreenIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_green.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedGreenIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_red.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedBaseIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "MagiciansRedBaseIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "RedBindUnlockButton"
+          },
+          "displayCondition": {
+            "name": "RedBindLockDisplay"
+          },
+          "x": 242,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock1",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "CrossfireSpecialUnlockButton"
+          },
+          "displayCondition": {
+            "name": "CrossfireSpecialLockDisplay"
+          },
+          "x": 202,
+          "y": 145
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock2",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "LifeDetectUnlockButton"
+          },
+          "displayCondition": {
+            "name": "LifeDetectorLockDisplay"
+          },
+          "x": 163,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_red_bind_10_potential_3_skill",
+          "text": {
+            "fixedValue": "Red Bind : 25 Potential, 3 Skill Points"
+          },
+          "displayCondition": {
+            "name": "RedBindLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 241,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_life_detector_10_potential_3",
+          "text": {
+            "fixedValue": "Life Detector : 10 Potential, 3 Skill Points"
+          },
+          "displayCondition": {
+            "name": "LifeDetectorLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 162,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_crossfire_hurricane_special_40",
+          "text": {
+            "fixedValue": "Crossfire Hurricane Special : 40 Potential, 5 Skill Points"
+          },
+          "displayCondition": {
+            "name": "CrossfireSpecialLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 146
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlockDisplay"
+          },
+          "x": 195,
+          "y": 140
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_lifedetector.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlockDisplay"
+          },
+          "x": 156,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlockDisplay"
+          },
+          "x": 235,
+          "y": 101
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_life_detector_detects_all_near",
+          "text": {
+            "fixedValue": "Life Detector : Detects All Nearby Life",
+            "name": "MagiciansRedLifeDetectRange"
+          },
+          "displayCondition": {
+            "name": "RedBindUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 162,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_red_bind_traps_nearby_enemies",
+          "text": {
+            "fixedValue": "Red Bind : Traps Nearby Enemies With Flames",
+            "name": "MagiciansRedBindRange"
+          },
+          "displayCondition": {
+            "name": "RedBindUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 241,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_crossfire_hurricane_special_sh",
+          "text": {
+            "fixedValue": "Crossfire Hurricane Special : Shoots Multiple Flaming Ankhs",
+            "name": "MagiciansRedCrossfireSpecialDamage"
+          },
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 146
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skillgui_button",
+          "image": "skillgui_button.png",
+          "hoveredImage": "skillgui_button_h.png",
+          "onClick": {
+            "name": "OpenStandStatKeybind"
+          },
+          "x": 202,
+          "y": 108
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_open_stand_stats",
+          "text": {
+            "fixedValue": "Open Stand Stats"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_attack_stand_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagiciansAttackStats"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 197,
+          "y": 64
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

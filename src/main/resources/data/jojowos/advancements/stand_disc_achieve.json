@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:empty_stand_disc"
+    },
+    "title": {
+      "translate": "advancements.stand_disc_achieve.title"
+    },
+    "description": {
+      "translate": "advancements.stand_disc_achieve.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stand_disc_achieve": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jojowos:empty_stand_disc"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jojowos:stand_arrow_achievement"
+}

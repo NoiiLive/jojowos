@@ -1,0 +1,532 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 184,
+          "y": 129
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 224,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 145,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 90,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 279,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_purple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldSilverIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_dark.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldSilverIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldBlackIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_black.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldBlackIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_yellow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldMangaIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldMangaIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_yellow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldOVAIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldOVAIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_yellow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldBaseIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworld.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "TheWorldBaseIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "RoadRollerUnlockButton"
+          },
+          "displayCondition": {
+            "name": "RoadRollerLockDisplay"
+          },
+          "x": 202,
+          "y": 145
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock1",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "WorldTimeSkipUnlockButton"
+          },
+          "displayCondition": {
+            "name": "WorldTimeSkipLockDisplay"
+          },
+          "x": 242,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock2",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "WorldTimeStopUnlockButton"
+          },
+          "displayCondition": {
+            "name": "WorldTimeStopLockDisplay"
+          },
+          "x": 297,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock3",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "MudaKickUnlockButton"
+          },
+          "displayCondition": {
+            "name": "MudaKickLockDisplay"
+          },
+          "x": 163,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock4",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "KnifeTossUnlockButton"
+          },
+          "displayCondition": {
+            "name": "KnifeTossLockDisplay"
+          },
+          "x": 108,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_road_roller_80_potential_10_s",
+          "text": {
+            "fixedValue": "Road Roller : 80 Potential, 5 Skill Points"
+          },
+          "displayCondition": {
+            "name": "RoadRollerLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 146
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_stop_50_potential_10_ski",
+          "text": {
+            "fixedValue": "Time Stop : 60 Potential, 10 Skill Points"
+          },
+          "displayCondition": {
+            "name": "WorldTimeStopLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 296,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_skip_40_potential_5_skil",
+          "text": {
+            "fixedValue": "Time Skip : 40 Potential, 5 Skill Points"
+          },
+          "displayCondition": {
+            "name": "WorldTimeSkipLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 241,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_knife_toss_10_potential_3_ski",
+          "text": {
+            "fixedValue": "Knife Toss : 10 Potential, 3 Skill Points"
+          },
+          "displayCondition": {
+            "name": "KnifeTossLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 107,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_muda_kick_barrage_20_potential",
+          "text": {
+            "fixedValue": "Muda Kick Barrage : 20 Potential, 3 Skill Points"
+          },
+          "displayCondition": {
+            "name": "MudaKickLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 162,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworld_knifetoss.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeTossUnlockDisplay"
+          },
+          "x": 101,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworld_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MudaKickUnlockDisplay"
+          },
+          "x": 156,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworld_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "WorldTimeSkipUnlockDisplay"
+          },
+          "x": 235,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworld_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "WorldTimeStopUnlockDisplay"
+          },
+          "x": 290,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworld_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlockDisplay"
+          },
+          "x": 195,
+          "y": 140
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_knife_toss_throw_multiple_kniv",
+          "text": {
+            "fixedValue": "Knife Toss : Throw Multiple Knives Out",
+            "name": "WorldKnifeThrowDamage"
+          },
+          "displayCondition": {
+            "name": "KnifeTossUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 107,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_muda_kick_barrage_send_out_a_b",
+          "text": {
+            "fixedValue": "Muda Kick Barrage : Send Out a Barrage of Kicks",
+            "name": "WorldMudaKickBarrageDamage"
+          },
+          "displayCondition": {
+            "name": "MudaKickUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 162,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_skip_quickly_stop_time_an",
+          "text": {
+            "fixedValue": "Time Skip : Quickly Stop Time and Skip Forward",
+            "name": "WorldTimeskipDistance"
+          },
+          "displayCondition": {
+            "name": "WorldTimeSkipUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 241,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_road_roller_drop_a_road_roller",
+          "text": {
+            "fixedValue": "Road Roller : Drop a Road Roller in Stopped Time",
+            "name": "WorldRoadRollerDamage"
+          },
+          "displayCondition": {
+            "name": "RoadRollerUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 146
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skillgui_button",
+          "image": "skillgui_button.png",
+          "hoveredImage": "skillgui_button_h.png",
+          "onClick": {
+            "name": "OpenStandStatKeybind"
+          },
+          "x": 202,
+          "y": 108
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_open_stand_stats",
+          "text": {
+            "fixedValue": "Open Stand Stats"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_attack_barrage_stand_displa",
+          "text": {
+            "fixedValue": "",
+            "name": "WorldAttackStats"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_world_timestop_length_displ",
+          "text": {
+            "fixedValue": "",
+            "name": "WorldTimestopLengthDisplay"
+          },
+          "displayCondition": {
+            "name": "WorldTimeStopUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 296,
+          "y": 107
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

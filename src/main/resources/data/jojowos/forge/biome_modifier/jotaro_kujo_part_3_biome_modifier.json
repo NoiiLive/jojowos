@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "plains",
+    "desert",
+    "forest",
+    "taiga",
+    "jungle",
+    "swamp",
+    "savanna"
+  ],
+  "spawners": {
+    "type": "jojowos:jotaro_kujo_part_3",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

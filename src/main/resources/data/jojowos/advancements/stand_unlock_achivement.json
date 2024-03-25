@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_star_platinum"
+    },
+    "title": {
+      "translate": "advancements.stand_unlock_achivement.title"
+    },
+    "description": {
+      "translate": "advancements.stand_unlock_achivement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stand_unlock_achivement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:jo_jo_world_of_stands_achievement"
+}

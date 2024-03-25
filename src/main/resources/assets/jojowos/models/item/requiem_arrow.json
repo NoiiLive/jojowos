@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/requiemarrow",
+  "textures": {
+    "0": "jojowos:block/requiemarrow",
+    "particle": "jojowos:item/arrowhead"
+  }
+}

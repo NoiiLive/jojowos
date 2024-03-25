@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/starplatinumdisc",
+  "textures": {
+    "0": "jojowos:block/starplatinumdisc",
+    "particle": "jojowos:item/standdisc"
+  }
+}

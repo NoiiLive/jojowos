@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_world_time_skip"
+    },
+    "title": {
+      "translate": "advancements.world_time_skip_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.world_time_skip_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "world_time_skip_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:muda_kick_achievement"
+}

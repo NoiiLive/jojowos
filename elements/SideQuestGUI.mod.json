@@ -1,0 +1,507 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 1,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skillgui_button",
+          "image": "skillgui_button.png",
+          "hoveredImage": "skillgui_button_h.png",
+          "onClick": {
+            "name": "OpenStandStatKeybind"
+          },
+          "x": 322,
+          "y": 190
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_open_stand_stats",
+          "text": {
+            "fixedValue": "Open Stand Stats"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 321,
+          "y": 189
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_main",
+          "text": {
+            "fixedValue": "Main Quest"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_side_quests",
+          "text": {
+            "fixedValue": "Side Quests"
+          },
+          "color": {
+            "value": -11184811,
+            "falpha": 0.0
+          },
+          "x": 237,
+          "y": 60
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "questmenu2.png",
+          "use1Xscale": false,
+          "x": 104,
+          "y": 45
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_questmenu2_button",
+          "image": "questmenu2_button.png",
+          "hoveredImage": "questmenu2_button.png",
+          "onClick": {
+            "name": "OpenMainQuest"
+          },
+          "x": 106,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_active_side_quests",
+          "text": {
+            "fixedValue": "Active Side Quests :"
+          },
+          "color": {
+            "value": -11184811,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 87
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_side_quest_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuest1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 118,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_side_quest_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuest2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 118,
+          "y": 138
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_side_quest_3",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuest3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 118,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_side_quest_4",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuest4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 118,
+          "y": 190
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_karma",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnKarma"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 112,
+          "y": 216
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_trashicon",
+          "image": "trashicon.png",
+          "hoveredImage": "trashicon_h.png",
+          "onClick": {
+            "name": "DiscardQuestButton1"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ1"
+          },
+          "x": 294,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_trashicon1",
+          "image": "trashicon.png",
+          "hoveredImage": "trashicon_h.png",
+          "onClick": {
+            "name": "DiscardQuestButton2"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ2"
+          },
+          "x": 294,
+          "y": 132
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_trashicon2",
+          "image": "trashicon.png",
+          "hoveredImage": "trashicon_h.png",
+          "onClick": {
+            "name": "DiscardQuestButton3"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ3"
+          },
+          "x": 294,
+          "y": 158
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_trashicon3",
+          "image": "trashicon.png",
+          "hoveredImage": "trashicon_h.png",
+          "onClick": {
+            "name": "DiscardQuestButton4"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ4"
+          },
+          "x": 294,
+          "y": 184
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_discard_quest",
+          "text": {
+            "fixedValue": "Discard Quest?"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ1"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 291,
+          "y": 103
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_discard_quest1",
+          "text": {
+            "fixedValue": "Discard Quest?"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 291,
+          "y": 129
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_discard_quest2",
+          "text": {
+            "fixedValue": "Discard Quest?"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ3"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 291,
+          "y": 155
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_discard_quest3",
+          "text": {
+            "fixedValue": "Discard Quest?"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ4"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 291,
+          "y": 181
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_giver_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestGiver1"
+          },
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest1"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 90,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_giver_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestGiver2"
+          },
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest2"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 90,
+          "y": 132
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_giver_3",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestGiver3"
+          },
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest3"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 90,
+          "y": 158
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_giver_4",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestGiver4"
+          },
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest4"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 90,
+          "y": 184
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_reward_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestReward1"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ1"
+          },
+          "width": 131,
+          "height": 22,
+          "x": 114,
+          "y": 104
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_reward_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestReward2"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ2"
+          },
+          "width": 131,
+          "height": 22,
+          "x": 114,
+          "y": 130
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_reward_3",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestReward3"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ3"
+          },
+          "width": 131,
+          "height": 22,
+          "x": 114,
+          "y": 156
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_side_quest_reward_4",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSideQuestReward4"
+          },
+          "displayCondition": {
+            "name": "ReturnActiveSQ4"
+          },
+          "width": 131,
+          "height": 22,
+          "x": 114,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "checkmark.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest1"
+          },
+          "x": 90,
+          "y": 106
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "checkmark.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest2"
+          },
+          "x": 90,
+          "y": 132
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "checkmark.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest3"
+          },
+          "x": 90,
+          "y": 158
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "checkmark.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnCompleteSideQuest4"
+          },
+          "x": 90,
+          "y": 184
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

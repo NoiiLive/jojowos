@@ -1,0 +1,376 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_gui_3.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinMagiciansRedBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNotEquippedBase"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip1",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinMagiciansRedManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNotEquippedManga"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip2",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinMagiciansRedOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNotEquippedOVA"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow_left",
+          "image": "guiarrow_left.png",
+          "hoveredImage": "guiarrow_left_h.png",
+          "onClick": {
+            "name": "OpenSkinMagiciansRed2"
+          },
+          "x": 57,
+          "y": 110
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow",
+          "image": "guiarrow.png",
+          "hoveredImage": "guiarrow_hover.png",
+          "onClick": {
+            "name": "OpenSkinMagiciansRed2"
+          },
+          "x": 356,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedEquippedBase"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedEquippedManga"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedEquippedOVA"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNoOVA"
+          },
+          "x": 298,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNoManga"
+          },
+          "x": 202,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnMagiciansRedBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedBase"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 107,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnMagiciansRedManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 203,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNoManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 203,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnMagiciansRedOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedOVA"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 299,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNoOVA"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 299,
+          "y": 165
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_base",
+          "text": {
+            "fixedValue": "Equipped - Base"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_magicians_red_b",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostMagiciansRedBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNotEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_manga",
+          "text": {
+            "fixedValue": "Equipped - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 185,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_magicians_red_m",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostMagiciansRedManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNotEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 185,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_manga",
+          "text": {
+            "fixedValue": "Locked - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNoManga"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 203,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_ova",
+          "text": {
+            "fixedValue": "Equipped - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_magicians_red_o",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostMagiciansRedOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNotEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_ova",
+          "text": {
+            "fixedValue": "Locked - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinMagiciansRedNoOVA"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 299,
+          "y": 197
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

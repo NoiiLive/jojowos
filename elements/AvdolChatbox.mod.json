@@ -1,0 +1,210 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "chatbox.png",
+          "use1Xscale": false,
+          "x": 85,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_twext",
+          "text": {
+            "fixedValue": "ChatBox Line 1",
+            "name": "ChatboxDisplay1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 140,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chatboxline2",
+          "text": {
+            "fixedValue": "ChatBox Line 2",
+            "name": "ChatboxDisplay2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 140,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chatbox_line_3",
+          "text": {
+            "fixedValue": "ChatBox Line 3",
+            "name": "ChatboxDisplay3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 140,
+          "y": 166
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chatbox_line_4",
+          "text": {
+            "fixedValue": "ChatBox Line 4",
+            "name": "ChatboxDisplay4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 140,
+          "y": 177
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_chat_button_display_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ChatButtonDisplay1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AvdolChatLevelButton"
+          },
+          "x": 202,
+          "y": 202
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_chat_button_display_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ChatButtonDisplay2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AvdolChatLevelButton2"
+          },
+          "x": 274,
+          "y": 202
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_textbutton",
+          "image": "textbutton.png",
+          "hoveredImage": "textbutton_h.png",
+          "onClick": {
+            "name": "AvdolChatButton1"
+          },
+          "displayCondition": {
+            "name": "AvdolChatLevelButton"
+          },
+          "x": 195,
+          "y": 196
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_textbutton1",
+          "image": "textbutton.png",
+          "hoveredImage": "textbutton_h.png",
+          "onClick": {
+            "name": "AvdolChatButton2"
+          },
+          "displayCondition": {
+            "name": "AvdolChatLevelButton2"
+          },
+          "x": 267,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "avdol.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "AvdolIconDisplay"
+          },
+          "x": 99,
+          "y": 149
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "avdolmad.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "AvdolMadIconDisplay"
+          },
+          "x": 99,
+          "y": 149
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "avdoltsk.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "AvdolTskIconDisplay"
+          },
+          "x": 99,
+          "y": 149
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "AvdolChatboxOpened"
+    },
+    "onTick": {
+      "name": "AvdolChatboxActive"
+    },
+    "onClosed": {
+      "name": "ChatboxClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LSHIFT",
+    "keyBindingName": "Toggle Shift Ability",
+    "keyBindingCategoryKey": "jojowos",
+    "onKeyPressed": {
+      "name": "ToggleShiftAbilities"
+    }
+  }
+}

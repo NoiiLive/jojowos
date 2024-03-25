@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:star_platinum_disc"
+    },
+    "title": {
+      "translate": "advancements.stand_disc_used_achieve.title"
+    },
+    "description": {
+      "translate": "advancements.stand_disc_used_achieve.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stand_disc_used_achieve": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:stand_disc_achieve"
+}

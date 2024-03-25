@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "jojowos:sand_dome_feature",
+  "step": "surface_structures"
+}

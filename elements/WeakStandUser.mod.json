@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:DIOCaped"
+      },
+      {
+        "value": "CUSTOM:Iggy"
+      }
+    ],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "weak_stand_user",
+    "namespace": "mod"
+  }
+}

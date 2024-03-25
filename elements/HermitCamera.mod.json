@@ -1,0 +1,72 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_who_do_you_desire_to_see",
+          "text": {
+            "fixedValue": "Who do you desire to see?"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "x": 148,
+          "y": 44
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "PlayerName",
+          "width": 120,
+          "height": 20,
+          "x": 153,
+          "y": 151
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_search",
+          "text": "Search",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "HermitSearching"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 185,
+          "y": 183
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hermit_purple_polaroid.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 20
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

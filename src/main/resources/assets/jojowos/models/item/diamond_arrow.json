@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/diamondarrow",
+  "textures": {
+    "0": "jojowos:block/diamondarrow",
+    "particle": "jojowos:item/diamond_arrow"
+  }
+}

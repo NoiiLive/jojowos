@@ -1,0 +1,376 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_gui_3.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheWorldBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedBase"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip1",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheWorldManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedManga"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip2",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheWorldOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedOVA"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow_left",
+          "image": "guiarrow_left.png",
+          "hoveredImage": "guiarrow_left_h.png",
+          "onClick": {
+            "name": "OpenSkinTheWorld2"
+          },
+          "x": 57,
+          "y": 110
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow",
+          "image": "guiarrow.png",
+          "hoveredImage": "guiarrow_hover.png",
+          "onClick": {
+            "name": "OpenSkinTheWorld2"
+          },
+          "x": 356,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedBase"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedManga"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedOVA"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoManga"
+          },
+          "x": 202,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoOVA"
+          },
+          "x": 298,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheWorldBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldBase"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 106,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 202,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoOVA"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 299,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheWorldManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 202,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheWorldOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldOVA"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 299,
+          "y": 165
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_manga",
+          "text": {
+            "fixedValue": "Locked - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoManga"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 203,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_ova",
+          "text": {
+            "fixedValue": "Locked - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoOVA"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 299,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_base",
+          "text": {
+            "fixedValue": "Equipped - Base"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_manga",
+          "text": {
+            "fixedValue": "Equipped - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 185,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_ova1",
+          "text": {
+            "fixedValue": "Equipped - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_world_base",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheWorldBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_world_manga",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheWorldManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 185,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_world_ova",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheWorldOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

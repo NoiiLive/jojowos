@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:AchievementStarFinger"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 0.0,
+    "knockback": 1,
+    "entityModel": "Modelemptyarmor",
+    "customModelTexture": "zzzamn.png",
+    "onHitsBlock": {
+      "name": "BarrageFistBreak"
+    },
+    "onHitsEntity": {
+      "name": "BarrageFistHit"
+    },
+    "onFlyingTick": {
+      "name": "ProjectileClash"
+    }
+  }
+}

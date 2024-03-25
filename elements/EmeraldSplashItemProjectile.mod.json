@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Achievement20MeterEmerald"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 2.0,
+    "damage": 0.0,
+    "knockback": 1,
+    "entityModel": "ModelEmeraldSplash",
+    "customModelTexture": "emerald_splash.png",
+    "onHitsEntity": {
+      "name": "BarrageFistHit"
+    }
+  }
+}

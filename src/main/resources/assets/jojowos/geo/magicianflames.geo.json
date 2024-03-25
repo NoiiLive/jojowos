@@ -1,0 +1,71 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.MagicianFlames",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "flames",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-48, 0, 48],
+							"size": [96, 46, 0],
+							"uv": {
+								"north": {"uv": [416, 0], "uv_size": [96, 46]},
+								"east": {"uv": [96, 96], "uv_size": [0, 46]},
+								"south": {"uv": [192, 96], "uv_size": [96, 46]},
+								"west": {"uv": [192, 96], "uv_size": [0, 46]},
+								"up": {"uv": [96, 96], "uv_size": [96, 0]},
+								"down": {"uv": [192, 96], "uv_size": [96, 0]}
+							}
+						},
+						{
+							"origin": [-48, 0, -48],
+							"size": [0, 46, 96],
+							"uv": {
+								"north": {"uv": [96, 96], "uv_size": [0, 46]},
+								"east": {"uv": [0, 96], "uv_size": [96, 46]},
+								"south": {"uv": [192, 96], "uv_size": [0, 46]},
+								"west": {"uv": [416, 0], "uv_size": [96, 46]},
+								"up": {"uv": [96, 0], "uv_size": [0, 96]},
+								"down": {"uv": [96, 96], "uv_size": [0, -96]}
+							}
+						},
+						{
+							"origin": [48, 0, -48],
+							"size": [0, 46, 96],
+							"uv": {
+								"north": {"uv": [96, 96], "uv_size": [0, 46]},
+								"east": {"uv": [416, 0], "uv_size": [96, 46]},
+								"south": {"uv": [192, 96], "uv_size": [0, 46]},
+								"west": {"uv": [96, 96], "uv_size": [96, 46]},
+								"up": {"uv": [96, 0], "uv_size": [0, 96]},
+								"down": {"uv": [96, 96], "uv_size": [0, -96]}
+							}
+						},
+						{
+							"origin": [-48, 0, -48],
+							"size": [96, 46, 0],
+							"uv": {
+								"north": {"uv": [96, 96], "uv_size": [96, 46]},
+								"east": {"uv": [96, 96], "uv_size": [0, 46]},
+								"south": {"uv": [416, 0], "uv_size": [96, 46]},
+								"west": {"uv": [192, 96], "uv_size": [0, 46]},
+								"up": {"uv": [96, 96], "uv_size": [96, 0]},
+								"down": {"uv": [192, 96], "uv_size": [96, 0]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

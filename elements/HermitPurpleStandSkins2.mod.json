@@ -1,0 +1,420 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_gui_3.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinHermitPurpleRed"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNotEquippedRed"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip1",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinHermitPurpleBlue"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNotEquippedBlue"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip2",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinHermitPurpleGold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNotEquippedGold"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow_left",
+          "image": "guiarrow_left.png",
+          "hoveredImage": "guiarrow_left_h.png",
+          "onClick": {
+            "name": "OpenSkinHermitPurple1"
+          },
+          "x": 57,
+          "y": 110
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow",
+          "image": "guiarrow.png",
+          "hoveredImage": "guiarrow_hover.png",
+          "onClick": {
+            "name": "OpenSkinHermitPurple1"
+          },
+          "x": 356,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleEquippedRed"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleEquippedBlue"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleEquippedGold"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoRed"
+          },
+          "x": 106,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoBlue"
+          },
+          "x": 202,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoGold"
+          },
+          "x": 298,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoRed"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 107,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoBlue"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 203,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoGold"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 300,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnHermitPurpleRed"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleRed"
+          },
+          "scale": 100,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 107,
+          "y": 144
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnHermitPurpleBlue"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleBlue"
+          },
+          "scale": 100,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 203,
+          "y": 144
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnHermitPurpleGold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleGold"
+          },
+          "scale": 100,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 299,
+          "y": 144
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_red",
+          "text": {
+            "fixedValue": "Locked - Red"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoRed"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 107,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_blue",
+          "text": {
+            "fixedValue": "Locked - Blue"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoBlue"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 203,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_gold",
+          "text": {
+            "fixedValue": "Locked - Gold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNoGold"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 299,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_hermit_purple_r",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostHermitPurpleRed"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNotEquippedRed"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_hermit_purple_b",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostHermitPurpleBlue"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNotEquippedBlue"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 185,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_hermit_purple_g",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostHermitPurpleGold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleNotEquippedGold"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_red",
+          "text": {
+            "fixedValue": "Equipped - Red"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleEquippedRed"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_blue",
+          "text": {
+            "fixedValue": "Equipped - Blue"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleEquippedBlue"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 184,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_gold",
+          "text": {
+            "fixedValue": "Equipped - Gold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinHermitPurpleEquippedGold"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

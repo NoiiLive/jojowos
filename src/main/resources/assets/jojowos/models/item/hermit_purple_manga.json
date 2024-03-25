@@ -1,0 +1,6 @@
+{
+  "parent": "jojowos:displaysettings/hermitpurple.item",
+  "textures": {
+    "layer0": "jojowos:item/hermitmanga"
+  }
+}

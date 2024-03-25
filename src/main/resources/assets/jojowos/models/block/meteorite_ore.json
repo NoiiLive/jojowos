@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jojowos:block/meteorite_ore",
+    "up": "jojowos:block/meteorite_ore",
+    "north": "jojowos:block/meteorite_ore",
+    "east": "jojowos:block/meteorite_ore",
+    "south": "jojowos:block/meteorite_ore",
+    "west": "jojowos:block/meteorite_ore",
+    "particle": "jojowos:block/meteorite_ore"
+  },
+  "render_type": "solid"
+}

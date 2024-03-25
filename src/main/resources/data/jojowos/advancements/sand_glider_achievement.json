@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_sand_glider"
+    },
+    "title": {
+      "translate": "advancements.sand_glider_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.sand_glider_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "sand_glider_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:the_fool_achievement"
+}

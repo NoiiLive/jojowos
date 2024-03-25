@@ -1,0 +1,471 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_maingui.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinSilverChariotBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedBase"
+          },
+          "x": 39,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip1",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinSilverChariotManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedManga"
+          },
+          "x": 135,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip2",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinSilverChariotOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedOVA"
+          },
+          "x": 231,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip3",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinSilverChariotGold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedGold"
+          },
+          "x": 327,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedBase"
+          },
+          "x": 39,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedManga"
+          },
+          "x": 135,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedOVA"
+          },
+          "x": 231,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedGold"
+          },
+          "x": 327,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoManga"
+          },
+          "x": 154,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoOVA"
+          },
+          "x": 250,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoGold"
+          },
+          "x": 346,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnSilverChariotBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotBase"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 58,
+          "y": 165
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_manga",
+          "text": {
+            "fixedValue": "Locked - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoManga"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 155,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_ova",
+          "text": {
+            "fixedValue": "Locked - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoOVA"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 251,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_gold",
+          "text": {
+            "fixedValue": "Locked - Gold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoGold"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 347,
+          "y": 197
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 154,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoOVA"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 251,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNoGold"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 347,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnSilverChariotManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 154,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnSilverChariotOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotOVA"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 251,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnSilverChariotGold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotGold"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 347,
+          "y": 165
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_base",
+          "text": {
+            "fixedValue": "Equipped - Base"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 41,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_manga",
+          "text": {
+            "fixedValue": "Equipped - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 137,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_ova",
+          "text": {
+            "fixedValue": "Equipped - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 233,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_gold",
+          "text": {
+            "fixedValue": "Equipped - Gold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotEquippedGold"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 329,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_silver_chariot",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostSilverChariotBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 41,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_silver_chariot1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostSilverChariotManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 137,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_silver_chariot2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostSilverChariotOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 233,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_silver_chariot3",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostSilverChariotGold"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinSilverChariotNotEquippedGold"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 329,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

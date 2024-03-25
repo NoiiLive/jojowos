@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/camera",
+  "textures": {
+    "0": "jojowos:block/cameratexture",
+    "particle": "jojowos:item/hermit_camera"
+  }
+}

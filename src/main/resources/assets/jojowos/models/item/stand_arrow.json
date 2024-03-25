@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/standarrow",
+  "textures": {
+    "0": "jojowos:block/standarrowtexture",
+    "particle": "jojowos:item/standarrow"
+  }
+}

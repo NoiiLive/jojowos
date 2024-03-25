@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "plains",
+    "jungle",
+    "forest",
+    "desert",
+    "taiga",
+    "swamp",
+    "savanna"
+  ],
+  "spawners": {
+    "type": "jojowos:jean_pierre_polnareff",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

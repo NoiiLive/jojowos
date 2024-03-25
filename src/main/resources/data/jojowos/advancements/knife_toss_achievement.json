@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_knife_toss"
+    },
+    "title": {
+      "translate": "advancements.knife_toss_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.knife_toss_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "knife_toss_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:the_world_achievement"
+}

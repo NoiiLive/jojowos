@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_20_meter_emerald"
+    },
+    "title": {
+      "translate": "advancements.meter_emerald_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.meter_emerald_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "meter_emerald_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:hiero_grapple_achievement"
+}

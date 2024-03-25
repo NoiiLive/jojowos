@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/coffeegum",
+  "textures": {
+    "0": "jojowos:block/coffeegumtexture",
+    "particle": "jojowos:item/coffee_gum"
+  }
+}

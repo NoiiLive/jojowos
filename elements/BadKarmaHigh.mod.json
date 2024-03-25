@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:DIOAwakened"
+      }
+    ],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "bad_karma_high",
+    "namespace": "mod"
+  }
+}

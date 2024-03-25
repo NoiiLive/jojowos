@@ -1,0 +1,159 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cross_fire_hurricane",
+          "text": {
+            "fixedValue": "Cross Fire Hurricane"
+          },
+          "displayCondition": {
+            "name": "CrossfireHurricaneDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 198,
+          "y": 72
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cross_fire_hurricane_special",
+          "text": {
+            "fixedValue": "Cross Fire Hurricane : Special"
+          },
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 232,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_life_detector",
+          "text": {
+            "fixedValue": "Life Detector"
+          },
+          "displayCondition": {
+            "name": "LifeDetectorUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 164,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magiciansred_lifedetector_h",
+          "image": "magiciansred_lifedetector.png",
+          "hoveredImage": "magiciansred_lifedetector_h.png",
+          "onClick": {
+            "name": "LifeDetectorAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "LifeDetectorUnlockDisplay"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magiciansred_crossfire_h",
+          "image": "magiciansred_crossfire.png",
+          "hoveredImage": "magiciansred_crossfire_h.png",
+          "onClick": {
+            "name": "CrossfireAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "CrossfireHurricaneDisplay"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magiciansred_crossfirespecial_h",
+          "image": "magiciansred_crossfirespecial.png",
+          "hoveredImage": "magiciansred_crossfirespecial_h.png",
+          "onClick": {
+            "name": "CrossfireSpecialAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlockDisplay"
+          },
+          "x": 230,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magiciansred_redbind_h",
+          "image": "magiciansred_redbind.png",
+          "hoveredImage": "magiciansred_redbind_h.png",
+          "onClick": {
+            "name": "RedBindAbilityWheel"
+          },
+          "displayCondition": {
+            "name": "RedBindUnlockDisplay"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_grid.png",
+          "use1Xscale": false,
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_red_bind",
+          "text": {
+            "fixedValue": "Red Bind"
+          },
+          "displayCondition": {
+            "name": "RedBindUnlockDisplay"
+          },
+          "width": 30,
+          "height": 30,
+          "x": 198,
+          "y": 140
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

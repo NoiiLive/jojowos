@@ -1,0 +1,1099 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 1,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standstatgui.png",
+          "use1Xscale": false,
+          "x": 104,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_star_platinum",
+          "text": {
+            "fixedValue": "Stand",
+            "name": "StandStatStandWords"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 118,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skin",
+          "text": {
+            "fixedValue": "Skin",
+            "name": "StandStatSkinWords"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 233,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thefool.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "TheFoolBaseIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinum.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StarPlatinumBaseIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworld.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "TheWorldBaseIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "silverchariot.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SilverChariotBaseIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hierophantgreen.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HierophantGreenBaseIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "MagiciansRedBaseIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hermitpurple.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "HermitPurpleBaseIcon"
+          },
+          "x": 116,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__22.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp22"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__21.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp21"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp20"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp19"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp18"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp17"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp16"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp15"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp14"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp13"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp12"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp11"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp10"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp9"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp8"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp7"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp6"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp5"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp4"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp3"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp2"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standexp__1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StandExp1"
+          },
+          "x": 113,
+          "y": 117
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level",
+          "text": {
+            "fixedValue": "Level",
+            "name": "StatLevelDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 86
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_power",
+          "text": {
+            "fixedValue": "Power",
+            "name": "StatStrengthDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 122
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_speed",
+          "text": {
+            "fixedValue": "Speed",
+            "name": "StatSpeedDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 140
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_durability",
+          "text": {
+            "fixedValue": "Durability",
+            "name": "StatDurabilityDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 158
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_precision",
+          "text": {
+            "fixedValue": "Precision",
+            "name": "StatPrecisionDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_potential",
+          "text": {
+            "fixedValue": "Potential",
+            "name": "StatPotentialDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 193
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_points",
+          "text": {
+            "fixedValue": "Points",
+            "name": "StatSkillPointDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 104
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilladd",
+          "image": "skilladd.png",
+          "hoveredImage": "skilladdhover.png",
+          "onClick": {
+            "name": "StatAddPower"
+          },
+          "displayCondition": {
+            "name": "PowerStatAddDisplay"
+          },
+          "x": 286,
+          "y": 116
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilladd1",
+          "image": "skilladd.png",
+          "hoveredImage": "skilladdhover.png",
+          "onClick": {
+            "name": "StatAddSpeed"
+          },
+          "displayCondition": {
+            "name": "SpeedStatAddDisplay"
+          },
+          "x": 286,
+          "y": 134
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilladd2",
+          "image": "skilladd.png",
+          "hoveredImage": "skilladdhover.png",
+          "onClick": {
+            "name": "StatAddDurability"
+          },
+          "displayCondition": {
+            "name": "DurabilityStatAddDisplay"
+          },
+          "x": 286,
+          "y": 152
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilladd3",
+          "image": "skilladd.png",
+          "hoveredImage": "skilladdhover.png",
+          "onClick": {
+            "name": "StatAddPrecision"
+          },
+          "displayCondition": {
+            "name": "PrecisionStatAddDisplay"
+          },
+          "x": 286,
+          "y": 170
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilladd4",
+          "image": "skilladd.png",
+          "hoveredImage": "skilladdhover.png",
+          "onClick": {
+            "name": "StatAddPotential"
+          },
+          "displayCondition": {
+            "name": "PotentialStatAddDisplay"
+          },
+          "x": 286,
+          "y": 187
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_blue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumBlueIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_green.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumGreenIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumMangaIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumOVAIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_part4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumPart4Icon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_part6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumPart6Icon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_black.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldBlackIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldMangaIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldOVAIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_dark.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldSilverIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hermitpurpleicon_blue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HermitPurpleBlueIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hermitpurpleicon_gold.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HermitPurpleGoldIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hermitpurpleicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HermitPurpleMangaIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hermitpurpleicon_part4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HermitPurplePart4Icon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hermitpurpleicon_red.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HermitPurpleRedIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hierophantgreenicon_blue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HierophantGreenBlueIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hierophantgreenicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HierophantGreenMangaIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hierophantgreenicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "HierophantGreenOVAIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_asb.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedASBIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_green.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedGreenIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedMangaIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansredicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagiciansRedOVAIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "silvercharioticon_gold.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SilverChariotGoldIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "silvercharioticon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SilverChariotMangaIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "silvercharioticon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SilverChariotOVAIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thefoolicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheFoolMangaIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thefoolicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheFoolOVAIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_decreases_the_cooldowns_of_your",
+          "text": {
+            "fixedValue": "Decreases the Cooldowns of your Stand's Moves"
+          },
+          "displayCondition": {
+            "name": "SpeedStatAddDisplay"
+          },
+          "width": 25,
+          "height": 15,
+          "x": 286,
+          "y": 134
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_increases_the_power_of_your_stan",
+          "text": {
+            "fixedValue": "Increases the Power of your Stand's Moves"
+          },
+          "displayCondition": {
+            "name": "PowerStatAddDisplay"
+          },
+          "width": 25,
+          "height": 15,
+          "x": 286,
+          "y": 116
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_decreases_the_damage_you_take",
+          "text": {
+            "fixedValue": "Increases Block Amount, and Damage Resistance"
+          },
+          "displayCondition": {
+            "name": "DurabilityStatAddDisplay"
+          },
+          "width": 25,
+          "height": 15,
+          "x": 286,
+          "y": 152
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_increases_the_range_of_your_stan",
+          "text": {
+            "fixedValue": "Increases the Effectiveness of your Stand's Moves"
+          },
+          "displayCondition": {
+            "name": "PrecisionStatAddDisplay"
+          },
+          "width": 25,
+          "height": 15,
+          "x": 286,
+          "y": 170
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_allows_your_stand_to_acquire_mor",
+          "text": {
+            "fixedValue": "Allows your Stand to Acquire More Moves and EXP"
+          },
+          "displayCondition": {
+            "name": "PotentialStatAddDisplay"
+          },
+          "width": 25,
+          "height": 15,
+          "x": 286,
+          "y": 187
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow",
+          "image": "guiarrow.png",
+          "hoveredImage": "guiarrow_hover.png",
+          "onClick": {
+            "name": "OpenSkillTreeGUI"
+          },
+          "x": 297,
+          "y": 85
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_display_level_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayLevelTooltip"
+          },
+          "width": 34,
+          "height": 87,
+          "x": 114,
+          "y": 118
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_opens_skill_tree",
+          "text": {
+            "fixedValue": "Open Skill Tree"
+          },
+          "width": 17,
+          "height": 23,
+          "x": 295,
+          "y": 83
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_questgui_button",
+          "image": "questgui_button.png",
+          "hoveredImage": "questgui_button_h.png",
+          "onClick": {
+            "name": "OpenMainQuest"
+          },
+          "x": 84,
+          "y": 190
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_open_quests",
+          "text": {
+            "fixedValue": "Open Quests"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 83,
+          "y": 189
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standstat_skintab",
+          "image": "standstat_skintab.png",
+          "hoveredImage": "standstat_skintab_h.png",
+          "onClick": {
+            "name": "OpenStandSkinGUI"
+          },
+          "x": 305,
+          "y": 57
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_change_stand_skin",
+          "text": {
+            "fixedValue": "Change Stand Skin"
+          },
+          "width": 7,
+          "height": 18,
+          "x": 305,
+          "y": 57
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

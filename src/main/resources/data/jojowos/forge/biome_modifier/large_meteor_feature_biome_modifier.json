@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "windswept_hills",
+    "windswept_gravelly_hills",
+    "stony_peaks",
+    "frozen_peaks",
+    "windswept_savanna",
+    "windswept_forest",
+    "snowy_slopes"
+  ],
+  "features": "jojowos:large_meteor_feature",
+  "step": "surface_structures"
+}

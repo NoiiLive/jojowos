@@ -1,0 +1,145 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntitySheep"
+      },
+      {
+        "value": "EntityAllay"
+      },
+      {
+        "value": "EntityAxolotl"
+      },
+      {
+        "value": "EntityBat"
+      },
+      {
+        "value": "EntityBee"
+      },
+      {
+        "value": "EntityCamel"
+      },
+      {
+        "value": "EntityCat"
+      },
+      {
+        "value": "EntityChicken"
+      },
+      {
+        "value": "EntityCod"
+      },
+      {
+        "value": "EntityCow"
+      },
+      {
+        "value": "EntityDolphin"
+      },
+      {
+        "value": "EntityDonkey"
+      },
+      {
+        "value": "EntityEndermite"
+      },
+      {
+        "value": "EntityFox"
+      },
+      {
+        "value": "EntityFrog"
+      },
+      {
+        "value": "EntityGoat"
+      },
+      {
+        "value": "EntityHorse"
+      },
+      {
+        "value": "EntityLlama"
+      },
+      {
+        "value": "EntityMooshroom"
+      },
+      {
+        "value": "EntityMule"
+      },
+      {
+        "value": "EntityOcelot"
+      },
+      {
+        "value": "EntityPanda"
+      },
+      {
+        "value": "EntityParrot"
+      },
+      {
+        "value": "EntityPig"
+      },
+      {
+        "value": "EntityPolarBear"
+      },
+      {
+        "value": "EntityPufferfish"
+      },
+      {
+        "value": "EntityGlowSquid"
+      },
+      {
+        "value": "EntitySquid"
+      },
+      {
+        "value": "EntitySalmon"
+      },
+      {
+        "value": "EntitySilverfish"
+      },
+      {
+        "value": "EntitySniffer"
+      },
+      {
+        "value": "EntityStrider"
+      },
+      {
+        "value": "EntityTadpole"
+      },
+      {
+        "value": "EntityTraderLlama"
+      },
+      {
+        "value": "EntityTropicalFish"
+      },
+      {
+        "value": "EntityTurtle"
+      },
+      {
+        "value": "EntityWolf"
+      },
+      {
+        "value": "EntityVillager"
+      },
+      {
+        "value": "EntityRabbit"
+      },
+      {
+        "value": "EntitySnowman"
+      },
+      {
+        "value": "EntitySkeletonHorse"
+      },
+      {
+        "value": "EntityZombieHorse"
+      },
+      {
+        "value": "EntityWanderingTrader"
+      }
+    ],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "weak_mob",
+    "namespace": "mod"
+  }
+}

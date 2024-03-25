@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_blade_cyclone"
+    },
+    "title": {
+      "translate": "advancements.blade_cyclone_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.blade_cyclone_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "blade_cyclone_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:sword_launch_achievement"
+}

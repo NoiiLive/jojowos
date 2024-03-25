@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Use Skill",
+    "keyBindingCategoryKey": "jojowos",
+    "onKeyPressed": {
+      "name": "SkillUsed"
+    }
+  }
+}

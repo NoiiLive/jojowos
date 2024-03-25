@@ -1,0 +1,74 @@
+{
+  "_fv": 57,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "empty",
+    "enableBody": true,
+    "textureBody": "empty",
+    "enableLeggings": true,
+    "textureLeggings": "empty",
+    "enableBoots": true,
+    "textureBoots": "empty",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "armorTextureFile": "empty_",
+    "helmetName": "Empty",
+    "bodyName": "Empty",
+    "leggingsName": "Empty",
+    "bootsName": "Empty",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelemptyarmor",
+    "helmetModelPart": "bone",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelemptyarmor",
+    "bodyModelPart": "bone",
+    "armsModelPartL": "bone",
+    "armsModelPartR": "bone",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Modelemptyarmor",
+    "leggingsModelPartL": "bone",
+    "leggingsModelPartR": "bone",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Modelemptyarmor",
+    "bootsModelPartL": "bone",
+    "bootsModelPartR": "bone",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 0,
+    "damageValueHelmet": 0,
+    "damageValueBody": 0,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 0,
+    "enchantability": 0,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

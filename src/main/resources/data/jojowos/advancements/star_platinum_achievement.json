@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "jojowos:achievement_star_platinum"
+    },
+    "title": {
+      "translate": "advancements.star_platinum_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.star_platinum_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "star_platinum_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

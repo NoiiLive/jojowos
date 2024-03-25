@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_hiero_grapple"
+    },
+    "title": {
+      "translate": "advancements.hiero_grapple_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.hiero_grapple_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "hiero_grapple_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:hierophant_green_achievement"
+}

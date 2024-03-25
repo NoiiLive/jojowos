@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/thefooldisc",
+  "textures": {
+    "0": "jojowos:block/thefooldisc",
+    "particle": "jojowos:item/standdisc"
+  }
+}

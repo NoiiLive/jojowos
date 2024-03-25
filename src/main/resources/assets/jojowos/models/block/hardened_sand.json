@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jojowos:block/hard_sand",
+    "up": "jojowos:block/hard_sand",
+    "north": "jojowos:block/hard_sand",
+    "east": "jojowos:block/hard_sand",
+    "south": "jojowos:block/hard_sand",
+    "west": "jojowos:block/hard_sand",
+    "particle": "jojowos:block/hard_sand"
+  },
+  "render_type": "solid"
+}

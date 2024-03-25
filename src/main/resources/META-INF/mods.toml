@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="jojowos"
+version="1.2.1"
+displayName="JoJo: World of Stands"
+displayURL="https://discord.gg/VyKWxMyeZf"
+logoFile="logo.png"
+credits="NoiiLive, Hirohiko Araki"
+authors="NoiiLive"
+description="Adds Stands from JoJo's Bizarre Adventure to Minecraft!"
+
+[[dependencies.jojowos]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.jojowos]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.jojowos]]
+    modId="playeranimator"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

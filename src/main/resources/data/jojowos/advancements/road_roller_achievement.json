@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:achievement_road_roller"
+    },
+    "title": {
+      "translate": "advancements.road_roller_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.road_roller_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "road_roller_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "jojowos:world_time_stop_achievement"
+}

@@ -1,0 +1,580 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 184,
+          "y": 129
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 224,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 145,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 90,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_default.png",
+          "use1Xscale": false,
+          "x": 279,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_purple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumMangaIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_manga.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumMangaIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_purple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumPart6Icon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_part6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumPart6Icon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_blue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumOVAIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_ova.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumOVAIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_blue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumPart4Icon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_part4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumPart4Icon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_blue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumBlueIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_blue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumBlueIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_green.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumGreenIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinumicon_green.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumGreenIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillicon_purple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarPlatinumBaseIcon"
+          },
+          "x": 184,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinum.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StarPlatinumBaseIcon"
+          },
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "StarTimeStopUnlockButton"
+          },
+          "displayCondition": {
+            "name": "StarTimeStopLockDisplay"
+          },
+          "x": 202,
+          "y": 146
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock1",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "StarFingerUnlockedButton"
+          },
+          "displayCondition": {
+            "name": "StarFingerLockDisplay"
+          },
+          "x": 242,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock2",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "StarTimeSkipUnlockButton"
+          },
+          "displayCondition": {
+            "name": "StarTimeSkipLockDisplay"
+          },
+          "x": 297,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock3",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "BearingShotUnlockButton"
+          },
+          "displayCondition": {
+            "name": "BearingShotLockDisplay"
+          },
+          "x": 163,
+          "y": 106
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skilltree_lock4",
+          "image": "skilltree_lock.png",
+          "hoveredImage": "skilltree_lock_hover.png",
+          "onClick": {
+            "name": "InhaleUnlockButton"
+          },
+          "displayCondition": {
+            "name": "InhaleLockDisplay"
+          },
+          "x": 108,
+          "y": 106
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_inhale_10_potential_3_skill_p",
+          "text": {
+            "fixedValue": "Inhale : 10 Potential, 3 Skill Points"
+          },
+          "displayCondition": {
+            "name": "InhaleLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 107,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bearing_shot_20_potential_3_s",
+          "text": {
+            "fixedValue": "Bearing Shot : 20 Potential, 3 Skill Points"
+          },
+          "displayCondition": {
+            "name": "BearingShotLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 162,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_star_finger_30_potential_5_sk",
+          "text": {
+            "fixedValue": "Star Finger : 40 Potential, 5 Skill Points"
+          },
+          "displayCondition": {
+            "name": "StarFingerLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 241,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_skip_80_potential_5_skil",
+          "text": {
+            "fixedValue": "Time Skip : 80 Potential, 5 Skill Points"
+          },
+          "displayCondition": {
+            "name": "StarTimeSkipLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 296,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_stop_100_potential_10_sk",
+          "text": {
+            "fixedValue": "Time Stop : 100 Potential, 10 Skill Points"
+          },
+          "displayCondition": {
+            "name": "StarTimeStopLockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 147
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinum_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlockDisplay"
+          },
+          "x": 101,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinum_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlockDisplay"
+          },
+          "x": 156,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinum_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlockDisplay"
+          },
+          "x": 235,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinum_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarTimeSkipUnlockDisplay"
+          },
+          "x": 290,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "starplatinum_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarTimeStopUnlockDisplay"
+          },
+          "x": 195,
+          "y": 140
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_time_skip_quickly_stop_time_an",
+          "text": {
+            "fixedValue": "Time Skip : Quickly Stop Time and Skip Forward",
+            "name": "StarTimeskipDistance"
+          },
+          "displayCondition": {
+            "name": "StarTimeSkipUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 296,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_star_finger_extend_your_finger",
+          "text": {
+            "fixedValue": "Star Finger : Extend Your Finger and Attack",
+            "name": "StarFingerDamage"
+          },
+          "displayCondition": {
+            "name": "StarFingerUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 241,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bearing_shot_shoot_an_iron_nug",
+          "text": {
+            "fixedValue": "Bearing Shot : Shoot an Iron Nugget at High Speed",
+            "name": "StarBearingDamage"
+          },
+          "displayCondition": {
+            "name": "BearingShotUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 162,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_inhale_inhale_and_drag_mobs_to",
+          "text": {
+            "fixedValue": "Inhale Display",
+            "name": "StarInhaleRange"
+          },
+          "displayCondition": {
+            "name": "InhaleUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 107,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skillgui_button",
+          "image": "skillgui_button.png",
+          "hoveredImage": "skillgui_button_h.png",
+          "onClick": {
+            "name": "OpenStandStatKeybind"
+          },
+          "x": 202,
+          "y": 108
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_open_stand_stats",
+          "text": {
+            "fixedValue": "Open Stand Stats"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_attack_barrage_stand_displa",
+          "text": {
+            "fixedValue": "",
+            "name": "StarAttackStats"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 197,
+          "y": 64
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_star_timestop_length_displa",
+          "text": {
+            "fixedValue": "",
+            "name": "StarTimestopLengthDisplay"
+          },
+          "displayCondition": {
+            "name": "StarTimeStopUnlockDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 201,
+          "y": 147
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

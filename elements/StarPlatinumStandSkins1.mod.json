@@ -1,0 +1,497 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_maingui.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinStarPlatinumBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedBase"
+          },
+          "x": 39,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip1",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinStarPlatinumPart4"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedPart4"
+          },
+          "x": 135,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip2",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinStarPlatinumPart6"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedPart6"
+          },
+          "x": 231,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip3",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinStarPlatinumManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedManga"
+          },
+          "x": 327,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow_left",
+          "image": "guiarrow_left.png",
+          "hoveredImage": "guiarrow_left_h.png",
+          "onClick": {
+            "name": "OpenSkinStarPlatinum2"
+          },
+          "x": 9,
+          "y": 110
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow",
+          "image": "guiarrow.png",
+          "hoveredImage": "guiarrow_hover.png",
+          "onClick": {
+            "name": "OpenSkinStarPlatinum2"
+          },
+          "x": 404,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedBase"
+          },
+          "x": 39,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedPart4"
+          },
+          "x": 135,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedPart6"
+          },
+          "x": 231,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedManga"
+          },
+          "x": 327,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoPart4"
+          },
+          "x": 154,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoPart6"
+          },
+          "x": 250,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoManga"
+          },
+          "x": 346,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnStarPlatinumBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumBase"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 59,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnStarPlatinumPart4"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumPart4"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 155,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnStarPlatinumPart6"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumPart6"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 251,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnStarPlatinumManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 347,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoPart4"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 155,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoPart6"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 251,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 347,
+          "y": 165
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_base",
+          "text": {
+            "fixedValue": "Equipped - Base"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 41,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equip_base_skin",
+          "text": {
+            "fixedValue": "Equip - Base",
+            "name": "ReturnCostStarPlatinumBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 41,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_part_4",
+          "text": {
+            "fixedValue": "Locked - Part 4"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoPart4"
+          },
+          "width": 19,
+          "height": 24,
+          "x": 156,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equip_part_4",
+          "text": {
+            "fixedValue": "Equip - Part 4",
+            "name": "ReturnCostStarPlatinumPart4"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedPart4"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 137,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_part_4",
+          "text": {
+            "fixedValue": "Equipped - Part 4"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedPart4"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 137,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_part_6",
+          "text": {
+            "fixedValue": "Locked - Part 6"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoPart6"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 251,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equip_part_6",
+          "text": {
+            "fixedValue": "Equip - Part 6",
+            "name": "ReturnCostStarPlatinumPart6"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedPart6"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 233,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_part_6",
+          "text": {
+            "fixedValue": "Equipped - Part 6"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedPart6"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 233,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_manga",
+          "text": {
+            "fixedValue": "Locked - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNoManga"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 347,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equip_manga",
+          "text": {
+            "fixedValue": "Equip - Manga",
+            "name": "ReturnCostStarPlatinumManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumNotEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 329,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_manga",
+          "text": {
+            "fixedValue": "Equipped - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinStarPlatinumEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 329,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

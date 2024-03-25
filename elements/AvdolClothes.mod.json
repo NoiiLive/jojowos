@@ -1,0 +1,74 @@
+{
+  "_fv": 57,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "avdol_headwrap",
+    "enableBody": true,
+    "textureBody": "avdol_coat",
+    "enableLeggings": true,
+    "textureLeggings": "avdol_pants",
+    "enableBoots": true,
+    "textureBoots": "avdol_boots",
+    "creativeTab": {
+      "value": "CUSTOM:JoJoArmor"
+    },
+    "armorTextureFile": "empty_",
+    "helmetName": "Muhammed Avdol's Headwrap",
+    "bodyName": "Muhammed Avdol's Coat",
+    "leggingsName": "Muhammed Avdol's Pants",
+    "bootsName": "Muhammed Avdol's Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelAvdolHeadwrap",
+    "helmetModelPart": "avdolhead",
+    "helmetModelTexture": "avdolarmortexture.png",
+    "bodyModelName": "ModelAvdolCoat",
+    "bodyModelPart": "avdoltorso",
+    "armsModelPartL": "avdolleft_arm",
+    "armsModelPartR": "avdolright_arm",
+    "bodyModelTexture": "avdolarmortexture.png",
+    "leggingsModelName": "ModelAvdolPants",
+    "leggingsModelPartL": "avdolleft_leg",
+    "leggingsModelPartR": "avdolright_leg",
+    "leggingsModelTexture": "avdolarmortexture.png",
+    "bootsModelName": "ModelAvdolBoots",
+    "bootsModelPartL": "avdolleft_boot",
+    "bootsModelPartR": "avdolright_boot",
+    "bootsModelTexture": "avdolarmortexture.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

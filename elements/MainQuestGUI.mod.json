@@ -1,0 +1,132 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 1,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "questmenu1.png",
+          "use1Xscale": false,
+          "x": 104,
+          "y": 45
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skillgui_button",
+          "image": "skillgui_button.png",
+          "hoveredImage": "skillgui_button_h.png",
+          "onClick": {
+            "name": "OpenStandStatKeybind"
+          },
+          "x": 322,
+          "y": 190
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_open_stand_stats",
+          "text": {
+            "fixedValue": "Open Stand Stats"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 321,
+          "y": 189
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_questmenu1_button",
+          "image": "questmenu1_button.png",
+          "hoveredImage": "questmenu1_button.png",
+          "onClick": {
+            "name": "OpenSideQuest"
+          },
+          "x": 212,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_main",
+          "text": {
+            "fixedValue": "Main Quest"
+          },
+          "color": {
+            "value": -11184811,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_side_quests",
+          "text": {
+            "fixedValue": "Side Quests"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 237,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_main_quest",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMainQuest"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 87
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_karma",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnKarma"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 112,
+          "y": 216
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

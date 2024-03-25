@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Armorless",
+    "icon": "chariotarmor.png",
+    "color": {
+      "value": -6710785,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ArmorlessEffect"
+    },
+    "onExpired": {
+      "name": "ArmorlessEffectEnd"
+    }
+  }
+}

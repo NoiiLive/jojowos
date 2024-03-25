@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jojowos:dio_cape_chestplate"
+    }
+  ],
+  "result": {
+    "item": "jojowos:red_cape_chestplate",
+    "count": 1
+  }
+}

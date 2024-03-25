@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:shiny_arrow"
+    },
+    "title": {
+      "translate": "advancements.shiny_arrow_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.shiny_arrow_achievement.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shiny_arrow_achievement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jojowos:shiny_arrow"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jojowos:stand_arrow_achievement"
+}

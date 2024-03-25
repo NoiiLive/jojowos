@@ -1,0 +1,71 @@
+{
+  "_fv": 57,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "[ ]",
+            "name": "AbilityTextDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AbilityTextDisplayCondition"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 24,
+          "y": 186
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "AbilityLockDisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 22,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_ability_time_left_display",
+          "text": {
+            "fixedValue": "TimeLeft",
+            "name": "AbilityTimeLeftDisplay"
+          },
+          "color": {
+            "value": -39322,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AbilityLockDisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 42,
+          "y": 205
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 2,
+      "oy": 1,
+      "snapOnGrid": false
+    }
+  }
+}

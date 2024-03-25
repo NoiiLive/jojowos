@@ -1,0 +1,350 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_gui_3.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheFoolBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNotEquippedBase"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip1",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheFoolManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNotEquippedManga"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip2",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheFoolOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNotEquippedOVA"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolEquippedBase"
+          },
+          "x": 87,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolEquippedManga"
+          },
+          "x": 183,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolEquippedOVA"
+          },
+          "x": 279,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNoManga"
+          },
+          "x": 202,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNoOVA"
+          },
+          "x": 298,
+          "y": 196
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_manga",
+          "text": {
+            "fixedValue": "Locked - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNoManga"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 203,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_ova",
+          "text": {
+            "fixedValue": "Locked - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNoOVA"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 299,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_base",
+          "text": {
+            "fixedValue": "Equipped - Base"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_manga",
+          "text": {
+            "fixedValue": "Equipped - Manga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 185,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_ova",
+          "text": {
+            "fixedValue": "Equipped - OVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_fool_base",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheFoolBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNotEquippedBase"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 89,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_fool_manga",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheFoolManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNotEquippedManga"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 185,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_fool_ova",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheFoolOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNotEquippedOVA"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 281,
+          "y": 202
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNoManga"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 203,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolNoOVA"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 299,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheFoolBase"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolBase"
+          },
+          "scale": 35,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 106,
+          "y": 144
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheFoolManga"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolManga"
+          },
+          "scale": 35,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 203,
+          "y": 144
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheFoolOVA"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheFoolOVA"
+          },
+          "scale": 35,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 299,
+          "y": 144
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

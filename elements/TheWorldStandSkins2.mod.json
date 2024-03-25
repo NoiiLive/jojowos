@@ -1,0 +1,299 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_gui_2.png",
+          "use1Xscale": false,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip1",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheWorldBlack"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedBlack"
+          },
+          "x": 135,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_standskin_equip2",
+          "image": "standskin_equip.png",
+          "hoveredImage": "standskin_equip_h.png",
+          "onClick": {
+            "name": "EquipSkinTheWorldDark"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedDark"
+          },
+          "x": 231,
+          "y": 200
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow_left",
+          "image": "guiarrow_left.png",
+          "hoveredImage": "guiarrow_left_h.png",
+          "onClick": {
+            "name": "OpenSkinTheWorld1"
+          },
+          "x": 105,
+          "y": 110
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow",
+          "image": "guiarrow.png",
+          "hoveredImage": "guiarrow_hover.png",
+          "onClick": {
+            "name": "OpenSkinTheWorld1"
+          },
+          "x": 308,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedBlack"
+          },
+          "x": 135,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "standskin_equipped.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedDark"
+          },
+          "x": 231,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoBlack"
+          },
+          "x": 154,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skilltree_lock.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoDark"
+          },
+          "x": 250,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoBlack"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 155,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnNoSkinEntity"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoDark"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 251,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheWorldBlack"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldBlack"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 155,
+          "y": 165
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnTheWorldDark"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldDark"
+          },
+          "scale": 50,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 251,
+          "y": 165
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_black",
+          "text": {
+            "fixedValue": "Locked - Black"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoBlack"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 155,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locked_dark",
+          "text": {
+            "fixedValue": "Locked - Dark"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNoDark"
+          },
+          "width": 20,
+          "height": 24,
+          "x": 251,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_black",
+          "text": {
+            "fixedValue": "Equipped - Black"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedBlack"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 137,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_equipped_dark",
+          "text": {
+            "fixedValue": "Equipped - Dark"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldEquippedDark"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 233,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_world_black",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheWorldBlack"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedBlack"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 137,
+          "y": 202
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_cost_the_world_dark",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCostTheWorldDark"
+          },
+          "displayCondition": {
+            "name": "ReturnSkinTheWorldNotEquippedDark"
+          },
+          "width": 56,
+          "height": 15,
+          "x": 233,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
