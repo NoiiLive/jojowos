@@ -1,11 +1,9 @@
 package net.mcreator.jojowos.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.jojowos.network.JojowosModVariables;
 import net.mcreator.jojowos.JojowosMod;
@@ -28,6 +26,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -37,6 +42,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Part6";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -52,6 +64,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -61,6 +80,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "OVA";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "White";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -76,6 +102,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Blue";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -85,6 +118,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Green";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Green";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -100,8 +140,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Stand Skin Failed!"), true);
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -128,6 +173,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Green";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -137,6 +189,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "OVA";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Green";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -152,6 +211,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Light Blue";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -164,8 +230,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Stand Skin Failed!"), true);
+					{
+						String _setval = "Green";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -192,6 +263,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -201,6 +279,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Manga";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "White";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -216,6 +301,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -228,8 +320,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Stand Skin Failed!"), true);
+					{
+						String _setval = "White";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -256,6 +353,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Red";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -265,6 +369,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Manga";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Red";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -280,6 +391,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Orange";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -289,6 +407,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Green";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Green";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -304,8 +429,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Stand Skin Failed!"), true);
+					{
+						String _setval = "Red";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -332,6 +462,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -341,6 +478,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Manga";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -356,6 +500,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Red";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -365,6 +516,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Blue";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Light Blue";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -380,6 +538,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -392,8 +557,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Stand Skin Failed!"), true);
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -420,6 +590,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "White";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -429,6 +606,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Manga";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -444,6 +628,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "White";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -453,6 +644,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Dark";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -468,8 +666,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Stand Skin Failed!"), true);
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -496,6 +699,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
@@ -505,6 +715,13 @@ public class Part3ShinySkinRerollProcedure {
 						String _setval = "Manga";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.StandSkin = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -520,8 +737,13 @@ public class Part3ShinySkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Stand Skin Failed!"), true);
+					{
+						String _setval = "White";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}

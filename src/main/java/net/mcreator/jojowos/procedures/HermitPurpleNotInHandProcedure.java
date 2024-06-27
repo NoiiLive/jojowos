@@ -75,8 +75,8 @@ public class HermitPurpleNotInHandProcedure {
 					});
 				}
 			}
-			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_GOLD.get()) == false
-					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Gold")) {
+			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_PURPLE_AUTOMAIL.get()) == false
+					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Automail")) {
 				{
 					boolean _setval = false;
 					entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -85,8 +85,48 @@ public class HermitPurpleNotInHandProcedure {
 					});
 				}
 			}
-			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_PURPLE_AUTOMAIL.get()) == false
-					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Automail")) {
+			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_PURPLE_GIGANTE.get()) == false
+					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Gigante")) {
+				{
+					boolean _setval = false;
+					entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ItemStandSummoned = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_PURPLE_VENOM.get()) == false
+					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Venom")) {
+				{
+					boolean _setval = false;
+					entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ItemStandSummoned = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_PURPLE_LINK.get()) == false
+					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Link")) {
+				{
+					boolean _setval = false;
+					entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ItemStandSummoned = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_PURPLE_NERO.get()) == false
+					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Nero")) {
+				{
+					boolean _setval = false;
+					entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ItemStandSummoned = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == JojowosModItems.HERMIT_PURPLE_LUCK.get()) == false
+					&& ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Luck")) {
 				{
 					boolean _setval = false;
 					entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -128,6 +168,18 @@ public class HermitPurpleNotInHandProcedure {
 				}
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_AUTOMAIL.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_GIGANTE.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_VENOM.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_LINK.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())

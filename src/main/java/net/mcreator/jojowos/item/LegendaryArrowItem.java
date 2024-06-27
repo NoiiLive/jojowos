@@ -11,7 +11,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.jojowos.procedures.ShinyArrowUsedProcedure;
+import net.mcreator.jojowos.procedures.LegendaryArrowUsedProcedure;
 
 import java.util.List;
 
@@ -21,16 +21,16 @@ public class LegendaryArrowItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7c\u00A7oAwakens \u00A77\u00A7oyour fighting spirit."));
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.literal("\u00A74\u00A7oAwakens \u00A77\u00A7oyour fighting spirit."));
 		list.add(Component.literal("\u00A78\u00A7oHigher Chance for a Legendary Stand Skin."));
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ShinyArrowUsedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		LegendaryArrowUsedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 }

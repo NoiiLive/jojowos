@@ -13,11 +13,6 @@ public class StandJumpEffectMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.jojowos.stand_jump_effect";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		StandJumpEffectNoDamageProcedure.execute(entity);
 	}

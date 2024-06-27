@@ -21,11 +21,13 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.jojowos.network.JojowosModVariables;
 import net.mcreator.jojowos.init.JojowosModItems;
 import net.mcreator.jojowos.entity.TheWorldSilverEntity;
+import net.mcreator.jojowos.entity.TheWorldShadowEntity;
 import net.mcreator.jojowos.entity.TheWorldOVAEntity;
 import net.mcreator.jojowos.entity.TheWorldMangaEntity;
 import net.mcreator.jojowos.entity.TheWorldImposterEntity;
 import net.mcreator.jojowos.entity.TheWorldEntity;
 import net.mcreator.jojowos.entity.TheWorldBlackEntity;
+import net.mcreator.jojowos.entity.TheHandEntity;
 import net.mcreator.jojowos.entity.TheFoolOVAEntity;
 import net.mcreator.jojowos.entity.TheFoolMangaEntity;
 import net.mcreator.jojowos.entity.TheFoolEntity;
@@ -41,19 +43,25 @@ import net.mcreator.jojowos.entity.SilverChariotOVAEntity;
 import net.mcreator.jojowos.entity.SilverChariotOVAArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaArmorlessEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotEntity;
 import net.mcreator.jojowos.entity.SilverChariotArmorlessEntity;
+import net.mcreator.jojowos.entity.MagiciansRedRinOkumuraEntity;
 import net.mcreator.jojowos.entity.MagiciansRedOVAEntity;
 import net.mcreator.jojowos.entity.MagiciansRedMangaEntity;
 import net.mcreator.jojowos.entity.MagiciansRedEntity;
 import net.mcreator.jojowos.entity.MagiciansRedASBEntity;
 import net.mcreator.jojowos.entity.MagiciansGreenEntity;
+import net.mcreator.jojowos.entity.HierophantGreenSeroEntity;
 import net.mcreator.jojowos.entity.HierophantGreenOVAEntity;
 import net.mcreator.jojowos.entity.HierophantGreenMangaEntity;
 import net.mcreator.jojowos.entity.HierophantGreenEntity;
 import net.mcreator.jojowos.entity.HierophantGreenBlueEntity;
+import net.mcreator.jojowos.entity.HeavensDoorEntity;
+import net.mcreator.jojowos.entity.CrazyDiamondEntity;
 
 import java.util.List;
 import java.util.Comparator;
@@ -356,6 +364,27 @@ public class StandDespawningProcedure {
 								}
 							}
 						}
+						if (entityiterator instanceof MagiciansRedRinOkumuraEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.475 0.788 1 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.184 0.173 0.239 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -437,6 +466,27 @@ public class StandDespawningProcedure {
 									_level.getServer().getCommands().performPrefixedCommand(
 											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 											"particle minecraft:dust 0.929 0.816 0.541 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
+						if (entityiterator instanceof HierophantGreenSeroEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.918 0.647 0.239 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.082 0.086 0.098 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
 								if (!entityiterator.level().isClientSide())
 									entityiterator.discard();
 								if (world instanceof Level _level) {
@@ -624,6 +674,48 @@ public class StandDespawningProcedure {
 								}
 							}
 						}
+						if (entityiterator instanceof SilverChariotKokushiboEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.529 0.416 0.82 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.271 0.247 0.263 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:kokushibo_unsummon")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:kokushibo_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
+						if (entityiterator instanceof SilverChariotKokushiboArmorlessEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.529 0.416 0.82 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.271 0.247 0.263 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:kokushibo_unsummon")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:kokushibo_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -737,6 +829,86 @@ public class StandDespawningProcedure {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:automail_desummon")), SoundSource.PLAYERS, 1, 1);
 						} else {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:automail_desummon")), SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
+				}
+				if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Gigante")) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"particle minecraft:dust 0.71 0.047 0.047 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_GIGANTE.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
+				}
+				if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Venom")) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"particle minecraft:dust 1 1 1 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_VENOM.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
+				}
+				if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Link")) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"particle minecraft:dust 0.318 0.961 0.514 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_LINK.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
+				}
+				if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Nero")) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"particle minecraft:dust 0.71 0.047 0.047 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_NERO.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
+				}
+				if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Luck")) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"particle minecraft:dust 0.29 0.6 0.871 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(JojowosModItems.HERMIT_PURPLE_LUCK.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 100, _player.inventoryMenu.getCraftSlots());
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
 						}
 					}
 				}
@@ -872,6 +1044,27 @@ public class StandDespawningProcedure {
 								}
 							}
 						}
+						if (entityiterator instanceof TheWorldShadowEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.953 0.725 0.965 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.573 0.204 0.898 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stw_time_skip")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stw_time_skip")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -932,6 +1125,93 @@ public class StandDespawningProcedure {
 									_level.getServer().getCommands().performPrefixedCommand(
 											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 											"particle minecraft:dust 0.722 0.667 0.384 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("CrazyDiamond")) {
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator instanceof CrazyDiamondEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.67059 0.64314 0.80784 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.96863 0.98824 0.57647 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("TheHand")) {
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator instanceof TheHandEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.67059 0.64314 0.80784 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.96863 0.98824 0.57647 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_unsummon")), SoundSource.PLAYERS, 1, 1, false);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("HeavensDoor")) {
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator instanceof HeavensDoorEntity) {
+							if ((entityiterator.getPersistentData().getString("UserName")).equals((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).PlayerName)) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.67059 0.64314 0.80784 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.96863 0.98824 0.57647 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
 								if (!entityiterator.level().isClientSide())
 									entityiterator.discard();
 								if (world instanceof Level _level) {

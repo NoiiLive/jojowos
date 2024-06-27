@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/harvestdisc",
+  "textures": {
+    "0": "jojowos:block/harvestdisctexture",
+    "particle": "jojowos:item/standdisc"
+  }
+}

@@ -116,11 +116,6 @@ public class PolnareffChatboxScreen extends AbstractContainerScreen<PolnareffCha
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_textbutton = new ImageButton(this.leftPos + -19, this.topPos + 76, 64, 21, 0, 0, 21, new ResourceLocation("jojowos:textures/screens/atlas/imagebutton_textbutton.png"), 64, 42, e -> {

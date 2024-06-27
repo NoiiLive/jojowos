@@ -1,0 +1,268 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_switch_display_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DontReturn"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnselected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneSelected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnStandSummoned"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

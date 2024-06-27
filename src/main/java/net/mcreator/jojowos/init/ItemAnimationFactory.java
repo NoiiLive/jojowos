@@ -6,115 +6,284 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 
-import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.jojowos.item.HermitRedItem;
+import net.mcreator.jojowos.item.HermitPurpleVenomItem;
 import net.mcreator.jojowos.item.HermitPurplePart4Item;
+import net.mcreator.jojowos.item.HermitPurpleNeroItem;
 import net.mcreator.jojowos.item.HermitPurpleMangaItem;
+import net.mcreator.jojowos.item.HermitPurpleLuckItem;
+import net.mcreator.jojowos.item.HermitPurpleLinkItem;
 import net.mcreator.jojowos.item.HermitPurpleItem;
+import net.mcreator.jojowos.item.HermitPurpleGiganteItem;
 import net.mcreator.jojowos.item.HermitPurpleAutomailItem;
 import net.mcreator.jojowos.item.HermitGoldItem;
 import net.mcreator.jojowos.item.HermitBlueItem;
 
 @Mod.EventBusSubscriber
 public class ItemAnimationFactory {
-	public static void disableUseAnim() {
-		try {
-			ItemInHandRenderer renderer = Minecraft.getInstance().gameRenderer.itemInHandRenderer;
-			if (renderer != null) {
+	public static void disableUseAnim(String hand) {
+		ItemInHandRenderer renderer = Minecraft.getInstance().gameRenderer.itemInHandRenderer;
+		if (renderer != null) {
+			if (hand.equals("right")) {
 				renderer.mainHandHeight = 1F;
 				renderer.oMainHandHeight = 1F;
+			}
+			if (hand.equals("left")) {
 				renderer.offHandHeight = 1F;
 				renderer.oOffHandHeight = 1F;
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
 	}
 
 	@SubscribeEvent
 	public static void animatedItems(TickEvent.PlayerTickEvent event) {
 		String animation = "";
-		if (event.phase == TickEvent.Phase.START && (event.player.getMainHandItem().getItem() instanceof GeoItem || event.player.getOffhandItem().getItem() instanceof GeoItem)) {
-			if (!event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getMainHandItem().getItem() instanceof ArmorItem)) {
-				animation = event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim");
-				event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
-				if (event.player.getMainHandItem().getItem() instanceof HermitPurpleItem animatable)
+		ItemStack mainhandItem = event.player.getMainHandItem().copy();
+		ItemStack offhandItem = event.player.getOffhandItem().copy();
+		if (event.phase == TickEvent.Phase.START && (mainhandItem.getItem() instanceof GeoItem || offhandItem.getItem() instanceof GeoItem)) {
+			if (mainhandItem.getItem() instanceof HermitPurpleItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitPurpleItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
 					}
-				if (event.player.getMainHandItem().getItem() instanceof HermitPurplePart4Item animatable)
-					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
-				if (event.player.getMainHandItem().getItem() instanceof HermitPurpleMangaItem animatable)
-					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
-				if (event.player.getMainHandItem().getItem() instanceof HermitRedItem animatable)
-					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
-				if (event.player.getMainHandItem().getItem() instanceof HermitBlueItem animatable)
-					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
-				if (event.player.getMainHandItem().getItem() instanceof HermitGoldItem animatable)
-					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
-				if (event.player.getMainHandItem().getItem() instanceof HermitPurpleAutomailItem animatable)
-					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
+				}
 			}
-			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof ArmorItem)) {
-				animation = event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim");
-				event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
-				if (event.player.getOffhandItem().getItem() instanceof HermitPurpleItem animatable)
+			if (offhandItem.getItem() instanceof HermitPurpleItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitPurpleItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
 					}
-				if (event.player.getOffhandItem().getItem() instanceof HermitPurplePart4Item animatable)
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurplePart4Item animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitPurplePart4Item) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
 					}
-				if (event.player.getOffhandItem().getItem() instanceof HermitPurpleMangaItem animatable)
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurplePart4Item animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitPurplePart4Item) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
 					}
-				if (event.player.getOffhandItem().getItem() instanceof HermitRedItem animatable)
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurpleMangaItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitPurpleMangaItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
 					}
-				if (event.player.getOffhandItem().getItem() instanceof HermitBlueItem animatable)
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurpleMangaItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitPurpleMangaItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
 					}
-				if (event.player.getOffhandItem().getItem() instanceof HermitGoldItem animatable)
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitRedItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitRedItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
 					}
-				if (event.player.getOffhandItem().getItem() instanceof HermitPurpleAutomailItem animatable)
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitRedItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
+						((HermitRedItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
 					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitBlueItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitBlueItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitBlueItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitBlueItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitGoldItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitGoldItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitGoldItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitGoldItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurpleAutomailItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleAutomailItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurpleAutomailItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleAutomailItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurpleGiganteItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleGiganteItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurpleGiganteItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleGiganteItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurpleVenomItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleVenomItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurpleVenomItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleVenomItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurpleLinkItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleLinkItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurpleLinkItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleLinkItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurpleNeroItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleNeroItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurpleNeroItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleNeroItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof HermitPurpleLuckItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleLuckItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("right");
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof HermitPurpleLuckItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((HermitPurpleLuckItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						disableUseAnim("left");
+					}
+				}
 			}
 		}
 	}

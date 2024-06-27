@@ -27,5 +27,14 @@ public class StandCloseSummonProcedure {
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("HermitPurple")) {
 			HermitPurpleSummonProcedure.execute(world, x, y, z, entity);
 		}
+		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("CrazyDiamond")) {
+			CrazyDiamondSummonProcedure.execute(world, x, y, z, entity);
+		}
+		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("TheHand")) {
+			TheHandSummonProcedure.execute(world, x, y, z, entity);
+		}
+		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("HeavensDoor")) {
+			HeavensDoorSummonProcedure.execute(world, x, y, z, entity);
+		}
 	}
 }

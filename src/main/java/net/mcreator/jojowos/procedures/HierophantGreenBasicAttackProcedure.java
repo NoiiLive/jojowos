@@ -14,6 +14,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
@@ -25,6 +26,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.jojowos.network.JojowosModVariables;
+import net.mcreator.jojowos.entity.HierophantGreenSeroEntity;
 import net.mcreator.jojowos.entity.HierophantGreenOVAEntity;
 import net.mcreator.jojowos.entity.HierophantGreenMangaEntity;
 import net.mcreator.jojowos.entity.HierophantGreenEntity;
@@ -54,8 +56,8 @@ public class HierophantGreenBasicAttackProcedure {
 			return;
 		boolean gate = false;
 		gate = false;
-		if (!damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("jojowos:stand")))) {
-			if (immediatesourceentity instanceof Player) {
+		if (immediatesourceentity instanceof Player) {
+			if (damagesource.is(DamageTypes.PLAYER_ATTACK)) {
 				if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSummoned == true
 						&& ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("HierophantGreen")) {
 					if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandBlocking == false) {
@@ -99,17 +101,25 @@ public class HierophantGreenBasicAttackProcedure {
 												((HierophantGreenOVAEntity) entityiterator).setAnimation("attack1");
 											}
 										}
+										if (entityiterator instanceof HierophantGreenSeroEntity
+												&& (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
+											if (entityiterator instanceof HierophantGreenSeroEntity) {
+												((HierophantGreenSeroEntity) entityiterator).setAnimation("attack1");
+											}
+										}
 										JojowosMod.queueServerWork(10, () -> {
 											entity.hurt(
 													new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("jojowos:stand"))),
 															immediatesourceentity),
 													(float) (1 + (immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandPower / 25));
 											immediatesourceentity.getPersistentData().putBoolean("Attack", false);
-											if (world instanceof Level _level) {
-												if (!_level.isClientSide()) {
-													_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_1")), SoundSource.PLAYERS, 1, 1);
-												} else {
-													_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_1")), SoundSource.PLAYERS, 1, 1, false);
+											if (!((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Sero")) {
+												if (world instanceof Level _level) {
+													if (!_level.isClientSide()) {
+														_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_1")), SoundSource.PLAYERS, 1, 1);
+													} else {
+														_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_1")), SoundSource.PLAYERS, 1, 1, false);
+													}
 												}
 											}
 											{
@@ -164,17 +174,25 @@ public class HierophantGreenBasicAttackProcedure {
 												((HierophantGreenOVAEntity) entityiterator).setAnimation("attack2");
 											}
 										}
+										if (entityiterator instanceof HierophantGreenSeroEntity
+												&& (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
+											if (entityiterator instanceof HierophantGreenSeroEntity) {
+												((HierophantGreenSeroEntity) entityiterator).setAnimation("attack2");
+											}
+										}
 										JojowosMod.queueServerWork(10, () -> {
 											entity.hurt(
 													new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("jojowos:stand"))),
 															immediatesourceentity),
 													(float) (1 + (immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandPower / 25));
 											immediatesourceentity.getPersistentData().putBoolean("Attack", false);
-											if (world instanceof Level _level) {
-												if (!_level.isClientSide()) {
-													_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_2")), SoundSource.PLAYERS, 1, 1);
-												} else {
-													_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_2")), SoundSource.PLAYERS, 1, 1, false);
+											if (!((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Sero")) {
+												if (world instanceof Level _level) {
+													if (!_level.isClientSide()) {
+														_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_2")), SoundSource.PLAYERS, 1, 1);
+													} else {
+														_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:hierophant_atk_2")), SoundSource.PLAYERS, 1, 1, false);
+													}
 												}
 											}
 											{

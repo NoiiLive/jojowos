@@ -36,7 +36,6 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
@@ -53,12 +52,12 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.jojowos.procedures.Part3NPCDeathProcedure;
 import net.mcreator.jojowos.procedures.NoAttackTimestopProcedure;
 import net.mcreator.jojowos.procedures.NPCTickGoodKarmaProcedure;
 import net.mcreator.jojowos.procedures.NPCSpawnProcedure;
 import net.mcreator.jojowos.procedures.JotaroOpenChatboxProcedure;
 import net.mcreator.jojowos.procedures.EntityNoCavesProcedure;
-import net.mcreator.jojowos.init.JojowosModItems;
 import net.mcreator.jojowos.init.JojowosModEntities;
 
 import javax.annotation.Nullable;
@@ -81,10 +80,7 @@ public class JotaroKujoPart3Entity extends Monster implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(JojowosModItems.JOTARO_KUJO_P_3_CLOTHES_HELMET.get()));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(JojowosModItems.JOTARO_KUJO_P_3_CLOTHES_CHESTPLATE.get()));
-		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(JojowosModItems.JOTARO_KUJO_P_3_CLOTHES_LEGGINGS.get()));
-		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(JojowosModItems.JOTARO_KUJO_P_3_CLOTHES_BOOTS.get()));
+		setMaxUpStep(0.6f);
 	}
 
 	@Override
@@ -222,6 +218,12 @@ public class JotaroKujoPart3Entity extends Monster implements GeoEntity {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:jotaro_death"));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		Part3NPCDeathProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

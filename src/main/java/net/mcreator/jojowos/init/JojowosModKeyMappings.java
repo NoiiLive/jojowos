@@ -16,6 +16,15 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.jojowos.network.UseSkillMessage;
+import net.mcreator.jojowos.network.UseAbility9Message;
+import net.mcreator.jojowos.network.UseAbility8Message;
+import net.mcreator.jojowos.network.UseAbility7Message;
+import net.mcreator.jojowos.network.UseAbility6Message;
+import net.mcreator.jojowos.network.UseAbility5Message;
+import net.mcreator.jojowos.network.UseAbility4Message;
+import net.mcreator.jojowos.network.UseAbility3Message;
+import net.mcreator.jojowos.network.UseAbility2Message;
+import net.mcreator.jojowos.network.UseAbility1Message;
 import net.mcreator.jojowos.network.ToggleShiftMessage;
 import net.mcreator.jojowos.network.SwitchSkillMessage;
 import net.mcreator.jojowos.network.SummonStandMessage;
@@ -108,6 +117,123 @@ public class JojowosModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping USE_ABILITY_1 = new KeyMapping("key.jojowos.use_ability_1", GLFW.GLFW_KEY_KP_1, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility1Message(0, 0));
+				UseAbility1Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_2 = new KeyMapping("key.jojowos.use_ability_2", GLFW.GLFW_KEY_KP_2, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility2Message(0, 0));
+				UseAbility2Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_3 = new KeyMapping("key.jojowos.use_ability_3", GLFW.GLFW_KEY_KP_3, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility3Message(0, 0));
+				UseAbility3Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_4 = new KeyMapping("key.jojowos.use_ability_4", GLFW.GLFW_KEY_KP_4, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility4Message(0, 0));
+				UseAbility4Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_5 = new KeyMapping("key.jojowos.use_ability_5", GLFW.GLFW_KEY_KP_5, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility5Message(0, 0));
+				UseAbility5Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_6 = new KeyMapping("key.jojowos.use_ability_6", GLFW.GLFW_KEY_KP_6, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility6Message(0, 0));
+				UseAbility6Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_7 = new KeyMapping("key.jojowos.use_ability_7", GLFW.GLFW_KEY_KP_7, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility7Message(0, 0));
+				UseAbility7Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_8 = new KeyMapping("key.jojowos.use_ability_8", GLFW.GLFW_KEY_KP_8, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility8Message(0, 0));
+				UseAbility8Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping USE_ABILITY_9 = new KeyMapping("key.jojowos.use_ability_9", GLFW.GLFW_KEY_KP_9, "key.categories.jojowos") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new UseAbility9Message(0, 0));
+				UseAbility9Message.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long STAND_BLOCK_LASTPRESS = 0;
 
 	@SubscribeEvent
@@ -118,6 +244,15 @@ public class JojowosModKeyMappings {
 		event.register(OPEN_STAND_STATS);
 		event.register(TOGGLE_SHIFT);
 		event.register(STAND_BLOCK);
+		event.register(USE_ABILITY_1);
+		event.register(USE_ABILITY_2);
+		event.register(USE_ABILITY_3);
+		event.register(USE_ABILITY_4);
+		event.register(USE_ABILITY_5);
+		event.register(USE_ABILITY_6);
+		event.register(USE_ABILITY_7);
+		event.register(USE_ABILITY_8);
+		event.register(USE_ABILITY_9);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -131,6 +266,15 @@ public class JojowosModKeyMappings {
 				OPEN_STAND_STATS.consumeClick();
 				TOGGLE_SHIFT.consumeClick();
 				STAND_BLOCK.consumeClick();
+				USE_ABILITY_1.consumeClick();
+				USE_ABILITY_2.consumeClick();
+				USE_ABILITY_3.consumeClick();
+				USE_ABILITY_4.consumeClick();
+				USE_ABILITY_5.consumeClick();
+				USE_ABILITY_6.consumeClick();
+				USE_ABILITY_7.consumeClick();
+				USE_ABILITY_8.consumeClick();
+				USE_ABILITY_9.consumeClick();
 			}
 		}
 	}

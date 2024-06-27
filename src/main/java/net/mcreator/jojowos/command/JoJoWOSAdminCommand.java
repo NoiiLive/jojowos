@@ -78,7 +78,7 @@ public class JoJoWOSAdminCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			SetSkinCommandProcedure.execute(arguments, entity);
+			SetSkinCommandProcedure.execute(world, x, y, z, arguments, entity);
 			return 0;
 		})))).then(Commands.literal("exp").then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("exp", DoubleArgumentType.doubleArg(0, 999999)).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
@@ -220,7 +220,7 @@ public class JoJoWOSAdminCommand {
 
 			LocateUserTheWorldProcedure.execute(world, entity);
 			return 0;
-		})))).then(Commands.literal("cooldown").then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("logic", BoolArgumentType.bool()).executes(arguments -> {
+		})))).then(Commands.literal("nocooldown").then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("logic", BoolArgumentType.bool()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -234,7 +234,7 @@ public class JoJoWOSAdminCommand {
 
 			NoCooldownCMDProcedure.execute(arguments);
 			return 0;
-		})))).then(Commands.literal("karma").then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("number", DoubleArgumentType.doubleArg(0, 999999)).executes(arguments -> {
+		})))).then(Commands.literal("karma").then(Commands.argument("name", EntityArgument.player()).then(Commands.argument("number", DoubleArgumentType.doubleArg(-999999, 999999)).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();

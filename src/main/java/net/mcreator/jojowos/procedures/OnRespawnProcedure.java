@@ -7,8 +7,6 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.jojowos.network.JojowosModVariables;
-
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
@@ -26,26 +24,5 @@ public class OnRespawnProcedure {
 		if (entity == null)
 			return;
 		entity.getPersistentData().putDouble("EXPCooldown", 100);
-		{
-			boolean _setval = false;
-			entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.StandVisibleTeam = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			boolean _setval = false;
-			entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.StandInvisibleTeam = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			boolean _setval = false;
-			entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.NonStandUserTeam = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
 	}
 }

@@ -481,11 +481,7 @@
 				{
 					"name": "barrage_arm1",
 					"parent": "barragearms",
-					"pivot": [-7, 21, 0],
-					"cubes": [
-						{"origin": [-8, 13, -2], "size": [3, 8, 4], "uv": [18, 33]},
-						{"origin": [-8.5, 15, -2.5], "size": [4, 1, 5], "uv": [0, 41]}
-					]
+					"pivot": [-7, 21, 0]
 				},
 				{
 					"name": "rapier5",
@@ -512,11 +508,7 @@
 				{
 					"name": "barrage_arm2",
 					"parent": "barragearms",
-					"pivot": [-7, 21, 0],
-					"cubes": [
-						{"origin": [-8, 13, -2], "size": [3, 8, 4], "uv": [18, 33]},
-						{"origin": [-8.5, 15, -2.5], "size": [4, 1, 5], "uv": [0, 41]}
-					]
+					"pivot": [-7, 21, 0]
 				},
 				{
 					"name": "rapier2",
@@ -543,11 +535,7 @@
 				{
 					"name": "barrage_arm3",
 					"parent": "barragearms",
-					"pivot": [-7, 21, 0],
-					"cubes": [
-						{"origin": [-8, 13, -2], "size": [3, 8, 4], "uv": [18, 33]},
-						{"origin": [-8.5, 15, -2.5], "size": [4, 1, 5], "uv": [0, 41]}
-					]
+					"pivot": [-7, 21, 0]
 				},
 				{
 					"name": "rapier3",
@@ -574,11 +562,7 @@
 				{
 					"name": "barrage_arm4",
 					"parent": "barragearms",
-					"pivot": [-7, 21, 0],
-					"cubes": [
-						{"origin": [-8, 13, -2], "size": [3, 8, 4], "uv": [18, 33]},
-						{"origin": [-8.5, 15, -2.5], "size": [4, 1, 5], "uv": [0, 41]}
-					]
+					"pivot": [-7, 21, 0]
 				},
 				{
 					"name": "rapier4",

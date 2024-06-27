@@ -16,6 +16,7 @@ import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -46,91 +47,95 @@ public class TheFoolBasicAttackProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getDirectEntity());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource(), event.getEntity(), event.getSource().getDirectEntity());
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
-		execute(null, world, x, y, z, entity, immediatesourceentity);
+	public static void execute(LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity, Entity immediatesourceentity) {
+		execute(null, world, x, y, z, damagesource, entity, immediatesourceentity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
-		if (entity == null || immediatesourceentity == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity, Entity immediatesourceentity) {
+		if (damagesource == null || entity == null || immediatesourceentity == null)
 			return;
 		boolean gate = false;
 		double random = 0;
 		gate = false;
 		if (immediatesourceentity instanceof Player) {
-			if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSummoned == true
-					&& ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("TheFool")) {
-				if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandBlocking == false) {
-					if (immediatesourceentity.getPersistentData().getDouble("AttackCooldown") == 0) {
-						if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).AttackLevel == 1 && gate == false) {
-							random = Mth.nextInt(RandomSource.create(), 1, 2);
-							immediatesourceentity.getPersistentData().putDouble("AttackCooldown", 40);
-							if (random == 1) {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk")), SoundSource.PLAYERS, 1, 1);
-									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk")), SoundSource.PLAYERS, 1, 1, false);
-									}
-								}
-							}
-							if (random == 2) {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk_2")), SoundSource.PLAYERS, 1, 1);
-									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk_2")), SoundSource.PLAYERS, 1, 1, false);
-									}
-								}
-							}
-							{
-								final Vec3 _center = new Vec3(x, y, z);
-								List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-								for (Entity entityiterator : _entfound) {
-									if (entityiterator instanceof TheFoolEntity && (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
-										if (entityiterator instanceof TheFoolEntity) {
-											((TheFoolEntity) entityiterator).setAnimation("attack");
-										}
-									}
-									if (entityiterator instanceof TheFoolMangaEntity && (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
-										if (entityiterator instanceof TheFoolMangaEntity) {
-											((TheFoolMangaEntity) entityiterator).setAnimation("attack");
-										}
-									}
-									if (entityiterator instanceof TheFoolOVAEntity && (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
-										if (entityiterator instanceof TheFoolOVAEntity) {
-											((TheFoolOVAEntity) entityiterator).setAnimation("attack");
+			if (damagesource.is(DamageTypes.PLAYER_ATTACK)) {
+				if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSummoned == true
+						&& ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("TheFool")) {
+					if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandBlocking == false) {
+						if (immediatesourceentity.getPersistentData().getDouble("AttackCooldown") == 0) {
+							if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).AttackLevel == 1 && gate == false) {
+								random = Mth.nextInt(RandomSource.create(), 1, 2);
+								immediatesourceentity.getPersistentData().putDouble("AttackCooldown", 40);
+								if (random == 1) {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk")), SoundSource.PLAYERS, 1, 1);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk")), SoundSource.PLAYERS, 1, 1, false);
 										}
 									}
 								}
-							}
-							gate = true;
-							JojowosMod.queueServerWork(10, () -> {
-								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("jojowos:stand"))), immediatesourceentity),
-										(float) (1 + (immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandPower / 25));
+								if (random == 2) {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk_2")), SoundSource.PLAYERS, 1, 1);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_fool_atk_2")), SoundSource.PLAYERS, 1, 1, false);
+										}
+									}
+								}
 								{
-									Entity _ent = entity;
-									if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-										_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
-												_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
-												"particle minecraft:block minecraft:redstone_block ~ ~1 ~ 0.3 0 0.3 0.1 10 force");
+									final Vec3 _center = new Vec3(x, y, z);
+									List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+											.toList();
+									for (Entity entityiterator : _entfound) {
+										if (entityiterator instanceof TheFoolEntity && (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
+											if (entityiterator instanceof TheFoolEntity) {
+												((TheFoolEntity) entityiterator).setAnimation("attack");
+											}
+										}
+										if (entityiterator instanceof TheFoolMangaEntity && (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
+											if (entityiterator instanceof TheFoolMangaEntity) {
+												((TheFoolMangaEntity) entityiterator).setAnimation("attack");
+											}
+										}
+										if (entityiterator instanceof TheFoolOVAEntity && (entityiterator instanceof TamableAnimal _tamIsTamedBy && immediatesourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
+											if (entityiterator instanceof TheFoolOVAEntity) {
+												((TheFoolOVAEntity) entityiterator).setAnimation("attack");
+											}
+										}
 									}
 								}
-							});
-						}
-						if (immediatesourceentity.getPersistentData().getDouble("PassiveCooldown") == 0) {
-							immediatesourceentity.getPersistentData().putDouble("PassiveCooldown", 300);
-							JojowosMod.queueServerWork(10, () -> {
-								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.SAND_TRAPPED.get(), 60, 0, false, false));
-								if (world instanceof ServerLevel _level)
-									_level.getServer().getCommands().performPrefixedCommand(
-											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-											"particle minecraft:block minecraft:sand ~ ~ ~ 0.5 0.5 0.5 0.1 50");
-							});
+								gate = true;
+								JojowosMod.queueServerWork(10, () -> {
+									entity.hurt(
+											new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("jojowos:stand"))), immediatesourceentity),
+											(float) (1 + (immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandPower / 25));
+									{
+										Entity _ent = entity;
+										if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+											_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+													_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
+													"particle minecraft:block minecraft:redstone_block ~ ~1 ~ 0.3 0 0.3 0.1 10 force");
+										}
+									}
+								});
+							}
+							if (immediatesourceentity.getPersistentData().getDouble("PassiveCooldown") == 0) {
+								immediatesourceentity.getPersistentData().putDouble("PassiveCooldown", 300);
+								JojowosMod.queueServerWork(10, () -> {
+									if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.SAND_TRAPPED.get(), 60, 0, false, false));
+									if (world instanceof ServerLevel _level)
+										_level.getServer().getCommands().performPrefixedCommand(
+												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+												"particle minecraft:block minecraft:sand ~ ~ ~ 0.5 0.5 0.5 0.1 50");
+								});
+							}
 						}
 					}
 				}

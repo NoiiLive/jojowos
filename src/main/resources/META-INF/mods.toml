@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="jojowos"
-version="1.2.1"
+version="1.3.0"
 displayName="JoJo: World of Stands"
 displayURL="https://discord.gg/VyKWxMyeZf"
 logoFile="logo.png"
@@ -12,13 +12,15 @@ credits="NoiiLive, Hirohiko Araki"
 authors="NoiiLive"
 description="Adds Stands from JoJo's Bizarre Adventure to Minecraft!"
 
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
 [[dependencies.jojowos]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
-
 
 
 [[dependencies.jojowos]]

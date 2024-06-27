@@ -18,11 +18,13 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.jojowos.entity.ThrowingKnifeProjectileEntity;
 import net.mcreator.jojowos.entity.TheWorldSilverEntity;
+import net.mcreator.jojowos.entity.TheWorldShadowEntity;
 import net.mcreator.jojowos.entity.TheWorldOVAEntity;
 import net.mcreator.jojowos.entity.TheWorldMangaEntity;
 import net.mcreator.jojowos.entity.TheWorldImposterEntity;
 import net.mcreator.jojowos.entity.TheWorldEntity;
 import net.mcreator.jojowos.entity.TheWorldBlackEntity;
+import net.mcreator.jojowos.entity.TheHandEntity;
 import net.mcreator.jojowos.entity.TheFoolOVAEntity;
 import net.mcreator.jojowos.entity.TheFoolMangaEntity;
 import net.mcreator.jojowos.entity.TheFoolEntity;
@@ -42,17 +44,18 @@ import net.mcreator.jojowos.entity.SilverChariotOVAEntity;
 import net.mcreator.jojowos.entity.SilverChariotOVAArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaArmorlessEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotEntity;
 import net.mcreator.jojowos.entity.SilverChariotArmorlessEntity;
 import net.mcreator.jojowos.entity.RoadRollerProjectileEntity;
 import net.mcreator.jojowos.entity.PlayerDummyEntity;
-import net.mcreator.jojowos.entity.PlayerControllingEntity;
-import net.mcreator.jojowos.entity.PlayerControlEntity;
 import net.mcreator.jojowos.entity.OldJosephJoestarEntity;
 import net.mcreator.jojowos.entity.NoriakiKakyoinEntity;
 import net.mcreator.jojowos.entity.MuhammedAvdolEntity;
+import net.mcreator.jojowos.entity.MagiciansRedRinOkumuraEntity;
 import net.mcreator.jojowos.entity.MagiciansRedOVAEntity;
 import net.mcreator.jojowos.entity.MagiciansRedMangaEntity;
 import net.mcreator.jojowos.entity.MagiciansRedEntity;
@@ -65,10 +68,13 @@ import net.mcreator.jojowos.entity.JeanPierrePolnareffEntity;
 import net.mcreator.jojowos.entity.InvisFistProjectileEntity;
 import net.mcreator.jojowos.entity.IggySittingEntity;
 import net.mcreator.jojowos.entity.IggyEntity;
+import net.mcreator.jojowos.entity.HierophantGreenSeroEntity;
 import net.mcreator.jojowos.entity.HierophantGreenOVAEntity;
 import net.mcreator.jojowos.entity.HierophantGreenMangaEntity;
 import net.mcreator.jojowos.entity.HierophantGreenEntity;
 import net.mcreator.jojowos.entity.HierophantGreenBlueEntity;
+import net.mcreator.jojowos.entity.HermitVenomTangleEntity;
+import net.mcreator.jojowos.entity.HermitSpiritTangleEntity;
 import net.mcreator.jojowos.entity.HermitRopeTangleEntity;
 import net.mcreator.jojowos.entity.HermitRedTangleEntity;
 import net.mcreator.jojowos.entity.HermitPurpleTangleEntity;
@@ -81,12 +87,15 @@ import net.mcreator.jojowos.entity.HermitPurpleDisplayBaseEntity;
 import net.mcreator.jojowos.entity.HermitPart4TangleEntity;
 import net.mcreator.jojowos.entity.HermitMangaTangleEntity;
 import net.mcreator.jojowos.entity.HermitGoldTangleEntity;
+import net.mcreator.jojowos.entity.HermitEnergyTangleEntity;
 import net.mcreator.jojowos.entity.HermitBlueTangleEntity;
+import net.mcreator.jojowos.entity.HeavensDoorEntity;
 import net.mcreator.jojowos.entity.EmeraldSplashItemProjectileEntity;
 import net.mcreator.jojowos.entity.EmeraldBarrierEntity;
 import net.mcreator.jojowos.entity.DIOEntity;
 import net.mcreator.jojowos.entity.DIOCapedEntity;
 import net.mcreator.jojowos.entity.DIOAwakenedEntity;
+import net.mcreator.jojowos.entity.CrazyDiamondEntity;
 import net.mcreator.jojowos.entity.ChariotSwordProjectileEntity;
 import net.mcreator.jojowos.entity.ChariotSwordGoldProjectileEntity;
 import net.mcreator.jojowos.entity.ChariotDisplayOVAEntity;
@@ -100,98 +109,6 @@ import net.mcreator.jojowos.JojowosMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class JojowosModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, JojowosMod.MODID);
-	public static final RegistryObject<EntityType<JotaroKujoPart3Entity>> JOTARO_KUJO_PART_3 = register("jotaro_kujo_part_3",
-			EntityType.Builder.<JotaroKujoPart3Entity>of(JotaroKujoPart3Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(JotaroKujoPart3Entity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<DIOCapedEntity>> DIO_CAPED = register("dio_caped",
-			EntityType.Builder.<DIOCapedEntity>of(DIOCapedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DIOCapedEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<DIOEntity>> DIO = register("dio",
-			EntityType.Builder.<DIOEntity>of(DIOEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DIOEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<DIOAwakenedEntity>> DIO_AWAKENED = register("dio_awakened",
-			EntityType.Builder.<DIOAwakenedEntity>of(DIOAwakenedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DIOAwakenedEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<IggyEntity>> IGGY = register("iggy",
-			EntityType.Builder.<IggyEntity>of(IggyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(IggyEntity::new)
-
-					.sized(0.6f, 1f));
-	public static final RegistryObject<EntityType<OldJosephJoestarEntity>> OLD_JOSEPH_JOESTAR = register("old_joseph_joestar",
-			EntityType.Builder.<OldJosephJoestarEntity>of(OldJosephJoestarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(OldJosephJoestarEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<JeanPierrePolnareffEntity>> JEAN_PIERRE_POLNAREFF = register("jean_pierre_polnareff",
-			EntityType.Builder.<JeanPierrePolnareffEntity>of(JeanPierrePolnareffEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(JeanPierrePolnareffEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<NoriakiKakyoinEntity>> NORIAKI_KAKYOIN = register("noriaki_kakyoin",
-			EntityType.Builder.<NoriakiKakyoinEntity>of(NoriakiKakyoinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(NoriakiKakyoinEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<MuhammedAvdolEntity>> MUHAMMED_AVDOL = register("muhammed_avdol", EntityType.Builder.<MuhammedAvdolEntity>of(MuhammedAvdolEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(MuhammedAvdolEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ChariotDisplayBaseEntity>> CHARIOT_DISPLAY_BASE = register("chariot_display_base",
-			EntityType.Builder.<ChariotDisplayBaseEntity>of(ChariotDisplayBaseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayBaseEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ChariotDisplayMangaEntity>> CHARIOT_DISPLAY_MANGA = register("chariot_display_manga",
-			EntityType.Builder.<ChariotDisplayMangaEntity>of(ChariotDisplayMangaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayMangaEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ChariotDisplayOVAEntity>> CHARIOT_DISPLAY_OVA = register("chariot_display_ova",
-			EntityType.Builder.<ChariotDisplayOVAEntity>of(ChariotDisplayOVAEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayOVAEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ChariotDisplayGoldEntity>> CHARIOT_DISPLAY_GOLD = register("chariot_display_gold",
-			EntityType.Builder.<ChariotDisplayGoldEntity>of(ChariotDisplayGoldEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayGoldEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HermitPurpleDisplayBaseEntity>> HERMIT_PURPLE_DISPLAY_BASE = register("hermit_purple_display_base",
-			EntityType.Builder.<HermitPurpleDisplayBaseEntity>of(HermitPurpleDisplayBaseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(HermitPurpleDisplayBaseEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HermitPurpleDisplayPart4Entity>> HERMIT_PURPLE_DISPLAY_PART_4 = register("hermit_purple_display_part_4",
-			EntityType.Builder.<HermitPurpleDisplayPart4Entity>of(HermitPurpleDisplayPart4Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(HermitPurpleDisplayPart4Entity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HermitPurpleDisplayMangaEntity>> HERMIT_PURPLE_DISPLAY_MANGA = register("hermit_purple_display_manga",
-			EntityType.Builder.<HermitPurpleDisplayMangaEntity>of(HermitPurpleDisplayMangaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(HermitPurpleDisplayMangaEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HermitPurpleDisplayRedEntity>> HERMIT_PURPLE_DISPLAY_RED = register("hermit_purple_display_red",
-			EntityType.Builder.<HermitPurpleDisplayRedEntity>of(HermitPurpleDisplayRedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(HermitPurpleDisplayRedEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HermitPurpleDisplayBlueEntity>> HERMIT_PURPLE_DISPLAY_BLUE = register("hermit_purple_display_blue",
-			EntityType.Builder.<HermitPurpleDisplayBlueEntity>of(HermitPurpleDisplayBlueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(HermitPurpleDisplayBlueEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HermitPurpleDisplayGoldEntity>> HERMIT_PURPLE_DISPLAY_GOLD = register("hermit_purple_display_gold",
-			EntityType.Builder.<HermitPurpleDisplayGoldEntity>of(HermitPurpleDisplayGoldEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(HermitPurpleDisplayGoldEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<TheFoolDisplayBaseEntity>> THE_FOOL_DISPLAY_BASE = register("the_fool_display_base",
-			EntityType.Builder.<TheFoolDisplayBaseEntity>of(TheFoolDisplayBaseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheFoolDisplayBaseEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<TheFoolDisplayMangaEntity>> THE_FOOL_DISPLAY_MANGA = register("the_fool_display_manga",
-			EntityType.Builder.<TheFoolDisplayMangaEntity>of(TheFoolDisplayMangaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheFoolDisplayMangaEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<TheFoolDisplayOVAEntity>> THE_FOOL_DISPLAY_OVA = register("the_fool_display_ova",
-			EntityType.Builder.<TheFoolDisplayOVAEntity>of(TheFoolDisplayOVAEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheFoolDisplayOVAEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<StarPlatinumP3Entity>> STAR_PLATINUM_P_3 = register("star_platinum_p_3", EntityType.Builder.<StarPlatinumP3Entity>of(StarPlatinumP3Entity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StarPlatinumP3Entity::new).fireImmune().sized(0.5f, 1.8f));
 	public static final RegistryObject<EntityType<StarPlatinumP4Entity>> STAR_PLATINUM_P_4 = register("star_platinum_p_4", EntityType.Builder.<StarPlatinumP4Entity>of(StarPlatinumP4Entity::new, MobCategory.MONSTER)
@@ -276,45 +193,129 @@ public class JojowosModEntities {
 			EntityType.Builder.<PlayerDummyEntity>of(PlayerDummyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlayerDummyEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<PlayerControlEntity>> PLAYER_CONTROL = register("player_control", EntityType.Builder.<PlayerControlEntity>of(PlayerControlEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlayerControlEntity::new).fireImmune().sized(0.1f, 1.8f));
-	public static final RegistryObject<EntityType<PlayerControllingEntity>> PLAYER_CONTROLLING = register("player_controlling",
-			EntityType.Builder.<PlayerControllingEntity>of(PlayerControllingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlayerControllingEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LifeDetectorEntity>> LIFE_DETECTOR = register("life_detector", EntityType.Builder.<LifeDetectorEntity>of(LifeDetectorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LifeDetectorEntity::new).fireImmune().sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<JotaroKujoPart3Entity>> JOTARO_KUJO_PART_3 = register("jotaro_kujo_part_3",
+			EntityType.Builder.<JotaroKujoPart3Entity>of(JotaroKujoPart3Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(JotaroKujoPart3Entity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DIOEntity>> DIO = register("dio",
+			EntityType.Builder.<DIOEntity>of(DIOEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DIOEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DIOCapedEntity>> DIO_CAPED = register("dio_caped",
+			EntityType.Builder.<DIOCapedEntity>of(DIOCapedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DIOCapedEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DIOAwakenedEntity>> DIO_AWAKENED = register("dio_awakened",
+			EntityType.Builder.<DIOAwakenedEntity>of(DIOAwakenedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DIOAwakenedEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<IggyEntity>> IGGY = register("iggy",
+			EntityType.Builder.<IggyEntity>of(IggyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(IggyEntity::new)
+
+					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<OldJosephJoestarEntity>> OLD_JOSEPH_JOESTAR = register("old_joseph_joestar",
+			EntityType.Builder.<OldJosephJoestarEntity>of(OldJosephJoestarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(OldJosephJoestarEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JeanPierrePolnareffEntity>> JEAN_PIERRE_POLNAREFF = register("jean_pierre_polnareff",
+			EntityType.Builder.<JeanPierrePolnareffEntity>of(JeanPierrePolnareffEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(JeanPierrePolnareffEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<NoriakiKakyoinEntity>> NORIAKI_KAKYOIN = register("noriaki_kakyoin",
+			EntityType.Builder.<NoriakiKakyoinEntity>of(NoriakiKakyoinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(NoriakiKakyoinEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MuhammedAvdolEntity>> MUHAMMED_AVDOL = register("muhammed_avdol", EntityType.Builder.<MuhammedAvdolEntity>of(MuhammedAvdolEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(MuhammedAvdolEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<IggySittingEntity>> IGGY_SITTING = register("iggy_sitting",
 			EntityType.Builder.<IggySittingEntity>of(IggySittingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IggySittingEntity::new)
 
 					.sized(0.6f, 1f));
-	public static final RegistryObject<EntityType<EmeraldSplashItemProjectileEntity>> EMERALD_SPLASH_ITEM_PROJECTILE = register("projectile_emerald_splash_item_projectile",
+	public static final RegistryObject<EntityType<EmeraldSplashItemProjectileEntity>> EMERALD_SPLASH_ITEM_PROJECTILE = register("emerald_splash_item_projectile",
 			EntityType.Builder.<EmeraldSplashItemProjectileEntity>of(EmeraldSplashItemProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(EmeraldSplashItemProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<InvisFistProjectileEntity>> INVIS_FIST_PROJECTILE = register("projectile_invis_fist_projectile", EntityType.Builder.<InvisFistProjectileEntity>of(InvisFistProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<InvisFistProjectileEntity>> INVIS_FIST_PROJECTILE = register("invis_fist_projectile", EntityType.Builder.<InvisFistProjectileEntity>of(InvisFistProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(InvisFistProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ThrowingKnifeProjectileEntity>> THROWING_KNIFE_PROJECTILE = register("projectile_throwing_knife_projectile",
+	public static final RegistryObject<EntityType<ThrowingKnifeProjectileEntity>> THROWING_KNIFE_PROJECTILE = register("throwing_knife_projectile",
 			EntityType.Builder.<ThrowingKnifeProjectileEntity>of(ThrowingKnifeProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(ThrowingKnifeProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<BallBearingProjectileEntity>> BALL_BEARING_PROJECTILE = register("projectile_ball_bearing_projectile",
-			EntityType.Builder.<BallBearingProjectileEntity>of(BallBearingProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(BallBearingProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ChariotSwordProjectileEntity>> CHARIOT_SWORD_PROJECTILE = register("projectile_chariot_sword_projectile",
-			EntityType.Builder.<ChariotSwordProjectileEntity>of(ChariotSwordProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(ChariotSwordProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ChariotSwordGoldProjectileEntity>> CHARIOT_SWORD_GOLD_PROJECTILE = register("projectile_chariot_sword_gold_projectile",
+	public static final RegistryObject<EntityType<BallBearingProjectileEntity>> BALL_BEARING_PROJECTILE = register("ball_bearing_projectile", EntityType.Builder.<BallBearingProjectileEntity>of(BallBearingProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BallBearingProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ChariotSwordProjectileEntity>> CHARIOT_SWORD_PROJECTILE = register("chariot_sword_projectile", EntityType.Builder.<ChariotSwordProjectileEntity>of(ChariotSwordProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(ChariotSwordProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ChariotSwordGoldProjectileEntity>> CHARIOT_SWORD_GOLD_PROJECTILE = register("chariot_sword_gold_projectile",
 			EntityType.Builder.<ChariotSwordGoldProjectileEntity>of(ChariotSwordGoldProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(ChariotSwordGoldProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<LargeCrossfireProjectileEntity>> LARGE_CROSSFIRE_PROJECTILE = register("projectile_large_crossfire_projectile",
+	public static final RegistryObject<EntityType<LargeCrossfireProjectileEntity>> LARGE_CROSSFIRE_PROJECTILE = register("large_crossfire_projectile",
 			EntityType.Builder.<LargeCrossfireProjectileEntity>of(LargeCrossfireProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(LargeCrossfireProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<SmallCrossfireProjectileEntity>> SMALL_CROSSFIRE_PROJECTILE = register("projectile_small_crossfire_projectile",
+	public static final RegistryObject<EntityType<SmallCrossfireProjectileEntity>> SMALL_CROSSFIRE_PROJECTILE = register("small_crossfire_projectile",
 			EntityType.Builder.<SmallCrossfireProjectileEntity>of(SmallCrossfireProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(SmallCrossfireProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RoadRollerProjectileEntity>> ROAD_ROLLER_PROJECTILE = register("projectile_road_roller_projectile", EntityType.Builder.<RoadRollerProjectileEntity>of(RoadRollerProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<RoadRollerProjectileEntity>> ROAD_ROLLER_PROJECTILE = register("road_roller_projectile", EntityType.Builder.<RoadRollerProjectileEntity>of(RoadRollerProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(RoadRollerProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<AncientBowProjectileEntity>> ANCIENT_BOW_PROJECTILE = register("projectile_ancient_bow_projectile", EntityType.Builder.<AncientBowProjectileEntity>of(AncientBowProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<AncientBowProjectileEntity>> ANCIENT_BOW_PROJECTILE = register("ancient_bow_projectile", EntityType.Builder.<AncientBowProjectileEntity>of(AncientBowProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(AncientBowProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ChariotDisplayBaseEntity>> CHARIOT_DISPLAY_BASE = register("chariot_display_base",
+			EntityType.Builder.<ChariotDisplayBaseEntity>of(ChariotDisplayBaseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayBaseEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChariotDisplayMangaEntity>> CHARIOT_DISPLAY_MANGA = register("chariot_display_manga",
+			EntityType.Builder.<ChariotDisplayMangaEntity>of(ChariotDisplayMangaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayMangaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChariotDisplayOVAEntity>> CHARIOT_DISPLAY_OVA = register("chariot_display_ova",
+			EntityType.Builder.<ChariotDisplayOVAEntity>of(ChariotDisplayOVAEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayOVAEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChariotDisplayGoldEntity>> CHARIOT_DISPLAY_GOLD = register("chariot_display_gold",
+			EntityType.Builder.<ChariotDisplayGoldEntity>of(ChariotDisplayGoldEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChariotDisplayGoldEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HermitPurpleDisplayBaseEntity>> HERMIT_PURPLE_DISPLAY_BASE = register("hermit_purple_display_base",
+			EntityType.Builder.<HermitPurpleDisplayBaseEntity>of(HermitPurpleDisplayBaseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(HermitPurpleDisplayBaseEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HermitPurpleDisplayPart4Entity>> HERMIT_PURPLE_DISPLAY_PART_4 = register("hermit_purple_display_part_4",
+			EntityType.Builder.<HermitPurpleDisplayPart4Entity>of(HermitPurpleDisplayPart4Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(HermitPurpleDisplayPart4Entity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HermitPurpleDisplayMangaEntity>> HERMIT_PURPLE_DISPLAY_MANGA = register("hermit_purple_display_manga",
+			EntityType.Builder.<HermitPurpleDisplayMangaEntity>of(HermitPurpleDisplayMangaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(HermitPurpleDisplayMangaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HermitPurpleDisplayRedEntity>> HERMIT_PURPLE_DISPLAY_RED = register("hermit_purple_display_red",
+			EntityType.Builder.<HermitPurpleDisplayRedEntity>of(HermitPurpleDisplayRedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(HermitPurpleDisplayRedEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HermitPurpleDisplayBlueEntity>> HERMIT_PURPLE_DISPLAY_BLUE = register("hermit_purple_display_blue",
+			EntityType.Builder.<HermitPurpleDisplayBlueEntity>of(HermitPurpleDisplayBlueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(HermitPurpleDisplayBlueEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HermitPurpleDisplayGoldEntity>> HERMIT_PURPLE_DISPLAY_GOLD = register("hermit_purple_display_gold",
+			EntityType.Builder.<HermitPurpleDisplayGoldEntity>of(HermitPurpleDisplayGoldEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(HermitPurpleDisplayGoldEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TheFoolDisplayBaseEntity>> THE_FOOL_DISPLAY_BASE = register("the_fool_display_base",
+			EntityType.Builder.<TheFoolDisplayBaseEntity>of(TheFoolDisplayBaseEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheFoolDisplayBaseEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TheFoolDisplayMangaEntity>> THE_FOOL_DISPLAY_MANGA = register("the_fool_display_manga",
+			EntityType.Builder.<TheFoolDisplayMangaEntity>of(TheFoolDisplayMangaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheFoolDisplayMangaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TheFoolDisplayOVAEntity>> THE_FOOL_DISPLAY_OVA = register("the_fool_display_ova",
+			EntityType.Builder.<TheFoolDisplayOVAEntity>of(TheFoolDisplayOVAEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheFoolDisplayOVAEntity::new)
+
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<StarPlatinumUltraInstinctEntity>> STAR_PLATINUM_ULTRA_INSTINCT = register("star_platinum_ultra_instinct",
 			EntityType.Builder.<StarPlatinumUltraInstinctEntity>of(StarPlatinumUltraInstinctEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(StarPlatinumUltraInstinctEntity::new).fireImmune().sized(0.5f, 1.8f));
@@ -324,6 +325,31 @@ public class JojowosModEntities {
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EmeraldBarrierEntity::new).fireImmune().sized(0.1f, 0.1f));
 	public static final RegistryObject<EntityType<HermitRopeTangleEntity>> HERMIT_ROPE_TANGLE = register("hermit_rope_tangle", EntityType.Builder.<HermitRopeTangleEntity>of(HermitRopeTangleEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(HermitRopeTangleEntity::new).fireImmune().sized(0.1f, 1.8f));
+	public static final RegistryObject<EntityType<CrazyDiamondEntity>> CRAZY_DIAMOND = register("crazy_diamond", EntityType.Builder.<CrazyDiamondEntity>of(CrazyDiamondEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrazyDiamondEntity::new).fireImmune().sized(0.5f, 1.8f));
+	public static final RegistryObject<EntityType<TheHandEntity>> THE_HAND = register("the_hand",
+			EntityType.Builder.<TheHandEntity>of(TheHandEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheHandEntity::new).fireImmune().sized(0.5f, 1.8f));
+	public static final RegistryObject<EntityType<HeavensDoorEntity>> HEAVENS_DOOR = register("heavens_door", EntityType.Builder.<HeavensDoorEntity>of(HeavensDoorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HeavensDoorEntity::new).fireImmune().sized(0.5f, 1.8f));
+	public static final RegistryObject<EntityType<TheWorldShadowEntity>> THE_WORLD_SHADOW = register("the_world_shadow", EntityType.Builder.<TheWorldShadowEntity>of(TheWorldShadowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheWorldShadowEntity::new).fireImmune().sized(0.5f, 1.8f));
+	public static final RegistryObject<EntityType<HermitSpiritTangleEntity>> HERMIT_SPIRIT_TANGLE = register("hermit_spirit_tangle", EntityType.Builder.<HermitSpiritTangleEntity>of(HermitSpiritTangleEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(HermitSpiritTangleEntity::new).fireImmune().sized(0.1f, 1.8f));
+	public static final RegistryObject<EntityType<HermitEnergyTangleEntity>> HERMIT_ENERGY_TANGLE = register("hermit_energy_tangle", EntityType.Builder.<HermitEnergyTangleEntity>of(HermitEnergyTangleEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(HermitEnergyTangleEntity::new).fireImmune().sized(0.1f, 1.8f));
+	public static final RegistryObject<EntityType<HermitVenomTangleEntity>> HERMIT_VENOM_TANGLE = register("hermit_venom_tangle", EntityType.Builder.<HermitVenomTangleEntity>of(HermitVenomTangleEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(HermitVenomTangleEntity::new).fireImmune().sized(0.1f, 1.8f));
+	public static final RegistryObject<EntityType<SilverChariotKokushiboEntity>> SILVER_CHARIOT_KOKUSHIBO = register("silver_chariot_kokushibo",
+			EntityType.Builder.<SilverChariotKokushiboEntity>of(SilverChariotKokushiboEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(SilverChariotKokushiboEntity::new).fireImmune().sized(0.5f, 1.8f));
+	public static final RegistryObject<EntityType<SilverChariotKokushiboArmorlessEntity>> SILVER_CHARIOT_KOKUSHIBO_ARMORLESS = register("silver_chariot_kokushibo_armorless",
+			EntityType.Builder.<SilverChariotKokushiboArmorlessEntity>of(SilverChariotKokushiboArmorlessEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(SilverChariotKokushiboArmorlessEntity::new).fireImmune().sized(0.5f, 1.8f));
+	public static final RegistryObject<EntityType<MagiciansRedRinOkumuraEntity>> MAGICIANS_RED_RIN_OKUMURA = register("magicians_red_rin_okumura",
+			EntityType.Builder.<MagiciansRedRinOkumuraEntity>of(MagiciansRedRinOkumuraEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(MagiciansRedRinOkumuraEntity::new).fireImmune().sized(0.5f, 1.8f));
+	public static final RegistryObject<EntityType<HierophantGreenSeroEntity>> HIEROPHANT_GREEN_SERO = register("hierophant_green_sero", EntityType.Builder.<HierophantGreenSeroEntity>of(HierophantGreenSeroEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HierophantGreenSeroEntity::new).fireImmune().sized(0.5f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -332,28 +358,6 @@ public class JojowosModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			JotaroKujoPart3Entity.init();
-			DIOCapedEntity.init();
-			DIOEntity.init();
-			DIOAwakenedEntity.init();
-			IggyEntity.init();
-			OldJosephJoestarEntity.init();
-			JeanPierrePolnareffEntity.init();
-			NoriakiKakyoinEntity.init();
-			MuhammedAvdolEntity.init();
-			ChariotDisplayBaseEntity.init();
-			ChariotDisplayMangaEntity.init();
-			ChariotDisplayOVAEntity.init();
-			ChariotDisplayGoldEntity.init();
-			HermitPurpleDisplayBaseEntity.init();
-			HermitPurpleDisplayPart4Entity.init();
-			HermitPurpleDisplayMangaEntity.init();
-			HermitPurpleDisplayRedEntity.init();
-			HermitPurpleDisplayBlueEntity.init();
-			HermitPurpleDisplayGoldEntity.init();
-			TheFoolDisplayBaseEntity.init();
-			TheFoolDisplayMangaEntity.init();
-			TheFoolDisplayOVAEntity.init();
 			StarPlatinumP3Entity.init();
 			StarPlatinumP4Entity.init();
 			StarPlatinumP6Entity.init();
@@ -393,41 +397,50 @@ public class JojowosModEntities {
 			TheFoolOVAEntity.init();
 			TheFoolMangaEntity.init();
 			PlayerDummyEntity.init();
-			PlayerControlEntity.init();
-			PlayerControllingEntity.init();
 			LifeDetectorEntity.init();
+			JotaroKujoPart3Entity.init();
+			DIOEntity.init();
+			DIOCapedEntity.init();
+			DIOAwakenedEntity.init();
+			IggyEntity.init();
+			OldJosephJoestarEntity.init();
+			JeanPierrePolnareffEntity.init();
+			NoriakiKakyoinEntity.init();
+			MuhammedAvdolEntity.init();
 			IggySittingEntity.init();
+			ChariotDisplayBaseEntity.init();
+			ChariotDisplayMangaEntity.init();
+			ChariotDisplayOVAEntity.init();
+			ChariotDisplayGoldEntity.init();
+			HermitPurpleDisplayBaseEntity.init();
+			HermitPurpleDisplayPart4Entity.init();
+			HermitPurpleDisplayMangaEntity.init();
+			HermitPurpleDisplayRedEntity.init();
+			HermitPurpleDisplayBlueEntity.init();
+			HermitPurpleDisplayGoldEntity.init();
+			TheFoolDisplayBaseEntity.init();
+			TheFoolDisplayMangaEntity.init();
+			TheFoolDisplayOVAEntity.init();
 			StarPlatinumUltraInstinctEntity.init();
 			TheWorldImposterEntity.init();
 			EmeraldBarrierEntity.init();
 			HermitRopeTangleEntity.init();
+			CrazyDiamondEntity.init();
+			TheHandEntity.init();
+			HeavensDoorEntity.init();
+			TheWorldShadowEntity.init();
+			HermitSpiritTangleEntity.init();
+			HermitEnergyTangleEntity.init();
+			HermitVenomTangleEntity.init();
+			SilverChariotKokushiboEntity.init();
+			SilverChariotKokushiboArmorlessEntity.init();
+			MagiciansRedRinOkumuraEntity.init();
+			HierophantGreenSeroEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(JOTARO_KUJO_PART_3.get(), JotaroKujoPart3Entity.createAttributes().build());
-		event.put(DIO_CAPED.get(), DIOCapedEntity.createAttributes().build());
-		event.put(DIO.get(), DIOEntity.createAttributes().build());
-		event.put(DIO_AWAKENED.get(), DIOAwakenedEntity.createAttributes().build());
-		event.put(IGGY.get(), IggyEntity.createAttributes().build());
-		event.put(OLD_JOSEPH_JOESTAR.get(), OldJosephJoestarEntity.createAttributes().build());
-		event.put(JEAN_PIERRE_POLNAREFF.get(), JeanPierrePolnareffEntity.createAttributes().build());
-		event.put(NORIAKI_KAKYOIN.get(), NoriakiKakyoinEntity.createAttributes().build());
-		event.put(MUHAMMED_AVDOL.get(), MuhammedAvdolEntity.createAttributes().build());
-		event.put(CHARIOT_DISPLAY_BASE.get(), ChariotDisplayBaseEntity.createAttributes().build());
-		event.put(CHARIOT_DISPLAY_MANGA.get(), ChariotDisplayMangaEntity.createAttributes().build());
-		event.put(CHARIOT_DISPLAY_OVA.get(), ChariotDisplayOVAEntity.createAttributes().build());
-		event.put(CHARIOT_DISPLAY_GOLD.get(), ChariotDisplayGoldEntity.createAttributes().build());
-		event.put(HERMIT_PURPLE_DISPLAY_BASE.get(), HermitPurpleDisplayBaseEntity.createAttributes().build());
-		event.put(HERMIT_PURPLE_DISPLAY_PART_4.get(), HermitPurpleDisplayPart4Entity.createAttributes().build());
-		event.put(HERMIT_PURPLE_DISPLAY_MANGA.get(), HermitPurpleDisplayMangaEntity.createAttributes().build());
-		event.put(HERMIT_PURPLE_DISPLAY_RED.get(), HermitPurpleDisplayRedEntity.createAttributes().build());
-		event.put(HERMIT_PURPLE_DISPLAY_BLUE.get(), HermitPurpleDisplayBlueEntity.createAttributes().build());
-		event.put(HERMIT_PURPLE_DISPLAY_GOLD.get(), HermitPurpleDisplayGoldEntity.createAttributes().build());
-		event.put(THE_FOOL_DISPLAY_BASE.get(), TheFoolDisplayBaseEntity.createAttributes().build());
-		event.put(THE_FOOL_DISPLAY_MANGA.get(), TheFoolDisplayMangaEntity.createAttributes().build());
-		event.put(THE_FOOL_DISPLAY_OVA.get(), TheFoolDisplayOVAEntity.createAttributes().build());
 		event.put(STAR_PLATINUM_P_3.get(), StarPlatinumP3Entity.createAttributes().build());
 		event.put(STAR_PLATINUM_P_4.get(), StarPlatinumP4Entity.createAttributes().build());
 		event.put(STAR_PLATINUM_P_6.get(), StarPlatinumP6Entity.createAttributes().build());
@@ -467,13 +480,44 @@ public class JojowosModEntities {
 		event.put(THE_FOOL_OVA.get(), TheFoolOVAEntity.createAttributes().build());
 		event.put(THE_FOOL_MANGA.get(), TheFoolMangaEntity.createAttributes().build());
 		event.put(PLAYER_DUMMY.get(), PlayerDummyEntity.createAttributes().build());
-		event.put(PLAYER_CONTROL.get(), PlayerControlEntity.createAttributes().build());
-		event.put(PLAYER_CONTROLLING.get(), PlayerControllingEntity.createAttributes().build());
 		event.put(LIFE_DETECTOR.get(), LifeDetectorEntity.createAttributes().build());
+		event.put(JOTARO_KUJO_PART_3.get(), JotaroKujoPart3Entity.createAttributes().build());
+		event.put(DIO.get(), DIOEntity.createAttributes().build());
+		event.put(DIO_CAPED.get(), DIOCapedEntity.createAttributes().build());
+		event.put(DIO_AWAKENED.get(), DIOAwakenedEntity.createAttributes().build());
+		event.put(IGGY.get(), IggyEntity.createAttributes().build());
+		event.put(OLD_JOSEPH_JOESTAR.get(), OldJosephJoestarEntity.createAttributes().build());
+		event.put(JEAN_PIERRE_POLNAREFF.get(), JeanPierrePolnareffEntity.createAttributes().build());
+		event.put(NORIAKI_KAKYOIN.get(), NoriakiKakyoinEntity.createAttributes().build());
+		event.put(MUHAMMED_AVDOL.get(), MuhammedAvdolEntity.createAttributes().build());
 		event.put(IGGY_SITTING.get(), IggySittingEntity.createAttributes().build());
+		event.put(CHARIOT_DISPLAY_BASE.get(), ChariotDisplayBaseEntity.createAttributes().build());
+		event.put(CHARIOT_DISPLAY_MANGA.get(), ChariotDisplayMangaEntity.createAttributes().build());
+		event.put(CHARIOT_DISPLAY_OVA.get(), ChariotDisplayOVAEntity.createAttributes().build());
+		event.put(CHARIOT_DISPLAY_GOLD.get(), ChariotDisplayGoldEntity.createAttributes().build());
+		event.put(HERMIT_PURPLE_DISPLAY_BASE.get(), HermitPurpleDisplayBaseEntity.createAttributes().build());
+		event.put(HERMIT_PURPLE_DISPLAY_PART_4.get(), HermitPurpleDisplayPart4Entity.createAttributes().build());
+		event.put(HERMIT_PURPLE_DISPLAY_MANGA.get(), HermitPurpleDisplayMangaEntity.createAttributes().build());
+		event.put(HERMIT_PURPLE_DISPLAY_RED.get(), HermitPurpleDisplayRedEntity.createAttributes().build());
+		event.put(HERMIT_PURPLE_DISPLAY_BLUE.get(), HermitPurpleDisplayBlueEntity.createAttributes().build());
+		event.put(HERMIT_PURPLE_DISPLAY_GOLD.get(), HermitPurpleDisplayGoldEntity.createAttributes().build());
+		event.put(THE_FOOL_DISPLAY_BASE.get(), TheFoolDisplayBaseEntity.createAttributes().build());
+		event.put(THE_FOOL_DISPLAY_MANGA.get(), TheFoolDisplayMangaEntity.createAttributes().build());
+		event.put(THE_FOOL_DISPLAY_OVA.get(), TheFoolDisplayOVAEntity.createAttributes().build());
 		event.put(STAR_PLATINUM_ULTRA_INSTINCT.get(), StarPlatinumUltraInstinctEntity.createAttributes().build());
 		event.put(THE_WORLD_IMPOSTER.get(), TheWorldImposterEntity.createAttributes().build());
 		event.put(EMERALD_BARRIER.get(), EmeraldBarrierEntity.createAttributes().build());
 		event.put(HERMIT_ROPE_TANGLE.get(), HermitRopeTangleEntity.createAttributes().build());
+		event.put(CRAZY_DIAMOND.get(), CrazyDiamondEntity.createAttributes().build());
+		event.put(THE_HAND.get(), TheHandEntity.createAttributes().build());
+		event.put(HEAVENS_DOOR.get(), HeavensDoorEntity.createAttributes().build());
+		event.put(THE_WORLD_SHADOW.get(), TheWorldShadowEntity.createAttributes().build());
+		event.put(HERMIT_SPIRIT_TANGLE.get(), HermitSpiritTangleEntity.createAttributes().build());
+		event.put(HERMIT_ENERGY_TANGLE.get(), HermitEnergyTangleEntity.createAttributes().build());
+		event.put(HERMIT_VENOM_TANGLE.get(), HermitVenomTangleEntity.createAttributes().build());
+		event.put(SILVER_CHARIOT_KOKUSHIBO.get(), SilverChariotKokushiboEntity.createAttributes().build());
+		event.put(SILVER_CHARIOT_KOKUSHIBO_ARMORLESS.get(), SilverChariotKokushiboArmorlessEntity.createAttributes().build());
+		event.put(MAGICIANS_RED_RIN_OKUMURA.get(), MagiciansRedRinOkumuraEntity.createAttributes().build());
+		event.put(HIEROPHANT_GREEN_SERO.get(), HierophantGreenSeroEntity.createAttributes().build());
 	}
 }

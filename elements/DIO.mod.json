@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "animatedentity",
   "definition": {
     "mobName": "DIO",
@@ -17,6 +17,7 @@
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -2706327,
@@ -39,16 +40,16 @@
       "value": ""
     },
     "equipmentHelmet": {
-      "value": "CUSTOM:DioClothes.helmet"
+      "value": ""
     },
     "equipmentBody": {
-      "value": "CUSTOM:DioClothes.body"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "CUSTOM:DioClothes.legs"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "CUSTOM:DioClothes.boots"
+      "value": ""
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",

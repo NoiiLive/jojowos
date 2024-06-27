@@ -1,0 +1,363 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_switch_display_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnStandSummoned"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_overlay_starplatinum.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnStarPlatinum"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_overlay_magiciansred.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnMagiciansRed"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_overlay_hierophantgreen.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnHierophantGreen"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_overlay_silverchariot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSilverChariot"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_overlay_theworld.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnTheWorld"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_overlay_thefool.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnTheFool"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 215
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_ability_time_left_display",
+          "text": {
+            "fixedValue": "",
+            "name": "AbilityTimeLeftDisplay"
+          },
+          "color": {
+            "value": -39322,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 182
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnStandSummoned"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

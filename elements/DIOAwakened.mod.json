@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "animatedentity",
   "definition": {
     "mobName": "DIO (Awakened)",
@@ -17,6 +17,7 @@
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -4683440,
@@ -42,13 +43,13 @@
       "value": ""
     },
     "equipmentBody": {
-      "value": "CUSTOM:DioTop.body"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "CUSTOM:DioClothes.legs"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "CUSTOM:DioClothes.boots"
+      "value": ""
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
@@ -95,13 +96,13 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": ""
+      "value": "CUSTOM:dio_death"
     },
     "stepSound": {
       "value": ""
     },
     "whenMobDies": {
-      "name": "DioDeathRespawn"
+      "name": "Part3NPCDeath"
     },
     "onRightClickedOn": {
       "name": "DioOpenChatbox"

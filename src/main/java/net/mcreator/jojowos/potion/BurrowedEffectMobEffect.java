@@ -13,11 +13,6 @@ public class BurrowedEffectMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.jojowos.burrowed_effect";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		BurrowedEffectActiveProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
 	}

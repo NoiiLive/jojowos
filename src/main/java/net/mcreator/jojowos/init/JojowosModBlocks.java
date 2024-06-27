@@ -18,4 +18,6 @@ public class JojowosModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, JojowosMod.MODID);
 	public static final RegistryObject<Block> METEORITE_ORE = REGISTRY.register("meteorite_ore", () -> new MeteoriteOreBlock());
 	public static final RegistryObject<Block> HARDENED_SAND = REGISTRY.register("hardened_sand", () -> new HardenedSandBlock());
+	// Start of user code block custom blocks
+	// End of user code block custom blocks
 }

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "stand_disc_equip_achievement": {
+    "stand_disc_equip_achievement_0": {
       "trigger": "minecraft:impossible"
     }
   },

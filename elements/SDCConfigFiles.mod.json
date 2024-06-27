@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "config",
   "definition": {
     "pools": [
@@ -20,9 +20,7 @@
             "comment": "Values over 100 may have unintend effects on gameplay!",
             "vardisplay": "Stand Stats",
             "varname": "creatornote1",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           },
           {
             "item": {
@@ -34,31 +32,11 @@
             },
             "logicField": 0,
             "numberField": 0.0,
-            "textDefault": "The cost of a skill within the skill tree.",
+            "textDefault": "Ability 1 will always been automatically unlocked. Make sure the names are typed properly, refer to the move directory config.",
             "comment": "",
-            "vardisplay": "Stand Costs",
+            "vardisplay": "Stand Abilities",
             "varname": "creatornote2",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 2,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "Cooldowns are in ticks (Number/20 = Seconds)",
-            "comment": "",
-            "vardisplay": "Stand Cooldowns",
-            "varname": "creatornote3",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           }
         ]
       },
@@ -79,9 +57,7 @@
             "comment": "Increases the Power of your Stand's Moves (Default: 100)",
             "vardisplay": "Strength",
             "varname": "starplatinumstrength",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -97,9 +73,7 @@
             "comment": "Increases your Health, and Decreases Damage Taken (Default: 100)",
             "vardisplay": "Durability",
             "varname": "starplatinumdurability",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -115,9 +89,7 @@
             "comment": "Increases the Effectiveness of your Stand's Moves (Default: 100)",
             "vardisplay": "Precision",
             "varname": "starplatinumprecision",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -133,9 +105,7 @@
             "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
             "vardisplay": "Potential",
             "varname": "starplatinumpotential",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -147,67 +117,11 @@
             },
             "logicField": 0,
             "numberField": 0.0,
-            "textDefault": "Barrage",
+            "textDefault": "Fist Barrage",
             "comment": "",
             "vardisplay": "Ability 1",
             "varname": "starplatinumability1",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 1 Cost",
-            "varname": "starplatinumability1cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 400.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 1 Cooldown Max",
-            "varname": "starplatinumability1cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 250.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 1 Cooldown Min",
-            "varname": "starplatinumability1cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           },
           {
             "item": {
@@ -219,139 +133,11 @@
             },
             "logicField": 0,
             "numberField": 0.0,
-            "textDefault": "StarFinger",
+            "textDefault": "Zoom",
             "comment": "",
             "vardisplay": "Ability 2",
             "varname": "starplatinumability2",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 5.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 2 Cost",
-            "varname": "starplatinumability2cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 400.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 2 Cooldown Max",
-            "varname": "starplatinumability2cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 150.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 2 Cooldown Min",
-            "varname": "starplatinumability2cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 2,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "BearingShot",
-            "comment": "",
-            "vardisplay": "Ability 3 ",
-            "varname": "starplatinumability3",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 3.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 3 Cost",
-            "varname": "starplatinumability3cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 200.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 3 Cooldown Max",
-            "varname": "starplatinumability3cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 100.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 3 Cooldown Min",
-            "varname": "starplatinumability3cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           },
           {
             "item": {
@@ -365,65 +151,9 @@
             "numberField": 0.0,
             "textDefault": "Inhale",
             "comment": "",
-            "vardisplay": "Ability 4",
-            "varname": "starplatinumability4",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 3.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 4 Cost",
-            "varname": "starplatinumability4cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 400.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 4 Cooldown Max",
-            "varname": "starplatinumability4cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 150.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 4 Cooldown Min",
-            "varname": "starplatinumability4cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "vardisplay": "Ability 3",
+            "varname": "starplatinumability3",
+            "enablecomment": false
           },
           {
             "item": {
@@ -435,67 +165,27 @@
             },
             "logicField": 0,
             "numberField": 0.0,
-            "textDefault": "TimeSkip",
+            "textDefault": "Bearing Shot",
+            "comment": "",
+            "vardisplay": "Ability 4",
+            "varname": "starplatinumability4",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Star Finger",
             "comment": "",
             "vardisplay": "Ability 5",
             "varname": "starplatinumability5",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 5.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 5 Cost",
-            "varname": "starplatinumability5cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 500.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 5 Cooldown Max",
-            "varname": "starplatinumability5cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 200.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 5 Cooldown Min",
-            "varname": "starplatinumability5cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           },
           {
             "item": {
@@ -507,67 +197,11 @@
             },
             "logicField": 0,
             "numberField": 0.0,
-            "textDefault": "TimeStop",
+            "textDefault": "Time Skip",
             "comment": "",
             "vardisplay": "Ability 6",
             "varname": "starplatinumability6",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 10.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 6 Cost",
-            "varname": "starplatinumability6cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 2400.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 6 Cooldown Max",
-            "varname": "starplatinumability6cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 1000.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 6 Cooldown Min",
-            "varname": "starplatinumability6cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           },
           {
             "item": {
@@ -579,67 +213,11 @@
             },
             "logicField": 0,
             "numberField": 0.0,
-            "textDefault": "",
+            "textDefault": "Short Timestop",
             "comment": "",
             "vardisplay": "Ability 7",
             "varname": "starplatinumability7",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 7 Cost",
-            "varname": "starplatinumability7cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 7 Cooldown Max",
-            "varname": "starplatinumability7cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 7 Cooldown Min",
-            "varname": "starplatinumability7cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           },
           {
             "item": {
@@ -655,63 +233,7 @@
             "comment": "",
             "vardisplay": "Ability 8",
             "varname": "starplatinumability8",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 8 Cost",
-            "varname": "starplatinumability8cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 8 Cooldown Max",
-            "varname": "starplatinumability8cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 8 Cooldown Min",
-            "varname": "starplatinumability8cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           },
           {
             "item": {
@@ -727,63 +249,7 @@
             "comment": "",
             "vardisplay": "Ability 9",
             "varname": "starplatinumability9",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 9 Cost",
-            "varname": "starplatinumability9cost",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 9 Cooldown Max",
-            "varname": "starplatinumability9cdmax",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
-          },
-          {
-            "item": {
-              "value": ""
-            },
-            "silkTouchMode": 1,
-            "block": {
-              "value": ""
-            },
-            "logicField": 0,
-            "numberField": 0.0,
-            "textDefault": "",
-            "comment": "",
-            "vardisplay": "Ability 9 Cooldown Min",
-            "varname": "starplatinumability9cdmin",
-            "enablecomment": false,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": false
           }
         ]
       },
@@ -804,9 +270,7 @@
             "comment": "Increases the Power of your Stand's Moves (Default: 80)",
             "vardisplay": "Strength",
             "varname": "magiciansredstrength",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -822,9 +286,7 @@
             "comment": "Increases your Health, and Decreases Damage Taken (Default: 80)",
             "vardisplay": "Durability",
             "varname": "magiciansreddurability",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -840,9 +302,7 @@
             "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
             "vardisplay": "Precision",
             "varname": "magiciansredprecision",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -858,9 +318,151 @@
             "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 40)",
             "vardisplay": "Potential",
             "varname": "magiciansredpotential",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Crossfire Hurricane",
+            "comment": "",
+            "vardisplay": "Ability 1",
+            "varname": "magiciansredability1",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Life Detector",
+            "comment": "",
+            "vardisplay": "Ability 2",
+            "varname": "magiciansredability2",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Red Bind",
+            "comment": "",
+            "vardisplay": "Ability 3",
+            "varname": "magiciansredability3",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Crossfire: Special",
+            "comment": "",
+            "vardisplay": "Ability 4",
+            "varname": "magiciansredability4",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 5",
+            "varname": "magiciansredability5",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 6",
+            "varname": "magiciansredability6",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 7",
+            "varname": "magiciansredability7",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 8",
+            "varname": "magiciansredability8",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 9",
+            "varname": "magiciansredability9",
+            "enablecomment": false
           }
         ]
       },
@@ -881,9 +483,7 @@
             "comment": "Increases the Power of your Stand's Moves (Default: 60)",
             "vardisplay": "Strength",
             "varname": "hierophantgreenstrength",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -899,9 +499,7 @@
             "comment": "Increases your Health, and Decreases Damage Taken (Default: 80)",
             "vardisplay": "Durability",
             "varname": "hierophantgreendurability",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -917,9 +515,7 @@
             "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
             "vardisplay": "Precision",
             "varname": "hierophantgreenprecision",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -935,9 +531,151 @@
             "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 40)",
             "vardisplay": "Potential",
             "varname": "hierophantgreenpotential",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Emerald Splash",
+            "comment": "",
+            "vardisplay": "Ability 1",
+            "varname": "hierophantgreenability1",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Grapple",
+            "comment": "",
+            "vardisplay": "Ability 2",
+            "varname": "hierophantgreenability2",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Emerald Barrier",
+            "comment": "",
+            "vardisplay": "Ability 3",
+            "varname": "hierophantgreenability3",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Body Control",
+            "comment": "",
+            "vardisplay": "Ability 4",
+            "varname": "hierophantgreenability4",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 5",
+            "varname": "hierophantgreenability5",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 6",
+            "varname": "hierophantgreenability6",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 7",
+            "varname": "hierophantgreenability7",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 8",
+            "varname": "hierophantgreenability8",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 9",
+            "varname": "hierophantgreenability9",
+            "enablecomment": false
           }
         ]
       },
@@ -958,9 +696,7 @@
             "comment": "Increases the Power of your Stand's Moves (Default: 60)",
             "vardisplay": "Strength",
             "varname": "silverchariotstrength",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -976,9 +712,7 @@
             "comment": "Increases your Health, and Decreases Damage Taken (Default: 80)",
             "vardisplay": "Durability",
             "varname": "silverchariotdurability",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -994,9 +728,7 @@
             "comment": "Increases the Effectiveness of your Stand's Moves (Default: 80)",
             "vardisplay": "Precision",
             "varname": "silverchariotprecision",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1012,9 +744,151 @@
             "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 60)",
             "vardisplay": "Potential",
             "varname": "silverchariotpotential",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Sword Barrage",
+            "comment": "",
+            "vardisplay": "Ability 1",
+            "varname": "silverchariotability1",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Sword Launch",
+            "comment": "",
+            "vardisplay": "Ability 2",
+            "varname": "silverchariotability2",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Blade Cyclone",
+            "comment": "",
+            "vardisplay": "Ability 3",
+            "varname": "silverchariotability3",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Armor Off",
+            "comment": "",
+            "vardisplay": "Ability 4",
+            "varname": "silverchariotability4",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 5",
+            "varname": "silverchariotability5",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 6",
+            "varname": "silverchariotability6",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 7",
+            "varname": "silverchariotability7",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 8",
+            "varname": "silverchariotability8",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 9",
+            "varname": "silverchariotability9",
+            "enablecomment": false
           }
         ]
       },
@@ -1035,9 +909,7 @@
             "comment": "Increases the Power of your Stand's Moves (Default: 40)",
             "vardisplay": "Strength",
             "varname": "hermitpurplestrength",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1053,9 +925,7 @@
             "comment": "Increases your Health, and Decreases Damage Taken (Default: 100)",
             "vardisplay": "Durability",
             "varname": "hermitpurpledurability",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1071,9 +941,7 @@
             "comment": "Increases the Effectiveness of your Stand's Moves (Default: 40)",
             "vardisplay": "Precision",
             "varname": "hermitpurpleprecision",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1089,9 +957,7 @@
             "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 20)",
             "vardisplay": "Potential",
             "varname": "hermitpurplepotential",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           }
         ]
       },
@@ -1112,9 +978,7 @@
             "comment": "Increases the Power of your Stand's Moves (Default: 80)",
             "vardisplay": "Strength",
             "varname": "thefoolstrength",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1130,9 +994,7 @@
             "comment": "Increases your Health, and Decreases Damage Taken (Default: 60)",
             "vardisplay": "Durability",
             "varname": "thefooldurability",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1148,9 +1010,7 @@
             "comment": "Increases the Effectiveness of your Stand's Moves (Default: 40)",
             "vardisplay": "Precision",
             "varname": "thefoolprecision",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1166,9 +1026,151 @@
             "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 60)",
             "vardisplay": "Potential",
             "varname": "thefoolpotential",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Quicksand",
+            "comment": "",
+            "vardisplay": "Ability 1",
+            "varname": "thefoolability1",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Sand Glider",
+            "comment": "",
+            "vardisplay": "Ability 2",
+            "varname": "thefoolability2",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Sand Dome",
+            "comment": "",
+            "vardisplay": "Ability 3",
+            "varname": "thefoolability3",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 4",
+            "varname": "thefoolability4",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 5",
+            "varname": "thefoolability5",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 6",
+            "varname": "thefoolability6",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 7",
+            "varname": "thefoolability7",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 8",
+            "varname": "thefoolability8",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 9",
+            "varname": "thefoolability9",
+            "enablecomment": false
           }
         ]
       },
@@ -1189,9 +1191,7 @@
             "comment": "Increases the Power of your Stand's Moves (Default: 100)",
             "vardisplay": "Strength",
             "varname": "theworldstrength",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1207,9 +1207,7 @@
             "comment": "Increases your Health, and Decreases Damage Taken (Default: 100)",
             "vardisplay": "Durability",
             "varname": "theworlddurability",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1225,9 +1223,7 @@
             "comment": "Increases the Effectiveness of your Stand's Moves (Default: 80)",
             "vardisplay": "Precision",
             "varname": "theworldprecision",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -1243,9 +1239,151 @@
             "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 80)",
             "vardisplay": "Potential",
             "varname": "theworldpotential",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Fist Barrage",
+            "comment": "",
+            "vardisplay": "Ability 1",
+            "varname": "theworldability1",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Knife Throw",
+            "comment": "",
+            "vardisplay": "Ability 2",
+            "varname": "theworldability2",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Kick Barrage",
+            "comment": "",
+            "vardisplay": "Ability 3",
+            "varname": "theworldability3",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Time Skip",
+            "comment": "",
+            "vardisplay": "Ability 4",
+            "varname": "theworldability4",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Time Stop",
+            "comment": "",
+            "vardisplay": "Ability 5",
+            "varname": "theworldability5",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Timestop Counter",
+            "comment": "",
+            "vardisplay": "Ability 6",
+            "varname": "theworldability6",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Road Roller",
+            "comment": "",
+            "vardisplay": "Ability 7",
+            "varname": "theworldability7",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 8",
+            "varname": "theworldability8",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Ability 9",
+            "varname": "theworldability9",
+            "enablecomment": false
           }
         ]
       }

@@ -65,9 +65,9 @@ public class StandPilotProcedure {
 					if (entity.isShiftKeyDown()) {
 						if (entity.getPersistentData().getBoolean("Piloting") == false) {
 							if (!((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.AIR || (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.CAVE_AIR)) {
-								if (entity.getPersistentData().getDouble("leapPower") < 100) {
+								if (entity.getPersistentData().getDouble("leapPower") < 60) {
 									entity.getPersistentData().putDouble("leapPower", (entity.getPersistentData().getDouble("leapPower") + 1));
-								} else if (entity.getPersistentData().getDouble("leapPower") >= 100) {
+								} else if (entity.getPersistentData().getDouble("leapPower") >= 60) {
 									entity.getPersistentData().putDouble("leapPower", (entity.getPersistentData().getDouble("leapPower") + 1));
 									if (world instanceof ServerLevel _level)
 										_level.getServer().getCommands().performPrefixedCommand(
@@ -77,9 +77,9 @@ public class StandPilotProcedure {
 							}
 						}
 						if (entity.getPersistentData().getBoolean("Piloting") == true) {
-							if (entity.getPersistentData().getDouble("leapPower") < 60) {
+							if (entity.getPersistentData().getDouble("leapPower") < 30) {
 								entity.getPersistentData().putDouble("leapPower", (entity.getPersistentData().getDouble("leapPower") + 1));
-							} else if (entity.getPersistentData().getDouble("leapPower") >= 60) {
+							} else if (entity.getPersistentData().getDouble("leapPower") >= 30) {
 								entity.getPersistentData().putDouble("leapPower", (entity.getPersistentData().getDouble("leapPower") + 1));
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
@@ -89,7 +89,7 @@ public class StandPilotProcedure {
 						}
 					} else {
 						if (entity.getPersistentData().getBoolean("Piloting") == false) {
-							if (entity.getPersistentData().getDouble("leapPower") >= 100) {
+							if (entity.getPersistentData().getDouble("leapPower") >= 60) {
 								if (entity instanceof Player _player)
 									_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 2));
 								entity.getPersistentData().putDouble("leapPower", 0);
@@ -104,9 +104,9 @@ public class StandPilotProcedure {
 								}
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_summon")), SoundSource.NEUTRAL, 1, 1);
+										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_summon")), SoundSource.PLAYERS, 1, 1);
 									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_summon")), SoundSource.NEUTRAL, 1, 1, false);
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:stand_summon")), SoundSource.PLAYERS, 1, 1, false);
 									}
 								}
 								if (world instanceof ServerLevel _level)
@@ -160,20 +160,22 @@ public class StandPilotProcedure {
 														}
 													}
 													if (entityiterator instanceof LivingEntity _entity) {
-														ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+														ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 														_setstack.setCount(1);
 														_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 														if (_entity instanceof Player _player)
 															_player.getInventory().setChanged();
 													}
 													if (entityiterator instanceof LivingEntity _entity) {
-														ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+														ItemStack _setstack = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 														_setstack.setCount(1);
 														_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 														if (_entity instanceof Player _player)
 															_player.getInventory().setChanged();
 													}
 													entityiterator.setCustomName(Component.literal((entity.getDisplayName().getString())));
+													if (entityiterator instanceof PlayerDummyEntity _datEntSetS)
+														_datEntSetS.getEntityData().set(PlayerDummyEntity.DATA_OwnerUUID, (entity.getStringUUID()));
 													{
 														Entity _ent = entityiterator;
 														_ent.setYRot(entity.getYRot());
@@ -265,6 +267,17 @@ public class StandPilotProcedure {
 												}
 											}
 										}
+										if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Sero")) {
+											{
+												Entity _entity = entity;
+												if (_entity instanceof Player _player) {
+													_player.getInventory().armor.set(2, new ItemStack(JojowosModItems.HIEROPHANT_SERO_PLAYER_CHESTPLATE.get()));
+													_player.getInventory().setChanged();
+												} else if (_entity instanceof LivingEntity _living) {
+													_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(JojowosModItems.HIEROPHANT_SERO_PLAYER_CHESTPLATE.get()));
+												}
+											}
+										}
 									}
 								});
 								JojowosMod.queueServerWork(2, () -> {
@@ -300,7 +313,7 @@ public class StandPilotProcedure {
 							}
 						}
 						if (entity.getPersistentData().getBoolean("Piloting") == true) {
-							if (entity.getPersistentData().getDouble("leapPower") >= 60) {
+							if (entity.getPersistentData().getDouble("leapPower") >= 30) {
 								entity.getPersistentData().putDouble("leapPower", 0);
 								{
 									Entity _ent = entity;

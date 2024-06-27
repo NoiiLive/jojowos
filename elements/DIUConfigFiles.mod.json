@@ -1,0 +1,806 @@
+{
+  "_fv": 60,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Creator's Note",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Values over 100 may have unintend effects on gameplay!",
+            "comment": "",
+            "vardisplay": "Stand Stats",
+            "varname": "creatornote1",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Ability 1 will always been automatically unlocked. Make sure the names are typed properly, refer to the move directory config.",
+            "comment": "",
+            "vardisplay": "Stand Abilities",
+            "varname": "creatornote2",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Crazy Diamond",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 100)",
+            "vardisplay": "Strength",
+            "varname": "crazydiamondstrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 80)",
+            "vardisplay": "Durability",
+            "varname": "crazydiamonddurability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 80)",
+            "vardisplay": "Precision",
+            "varname": "crazydiamondprecision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 60)",
+            "vardisplay": "Potential",
+            "varname": "crazydiamondpotential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "The Hand",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 80)",
+            "vardisplay": "Strength",
+            "varname": "thehandstrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 60)",
+            "vardisplay": "Durability",
+            "varname": "thehanddurability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
+            "vardisplay": "Precision",
+            "varname": "thehandprecision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 60)",
+            "vardisplay": "Potential",
+            "varname": "thehandpotential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Heaven's Door",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 40.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 40)",
+            "vardisplay": "Strength",
+            "varname": "heavensdoorstrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 80)",
+            "vardisplay": "Durability",
+            "varname": "heavensdoordurability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
+            "vardisplay": "Precision",
+            "varname": "heavensdoorprecision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
+            "vardisplay": "Potential",
+            "varname": "heavensdoorpotential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Echoes Act 0",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 20)",
+            "vardisplay": "Strength",
+            "varname": "echoes0strength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 80)",
+            "vardisplay": "Durability",
+            "varname": "echoes0durability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
+            "vardisplay": "Precision",
+            "varname": "echoes0precision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
+            "vardisplay": "Potential",
+            "varname": "echoes0potential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Echoes Act 1",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 20)",
+            "vardisplay": "Strength",
+            "varname": "echoes1strength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 80)",
+            "vardisplay": "Durability",
+            "varname": "echoes1durability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
+            "vardisplay": "Precision",
+            "varname": "echoes1precision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
+            "vardisplay": "Potential",
+            "varname": "echoes1potential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Echoes Act 2",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 60)",
+            "vardisplay": "Strength",
+            "varname": "echoes2strength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 80)",
+            "vardisplay": "Durability",
+            "varname": "echoes2durability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
+            "vardisplay": "Precision",
+            "varname": "echoes2precision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
+            "vardisplay": "Potential",
+            "varname": "echoes2potential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Echoes Act 3",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 80)",
+            "vardisplay": "Strength",
+            "varname": "echoes3strengthstrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 80)",
+            "vardisplay": "Durability",
+            "varname": "echoes3durability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
+            "vardisplay": "Precision",
+            "varname": "echoes3precision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
+            "vardisplay": "Potential",
+            "varname": "echoes3potential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Harvest",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 20)",
+            "vardisplay": "Strength",
+            "varname": "harveststrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 100)",
+            "vardisplay": "Durability",
+            "varname": "harvestdurability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 20)",
+            "vardisplay": "Precision",
+            "varname": "harvestprecision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 60)",
+            "vardisplay": "Potential",
+            "varname": "harvestpotential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Love Deluxe",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 80)",
+            "vardisplay": "Strength",
+            "varname": "lovedeluxestrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 100)",
+            "vardisplay": "Durability",
+            "varname": "lovedeluxedurability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 20)",
+            "vardisplay": "Precision",
+            "varname": "lovedeluxeprecision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 80)",
+            "vardisplay": "Potential",
+            "varname": "lovedeluxepotential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Red Hot Chili Peppers",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 100)",
+            "vardisplay": "Strength",
+            "varname": "chilipeppersstrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 100)",
+            "vardisplay": "Durability",
+            "varname": "chilipeppersdurability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 60)",
+            "vardisplay": "Precision",
+            "varname": "chilipeppersprecision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
+            "vardisplay": "Potential",
+            "varname": "chilipepperspotential",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "Killer Queen",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Increases the Power of your Stand's Moves (Default: 100)",
+            "vardisplay": "Strength",
+            "varname": "killerqueenstrength",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases your Block, and Guard (Default: 80)",
+            "vardisplay": "Durability",
+            "varname": "killerqueendurability",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "Increases the Effectiveness of your Stand's Moves (Default: 80)",
+            "vardisplay": "Precision",
+            "varname": "killerqueenprecision",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "Allows your Stand to Acquire More Moves and EXP (Default: 100)",
+            "vardisplay": "Potential",
+            "varname": "killerqueenpotential",
+            "enablecomment": true
+          }
+        ]
+      }
+    ],
+    "file": "jojowos_stands_diu",
+    "configType": 0
+  }
+}

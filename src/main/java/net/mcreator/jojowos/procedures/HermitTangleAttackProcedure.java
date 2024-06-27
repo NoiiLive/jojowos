@@ -30,12 +30,15 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.jojowos.network.JojowosModVariables;
 import net.mcreator.jojowos.init.JojowosModEntities;
+import net.mcreator.jojowos.entity.HermitVenomTangleEntity;
+import net.mcreator.jojowos.entity.HermitSpiritTangleEntity;
 import net.mcreator.jojowos.entity.HermitRopeTangleEntity;
 import net.mcreator.jojowos.entity.HermitRedTangleEntity;
 import net.mcreator.jojowos.entity.HermitPurpleTangleEntity;
 import net.mcreator.jojowos.entity.HermitPart4TangleEntity;
 import net.mcreator.jojowos.entity.HermitMangaTangleEntity;
 import net.mcreator.jojowos.entity.HermitGoldTangleEntity;
+import net.mcreator.jojowos.entity.HermitEnergyTangleEntity;
 import net.mcreator.jojowos.entity.HermitBlueTangleEntity;
 import net.mcreator.jojowos.JojowosMod;
 
@@ -63,12 +66,18 @@ public class HermitTangleAttackProcedure {
 		boolean gate = false;
 		gate = false;
 		if (immediatesourceentity instanceof Player) {
-			if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).TangleUnlocked == true) {
+			if (((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).MovesUnlocked).contains("Tangle")) {
 				if (((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("HermitPurple")
 						&& (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("jojowos:hermit_purple_tag"))) && gate == false) {
-					if (immediatesourceentity.getPersistentData().getDouble("AttackCooldown") == 0) {
-						immediatesourceentity.getPersistentData().putDouble("AttackCooldown", 400);
+					if ((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).AbilityCooldown2 == 0) {
 						gate = true;
+						{
+							double _setval = 400;
+							immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.AbilityCooldown2 = _setval;
+								capability.syncPlayerVariables(immediatesourceentity);
+							});
+						}
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 9, false, false));
 						if (entity instanceof Player) {
@@ -212,6 +221,111 @@ public class HermitTangleAttackProcedure {
 												.toList();
 										for (Entity entityiterator : _entfound) {
 											if (entityiterator instanceof HermitRopeTangleEntity) {
+												if (entityiterator instanceof TamableAnimal _toTame && entity instanceof Player _owner)
+													_toTame.tame(_owner);
+											}
+										}
+									}
+								});
+							}
+							if (((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Gigante")) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = JojowosModEntities.HERMIT_SPIRIT_TANGLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+								JojowosMod.queueServerWork(5, () -> {
+									{
+										final Vec3 _center = new Vec3(x, y, z);
+										List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+												.toList();
+										for (Entity entityiterator : _entfound) {
+											if (entityiterator instanceof HermitSpiritTangleEntity) {
+												if (entityiterator instanceof TamableAnimal _toTame && entity instanceof Player _owner)
+													_toTame.tame(_owner);
+											}
+										}
+									}
+								});
+							}
+							if (((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Venom")) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = JojowosModEntities.HERMIT_VENOM_TANGLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+								JojowosMod.queueServerWork(5, () -> {
+									{
+										final Vec3 _center = new Vec3(x, y, z);
+										List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+												.toList();
+										for (Entity entityiterator : _entfound) {
+											if (entityiterator instanceof HermitVenomTangleEntity) {
+												if (entityiterator instanceof TamableAnimal _toTame && entity instanceof Player _owner)
+													_toTame.tame(_owner);
+											}
+										}
+									}
+								});
+							}
+							if (((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Link")) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = JojowosModEntities.HERMIT_ENERGY_TANGLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+								JojowosMod.queueServerWork(5, () -> {
+									{
+										final Vec3 _center = new Vec3(x, y, z);
+										List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+												.toList();
+										for (Entity entityiterator : _entfound) {
+											if (entityiterator instanceof HermitEnergyTangleEntity) {
+												if (entityiterator instanceof TamableAnimal _toTame && entity instanceof Player _owner)
+													_toTame.tame(_owner);
+											}
+										}
+									}
+								});
+							}
+							if (((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Nero")) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = JojowosModEntities.HERMIT_BLUE_TANGLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+								JojowosMod.queueServerWork(5, () -> {
+									{
+										final Vec3 _center = new Vec3(x, y, z);
+										List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+												.toList();
+										for (Entity entityiterator : _entfound) {
+											if (entityiterator instanceof HermitBlueTangleEntity) {
+												if (entityiterator instanceof TamableAnimal _toTame && entity instanceof Player _owner)
+													_toTame.tame(_owner);
+											}
+										}
+									}
+								});
+							}
+							if (((immediatesourceentity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Luck")) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = JojowosModEntities.HERMIT_BLUE_TANGLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+								JojowosMod.queueServerWork(5, () -> {
+									{
+										final Vec3 _center = new Vec3(x, y, z);
+										List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+												.toList();
+										for (Entity entityiterator : _entfound) {
+											if (entityiterator instanceof HermitBlueTangleEntity) {
 												if (entityiterator instanceof TamableAnimal _toTame && entity instanceof Player _owner)
 													_toTame.tame(_owner);
 											}

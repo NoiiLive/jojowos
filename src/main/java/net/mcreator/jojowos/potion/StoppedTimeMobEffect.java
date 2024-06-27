@@ -13,11 +13,6 @@ public class StoppedTimeMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.jojowos.stopped_time";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		StopTimeContinuousProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}

@@ -1,0 +1,268 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_switch_display_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DontReturn"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnselected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageSelected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnStandSummoned"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

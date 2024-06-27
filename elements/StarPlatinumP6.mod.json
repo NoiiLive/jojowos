@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Star Platinum Part 6",
@@ -17,7 +17,8 @@
     "modelHeight": 1.8,
     "modelShadowSize": 0.0,
     "mountedYOffset": 0.0,
-    "hasSpawnEgg": true,
+    "stepHeight": 0.6,
+    "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -3407668,
       "falpha": 0.0
@@ -145,7 +146,7 @@
     "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": false,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

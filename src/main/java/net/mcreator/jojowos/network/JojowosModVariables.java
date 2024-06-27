@@ -33,6 +33,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.jojowos.JojowosMod;
 
 import java.util.function.Supplier;
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class JojowosModVariables {
@@ -51,20 +52,29 @@ public class JojowosModVariables {
 	public static class EventBusVariableHandlers {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
@@ -79,7 +89,6 @@ public class JojowosModVariables {
 			clone.StandSkin = original.StandSkin;
 			clone.PlayerSpawned = original.PlayerSpawned;
 			clone.GATE = original.GATE;
-			clone.ArrowUsed = original.ArrowUsed;
 			clone.SpecialType = original.SpecialType;
 			clone.TimeStopLength = original.TimeStopLength;
 			clone.MaxExp = original.MaxExp;
@@ -89,41 +98,16 @@ public class JojowosModVariables {
 			clone.StandSpeed = original.StandSpeed;
 			clone.StandDurability = original.StandDurability;
 			clone.StandPrecision = original.StandPrecision;
-			clone.StandRange = original.StandRange;
 			clone.StandPotential = original.StandPotential;
 			clone.SkillPoints = original.SkillPoints;
 			clone.MaxPower = original.MaxPower;
 			clone.MaxSpeed = original.MaxSpeed;
 			clone.MaxDurability = original.MaxDurability;
-			clone.MaxRange = original.MaxRange;
 			clone.MaxPotential = original.MaxPotential;
 			clone.MaxPrecision = original.MaxPrecision;
 			clone.Karma = original.Karma;
 			clone.CurrentQuest = original.CurrentQuest;
 			clone.ArrowWorthy = original.ArrowWorthy;
-			clone.TangleUnlocked = original.TangleUnlocked;
-			clone.DivinationUnlocked = original.DivinationUnlocked;
-			clone.StarFingerUnlocked = original.StarFingerUnlocked;
-			clone.InhaleUnlocked = original.InhaleUnlocked;
-			clone.BearingShotUnlocked = original.BearingShotUnlocked;
-			clone.StarTimeSkipUnlocked = original.StarTimeSkipUnlocked;
-			clone.StarTimeStopUnlocked = original.StarTimeStopUnlocked;
-			clone.CrossfireSpecialUnlocked = original.CrossfireSpecialUnlocked;
-			clone.RedBindUnlocked = original.RedBindUnlocked;
-			clone.LifeDetectUnlocked = original.LifeDetectUnlocked;
-			clone.SwordLaunchUnlocked = original.SwordLaunchUnlocked;
-			clone.ArmorOffUnlocked = original.ArmorOffUnlocked;
-			clone.BladeCycloneUnlocked = original.BladeCycloneUnlocked;
-			clone.GreenGrappleUnlocked = original.GreenGrappleUnlocked;
-			clone.MeterEmeraldUnlocked = original.MeterEmeraldUnlocked;
-			clone.BodyControlUnlocked = original.BodyControlUnlocked;
-			clone.SandDomeUnlocked = original.SandDomeUnlocked;
-			clone.SandGlideUnlocked = original.SandGlideUnlocked;
-			clone.MudaKickUnlocked = original.MudaKickUnlocked;
-			clone.KnifeTossUnlocked = original.KnifeTossUnlocked;
-			clone.WorldTimeSkipUnlocked = original.WorldTimeSkipUnlocked;
-			clone.WorldTimeStopUnlocked = original.WorldTimeStopUnlocked;
-			clone.RoadRollerUnlocked = original.RoadRollerUnlocked;
 			clone.NPCIcon = original.NPCIcon;
 			clone.NPCTextLine1 = original.NPCTextLine1;
 			clone.NPCTextLine2 = original.NPCTextLine2;
@@ -165,9 +149,6 @@ public class JojowosModVariables {
 			clone.AvdolChatStage = original.AvdolChatStage;
 			clone.UseAbilityType = original.UseAbilityType;
 			clone.HEUseAbilityType = original.HEUseAbilityType;
-			clone.StandVisibleTeam = original.StandVisibleTeam;
-			clone.StandInvisibleTeam = original.StandInvisibleTeam;
-			clone.NonStandUserTeam = original.NonStandUserTeam;
 			clone.StarPlatinumSkinsUnlocked = original.StarPlatinumSkinsUnlocked;
 			clone.MagiciansRedSkinsUnlocked = original.MagiciansRedSkinsUnlocked;
 			clone.HierophantGreenSkinsUnlocked = original.HierophantGreenSkinsUnlocked;
@@ -175,13 +156,29 @@ public class JojowosModVariables {
 			clone.HermitPurpleSkinsUnlocked = original.HermitPurpleSkinsUnlocked;
 			clone.TheFoolSkinsUnlocked = original.TheFoolSkinsUnlocked;
 			clone.TheWorldSkinsUnlocked = original.TheWorldSkinsUnlocked;
-			clone.StarPlatinumMovesUnlocked = original.StarPlatinumMovesUnlocked;
-			clone.MagiciansRedMovesUnlocked = original.MagiciansRedMovesUnlocked;
-			clone.HierophantGreenMovesUnlocked = original.HierophantGreenMovesUnlocked;
-			clone.SilverChariotMovesUnlocked = original.SilverChariotMovesUnlocked;
-			clone.HermitPurpleMovesUnlocked = original.HermitPurpleMovesUnlocked;
-			clone.TheFoolMovesUnlocked = original.TheFoolMovesUnlocked;
-			clone.TheWorldMovesUnlocked = original.TheWorldMovesUnlocked;
+			clone.AbilitySlot1 = original.AbilitySlot1;
+			clone.AbilitySlot2 = original.AbilitySlot2;
+			clone.AbilitySlot3 = original.AbilitySlot3;
+			clone.AbilitySlot4 = original.AbilitySlot4;
+			clone.AbilitySlot5 = original.AbilitySlot5;
+			clone.AbilitySlot6 = original.AbilitySlot6;
+			clone.AbilitySlot7 = original.AbilitySlot7;
+			clone.AbilitySlot8 = original.AbilitySlot8;
+			clone.AbilitySlot9 = original.AbilitySlot9;
+			clone.MovesUnlocked = original.MovesUnlocked;
+			clone.SetAbility1 = original.SetAbility1;
+			clone.SetAbility2 = original.SetAbility2;
+			clone.SetAbility3 = original.SetAbility3;
+			clone.SetAbility4 = original.SetAbility4;
+			clone.SetAbility5 = original.SetAbility5;
+			clone.SetAbility6 = original.SetAbility6;
+			clone.SetAbility7 = original.SetAbility7;
+			clone.SetAbility8 = original.SetAbility8;
+			clone.SetAbility9 = original.SetAbility9;
+			clone.StandColor = original.StandColor;
+			clone.PlayerTitle = original.PlayerTitle;
+			clone.UnlockedTitles = original.UnlockedTitles;
+			clone.TitleColor = original.TitleColor;
 			if (!event.isWasDeath()) {
 				clone.StandSummoned = original.StandSummoned;
 				clone.AttackLevel = original.AttackLevel;
@@ -191,7 +188,6 @@ public class JojowosModVariables {
 				clone.SelectedSkill = original.SelectedSkill;
 				clone.SkillNumber = original.SkillNumber;
 				clone.TimeStop = original.TimeStop;
-				clone.Evolved = original.Evolved;
 				clone.SwitchWheels = original.SwitchWheels;
 				clone.StandBlocking = original.StandBlocking;
 				clone.AttacksBlocked = original.AttacksBlocked;
@@ -206,6 +202,15 @@ public class JojowosModVariables {
 				clone.AbilityCooldown7 = original.AbilityCooldown7;
 				clone.AbilityCooldown8 = original.AbilityCooldown8;
 				clone.AbilityCooldown9 = original.AbilityCooldown9;
+				clone.SwitcherSlot = original.SwitcherSlot;
+				clone.AbilitySelected = original.AbilitySelected;
+				clone.UsingDisc = original.UsingDisc;
+				clone.AddEXPAmount = original.AddEXPAmount;
+			}
+			if (!event.getEntity().level().isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
 			}
 		}
 
@@ -432,67 +437,40 @@ public class JojowosModVariables {
 		public boolean GATE = false;
 		public double AttackLevel = 1.0;
 		public boolean ItemStandSummoned = false;
-		public boolean ArrowUsed = false;
 		public String HermitSearch = "";
 		public String PolaroidGeneration = "";
 		public String SpecialType = "";
 		public String SelectedSkill = "[ ]";
-		public double SkillNumber = 0;
+		public double SkillNumber = 0.0;
 		public boolean TimeStop = false;
-		public boolean Evolved = false;
 		public double TimeStopLength = 0.0;
 		public double MaxExp = 100.0;
-		public double CurrentExp = 0;
+		public double CurrentExp = 0.0;
 		public double Level = 1.0;
-		public double StandPower = 0;
-		public double StandSpeed = 0;
-		public double StandDurability = 0;
-		public double StandPrecision = 0;
-		public double StandRange = 0;
-		public double StandPotential = 0;
-		public double SkillPoints = 0;
-		public double MaxPower = 0;
-		public double MaxSpeed = 0;
-		public double MaxDurability = 0;
-		public double MaxRange = 0;
-		public double MaxPotential = 0;
-		public double MaxPrecision = 0;
-		public double Karma = 0;
+		public double StandPower = 0.0;
+		public double StandSpeed = 0.0;
+		public double StandDurability = 0.0;
+		public double StandPrecision = 0.0;
+		public double StandPotential = 0.0;
+		public double SkillPoints = 0.0;
+		public double MaxPower = 0.0;
+		public double MaxSpeed = 0.0;
+		public double MaxDurability = 0.0;
+		public double MaxPotential = 0.0;
+		public double MaxPrecision = 0.0;
+		public double Karma = 0.0;
 		public String CurrentQuest = "";
 		public boolean ArrowWorthy = true;
-		public boolean TangleUnlocked = false;
-		public boolean DivinationUnlocked = false;
-		public boolean StarFingerUnlocked = false;
-		public boolean InhaleUnlocked = false;
-		public boolean BearingShotUnlocked = false;
-		public boolean StarTimeSkipUnlocked = false;
-		public boolean StarTimeStopUnlocked = false;
-		public boolean CrossfireSpecialUnlocked = false;
-		public boolean RedBindUnlocked = false;
-		public boolean LifeDetectUnlocked = false;
-		public boolean SwordLaunchUnlocked = false;
-		public boolean ArmorOffUnlocked = false;
-		public boolean BladeCycloneUnlocked = false;
-		public boolean GreenGrappleUnlocked = false;
-		public boolean MeterEmeraldUnlocked = false;
-		public boolean BodyControlUnlocked = false;
-		public boolean SandDomeUnlocked = false;
-		public boolean SandGlideUnlocked = false;
-		public boolean MudaKickUnlocked = false;
-		public boolean KnifeTossUnlocked = false;
-		public boolean WorldTimeSkipUnlocked = false;
-		public boolean WorldTimeStopUnlocked = false;
-		public boolean RoadRollerUnlocked = false;
 		public String NPCIcon = "";
 		public String NPCTextLine1 = "";
 		public String NPCTextLine2 = "";
 		public String NPCTextLine3 = "";
 		public String NPCTextLine4 = "";
 		public String JotaroChatStage = "HaveWeMet";
-		public double NPCTextStep1 = 0;
-		public double NPCTextStep2 = 0;
-		public double NPCTextStep3 = 0;
-		public double NPCTextStep4 = 0;
+		public double NPCTextStep1 = 0.0;
+		public double NPCTextStep2 = 0.0;
+		public double NPCTextStep3 = 0.0;
+		public double NPCTextStep4 = 0.0;
 		public String ChatButton1 = "";
 		public String ChatButton2 = "";
 		public boolean ToggleShiftMove = true;
@@ -506,14 +484,14 @@ public class JojowosModVariables {
 		public String SideQuest2 = "None";
 		public String SideQuest3 = "None";
 		public String SideQuest4 = "None";
-		public double SideQuestObjective1 = 0;
-		public double SideQuestObjective2 = 0;
-		public double SideQuestObjective3 = 0;
-		public double SideQuestObjective4 = 0;
-		public double SideQuestTotalObjective1 = 0;
-		public double SideQuestTotalObjective2 = 0;
-		public double SideQuestTotalObjective3 = 0;
-		public double SideQuestTotalObjective4 = 0;
+		public double SideQuestObjective1 = 0.0;
+		public double SideQuestObjective2 = 0.0;
+		public double SideQuestObjective3 = 0.0;
+		public double SideQuestObjective4 = 0.0;
+		public double SideQuestTotalObjective1 = 0.0;
+		public double SideQuestTotalObjective2 = 0.0;
+		public double SideQuestTotalObjective3 = 0.0;
+		public double SideQuestTotalObjective4 = 0.0;
 		public String SideQuestGiver1 = "None";
 		public String SideQuestGiver2 = "None";
 		public String SideQuestGiver3 = "None";
@@ -525,12 +503,9 @@ public class JojowosModVariables {
 		public String AvdolChatStage = "TskTsk";
 		public String UseAbilityType = "Wheel";
 		public String HEUseAbilityType = "";
-		public boolean StandVisibleTeam = false;
-		public boolean StandInvisibleTeam = false;
-		public boolean NonStandUserTeam = false;
 		public boolean StandBlocking = false;
-		public double AttacksBlocked = 0;
-		public double BlockingCooldown = 0;
+		public double AttacksBlocked = 0.0;
+		public double BlockingCooldown = 0.0;
 		public boolean StandGuarding = false;
 		public String StarPlatinumSkinsUnlocked = "";
 		public String MagiciansRedSkinsUnlocked = "";
@@ -539,26 +514,46 @@ public class JojowosModVariables {
 		public String HermitPurpleSkinsUnlocked = "";
 		public String TheFoolSkinsUnlocked = "";
 		public String TheWorldSkinsUnlocked = "";
-		public double AbilityCooldown1 = 0;
-		public double AbilityCooldown2 = 0;
-		public double AbilityCooldown3 = 0;
-		public double AbilityCooldown4 = 0;
-		public double AbilityCooldown5 = 0;
-		public double AbilityCooldown6 = 0;
-		public double AbilityCooldown7 = 0;
-		public double AbilityCooldown8 = 0;
-		public double AbilityCooldown9 = 0;
-		public String StarPlatinumMovesUnlocked = "";
-		public String MagiciansRedMovesUnlocked = "";
-		public String HierophantGreenMovesUnlocked = "";
-		public String SilverChariotMovesUnlocked = "";
-		public String HermitPurpleMovesUnlocked = "";
-		public String TheFoolMovesUnlocked = "";
-		public String TheWorldMovesUnlocked = "";
+		public double AbilityCooldown1 = 0.0;
+		public double AbilityCooldown2 = 0.0;
+		public double AbilityCooldown3 = 0.0;
+		public double AbilityCooldown4 = 0.0;
+		public double AbilityCooldown5 = 0.0;
+		public double AbilityCooldown6 = 0.0;
+		public double AbilityCooldown7 = 0.0;
+		public double AbilityCooldown8 = 0.0;
+		public double AbilityCooldown9 = 0.0;
+		public String AbilitySlot1 = "None";
+		public String AbilitySlot2 = "None";
+		public String AbilitySlot3 = "None";
+		public String AbilitySlot4 = "None";
+		public String AbilitySlot5 = "None";
+		public String AbilitySlot6 = "None";
+		public String AbilitySlot7 = "None";
+		public String AbilitySlot8 = "None";
+		public String AbilitySlot9 = "None";
+		public double SwitcherSlot = 0.0;
+		public String AbilitySelected = "[ ]";
+		public String MovesUnlocked = "";
+		public String SetAbility1 = "";
+		public String SetAbility2 = "";
+		public String SetAbility3 = "";
+		public String SetAbility4 = "";
+		public String SetAbility5 = "";
+		public String SetAbility6 = "";
+		public String SetAbility7 = "";
+		public String SetAbility8 = "";
+		public String SetAbility9 = "";
+		public String StandColor = "";
+		public boolean UsingDisc = false;
+		public double AddEXPAmount = 1.0;
+		public String PlayerTitle = "";
+		public String UnlockedTitles = " ";
+		public String TitleColor = "f";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
-				JojowosMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
+				JojowosMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(entity.level()::dimension), new PlayerVariablesSyncMessage(this, entity.getId()));
 		}
 
 		public Tag writeNBT() {
@@ -573,14 +568,12 @@ public class JojowosModVariables {
 			nbt.putBoolean("GATE", GATE);
 			nbt.putDouble("AttackLevel", AttackLevel);
 			nbt.putBoolean("ItemStandSummoned", ItemStandSummoned);
-			nbt.putBoolean("ArrowUsed", ArrowUsed);
 			nbt.putString("HermitSearch", HermitSearch);
 			nbt.putString("PolaroidGeneration", PolaroidGeneration);
 			nbt.putString("SpecialType", SpecialType);
 			nbt.putString("SelectedSkill", SelectedSkill);
 			nbt.putDouble("SkillNumber", SkillNumber);
 			nbt.putBoolean("TimeStop", TimeStop);
-			nbt.putBoolean("Evolved", Evolved);
 			nbt.putDouble("TimeStopLength", TimeStopLength);
 			nbt.putDouble("MaxExp", MaxExp);
 			nbt.putDouble("CurrentExp", CurrentExp);
@@ -589,41 +582,16 @@ public class JojowosModVariables {
 			nbt.putDouble("StandSpeed", StandSpeed);
 			nbt.putDouble("StandDurability", StandDurability);
 			nbt.putDouble("StandPrecision", StandPrecision);
-			nbt.putDouble("StandRange", StandRange);
 			nbt.putDouble("StandPotential", StandPotential);
 			nbt.putDouble("SkillPoints", SkillPoints);
 			nbt.putDouble("MaxPower", MaxPower);
 			nbt.putDouble("MaxSpeed", MaxSpeed);
 			nbt.putDouble("MaxDurability", MaxDurability);
-			nbt.putDouble("MaxRange", MaxRange);
 			nbt.putDouble("MaxPotential", MaxPotential);
 			nbt.putDouble("MaxPrecision", MaxPrecision);
 			nbt.putDouble("Karma", Karma);
 			nbt.putString("CurrentQuest", CurrentQuest);
 			nbt.putBoolean("ArrowWorthy", ArrowWorthy);
-			nbt.putBoolean("TangleUnlocked", TangleUnlocked);
-			nbt.putBoolean("DivinationUnlocked", DivinationUnlocked);
-			nbt.putBoolean("StarFingerUnlocked", StarFingerUnlocked);
-			nbt.putBoolean("InhaleUnlocked", InhaleUnlocked);
-			nbt.putBoolean("BearingShotUnlocked", BearingShotUnlocked);
-			nbt.putBoolean("StarTimeSkipUnlocked", StarTimeSkipUnlocked);
-			nbt.putBoolean("StarTimeStopUnlocked", StarTimeStopUnlocked);
-			nbt.putBoolean("CrossfireSpecialUnlocked", CrossfireSpecialUnlocked);
-			nbt.putBoolean("RedBindUnlocked", RedBindUnlocked);
-			nbt.putBoolean("LifeDetectUnlocked", LifeDetectUnlocked);
-			nbt.putBoolean("SwordLaunchUnlocked", SwordLaunchUnlocked);
-			nbt.putBoolean("ArmorOffUnlocked", ArmorOffUnlocked);
-			nbt.putBoolean("BladeCycloneUnlocked", BladeCycloneUnlocked);
-			nbt.putBoolean("GreenGrappleUnlocked", GreenGrappleUnlocked);
-			nbt.putBoolean("MeterEmeraldUnlocked", MeterEmeraldUnlocked);
-			nbt.putBoolean("BodyControlUnlocked", BodyControlUnlocked);
-			nbt.putBoolean("SandDomeUnlocked", SandDomeUnlocked);
-			nbt.putBoolean("SandGlideUnlocked", SandGlideUnlocked);
-			nbt.putBoolean("MudaKickUnlocked", MudaKickUnlocked);
-			nbt.putBoolean("KnifeTossUnlocked", KnifeTossUnlocked);
-			nbt.putBoolean("WorldTimeSkipUnlocked", WorldTimeSkipUnlocked);
-			nbt.putBoolean("WorldTimeStopUnlocked", WorldTimeStopUnlocked);
-			nbt.putBoolean("RoadRollerUnlocked", RoadRollerUnlocked);
 			nbt.putString("NPCIcon", NPCIcon);
 			nbt.putString("NPCTextLine1", NPCTextLine1);
 			nbt.putString("NPCTextLine2", NPCTextLine2);
@@ -666,9 +634,6 @@ public class JojowosModVariables {
 			nbt.putString("AvdolChatStage", AvdolChatStage);
 			nbt.putString("UseAbilityType", UseAbilityType);
 			nbt.putString("HEUseAbilityType", HEUseAbilityType);
-			nbt.putBoolean("StandVisibleTeam", StandVisibleTeam);
-			nbt.putBoolean("StandInvisibleTeam", StandInvisibleTeam);
-			nbt.putBoolean("NonStandUserTeam", NonStandUserTeam);
 			nbt.putBoolean("StandBlocking", StandBlocking);
 			nbt.putDouble("AttacksBlocked", AttacksBlocked);
 			nbt.putDouble("BlockingCooldown", BlockingCooldown);
@@ -689,13 +654,33 @@ public class JojowosModVariables {
 			nbt.putDouble("AbilityCooldown7", AbilityCooldown7);
 			nbt.putDouble("AbilityCooldown8", AbilityCooldown8);
 			nbt.putDouble("AbilityCooldown9", AbilityCooldown9);
-			nbt.putString("StarPlatinumMovesUnlocked", StarPlatinumMovesUnlocked);
-			nbt.putString("MagiciansRedMovesUnlocked", MagiciansRedMovesUnlocked);
-			nbt.putString("HierophantGreenMovesUnlocked", HierophantGreenMovesUnlocked);
-			nbt.putString("SilverChariotMovesUnlocked", SilverChariotMovesUnlocked);
-			nbt.putString("HermitPurpleMovesUnlocked", HermitPurpleMovesUnlocked);
-			nbt.putString("TheFoolMovesUnlocked", TheFoolMovesUnlocked);
-			nbt.putString("TheWorldMovesUnlocked", TheWorldMovesUnlocked);
+			nbt.putString("AbilitySlot1", AbilitySlot1);
+			nbt.putString("AbilitySlot2", AbilitySlot2);
+			nbt.putString("AbilitySlot3", AbilitySlot3);
+			nbt.putString("AbilitySlot4", AbilitySlot4);
+			nbt.putString("AbilitySlot5", AbilitySlot5);
+			nbt.putString("AbilitySlot6", AbilitySlot6);
+			nbt.putString("AbilitySlot7", AbilitySlot7);
+			nbt.putString("AbilitySlot8", AbilitySlot8);
+			nbt.putString("AbilitySlot9", AbilitySlot9);
+			nbt.putDouble("SwitcherSlot", SwitcherSlot);
+			nbt.putString("AbilitySelected", AbilitySelected);
+			nbt.putString("MovesUnlocked", MovesUnlocked);
+			nbt.putString("SetAbility1", SetAbility1);
+			nbt.putString("SetAbility2", SetAbility2);
+			nbt.putString("SetAbility3", SetAbility3);
+			nbt.putString("SetAbility4", SetAbility4);
+			nbt.putString("SetAbility5", SetAbility5);
+			nbt.putString("SetAbility6", SetAbility6);
+			nbt.putString("SetAbility7", SetAbility7);
+			nbt.putString("SetAbility8", SetAbility8);
+			nbt.putString("SetAbility9", SetAbility9);
+			nbt.putString("StandColor", StandColor);
+			nbt.putBoolean("UsingDisc", UsingDisc);
+			nbt.putDouble("AddEXPAmount", AddEXPAmount);
+			nbt.putString("PlayerTitle", PlayerTitle);
+			nbt.putString("UnlockedTitles", UnlockedTitles);
+			nbt.putString("TitleColor", TitleColor);
 			return nbt;
 		}
 
@@ -711,14 +696,12 @@ public class JojowosModVariables {
 			GATE = nbt.getBoolean("GATE");
 			AttackLevel = nbt.getDouble("AttackLevel");
 			ItemStandSummoned = nbt.getBoolean("ItemStandSummoned");
-			ArrowUsed = nbt.getBoolean("ArrowUsed");
 			HermitSearch = nbt.getString("HermitSearch");
 			PolaroidGeneration = nbt.getString("PolaroidGeneration");
 			SpecialType = nbt.getString("SpecialType");
 			SelectedSkill = nbt.getString("SelectedSkill");
 			SkillNumber = nbt.getDouble("SkillNumber");
 			TimeStop = nbt.getBoolean("TimeStop");
-			Evolved = nbt.getBoolean("Evolved");
 			TimeStopLength = nbt.getDouble("TimeStopLength");
 			MaxExp = nbt.getDouble("MaxExp");
 			CurrentExp = nbt.getDouble("CurrentExp");
@@ -727,41 +710,16 @@ public class JojowosModVariables {
 			StandSpeed = nbt.getDouble("StandSpeed");
 			StandDurability = nbt.getDouble("StandDurability");
 			StandPrecision = nbt.getDouble("StandPrecision");
-			StandRange = nbt.getDouble("StandRange");
 			StandPotential = nbt.getDouble("StandPotential");
 			SkillPoints = nbt.getDouble("SkillPoints");
 			MaxPower = nbt.getDouble("MaxPower");
 			MaxSpeed = nbt.getDouble("MaxSpeed");
 			MaxDurability = nbt.getDouble("MaxDurability");
-			MaxRange = nbt.getDouble("MaxRange");
 			MaxPotential = nbt.getDouble("MaxPotential");
 			MaxPrecision = nbt.getDouble("MaxPrecision");
 			Karma = nbt.getDouble("Karma");
 			CurrentQuest = nbt.getString("CurrentQuest");
 			ArrowWorthy = nbt.getBoolean("ArrowWorthy");
-			TangleUnlocked = nbt.getBoolean("TangleUnlocked");
-			DivinationUnlocked = nbt.getBoolean("DivinationUnlocked");
-			StarFingerUnlocked = nbt.getBoolean("StarFingerUnlocked");
-			InhaleUnlocked = nbt.getBoolean("InhaleUnlocked");
-			BearingShotUnlocked = nbt.getBoolean("BearingShotUnlocked");
-			StarTimeSkipUnlocked = nbt.getBoolean("StarTimeSkipUnlocked");
-			StarTimeStopUnlocked = nbt.getBoolean("StarTimeStopUnlocked");
-			CrossfireSpecialUnlocked = nbt.getBoolean("CrossfireSpecialUnlocked");
-			RedBindUnlocked = nbt.getBoolean("RedBindUnlocked");
-			LifeDetectUnlocked = nbt.getBoolean("LifeDetectUnlocked");
-			SwordLaunchUnlocked = nbt.getBoolean("SwordLaunchUnlocked");
-			ArmorOffUnlocked = nbt.getBoolean("ArmorOffUnlocked");
-			BladeCycloneUnlocked = nbt.getBoolean("BladeCycloneUnlocked");
-			GreenGrappleUnlocked = nbt.getBoolean("GreenGrappleUnlocked");
-			MeterEmeraldUnlocked = nbt.getBoolean("MeterEmeraldUnlocked");
-			BodyControlUnlocked = nbt.getBoolean("BodyControlUnlocked");
-			SandDomeUnlocked = nbt.getBoolean("SandDomeUnlocked");
-			SandGlideUnlocked = nbt.getBoolean("SandGlideUnlocked");
-			MudaKickUnlocked = nbt.getBoolean("MudaKickUnlocked");
-			KnifeTossUnlocked = nbt.getBoolean("KnifeTossUnlocked");
-			WorldTimeSkipUnlocked = nbt.getBoolean("WorldTimeSkipUnlocked");
-			WorldTimeStopUnlocked = nbt.getBoolean("WorldTimeStopUnlocked");
-			RoadRollerUnlocked = nbt.getBoolean("RoadRollerUnlocked");
 			NPCIcon = nbt.getString("NPCIcon");
 			NPCTextLine1 = nbt.getString("NPCTextLine1");
 			NPCTextLine2 = nbt.getString("NPCTextLine2");
@@ -804,9 +762,6 @@ public class JojowosModVariables {
 			AvdolChatStage = nbt.getString("AvdolChatStage");
 			UseAbilityType = nbt.getString("UseAbilityType");
 			HEUseAbilityType = nbt.getString("HEUseAbilityType");
-			StandVisibleTeam = nbt.getBoolean("StandVisibleTeam");
-			StandInvisibleTeam = nbt.getBoolean("StandInvisibleTeam");
-			NonStandUserTeam = nbt.getBoolean("NonStandUserTeam");
 			StandBlocking = nbt.getBoolean("StandBlocking");
 			AttacksBlocked = nbt.getDouble("AttacksBlocked");
 			BlockingCooldown = nbt.getDouble("BlockingCooldown");
@@ -827,37 +782,66 @@ public class JojowosModVariables {
 			AbilityCooldown7 = nbt.getDouble("AbilityCooldown7");
 			AbilityCooldown8 = nbt.getDouble("AbilityCooldown8");
 			AbilityCooldown9 = nbt.getDouble("AbilityCooldown9");
-			StarPlatinumMovesUnlocked = nbt.getString("StarPlatinumMovesUnlocked");
-			MagiciansRedMovesUnlocked = nbt.getString("MagiciansRedMovesUnlocked");
-			HierophantGreenMovesUnlocked = nbt.getString("HierophantGreenMovesUnlocked");
-			SilverChariotMovesUnlocked = nbt.getString("SilverChariotMovesUnlocked");
-			HermitPurpleMovesUnlocked = nbt.getString("HermitPurpleMovesUnlocked");
-			TheFoolMovesUnlocked = nbt.getString("TheFoolMovesUnlocked");
-			TheWorldMovesUnlocked = nbt.getString("TheWorldMovesUnlocked");
+			AbilitySlot1 = nbt.getString("AbilitySlot1");
+			AbilitySlot2 = nbt.getString("AbilitySlot2");
+			AbilitySlot3 = nbt.getString("AbilitySlot3");
+			AbilitySlot4 = nbt.getString("AbilitySlot4");
+			AbilitySlot5 = nbt.getString("AbilitySlot5");
+			AbilitySlot6 = nbt.getString("AbilitySlot6");
+			AbilitySlot7 = nbt.getString("AbilitySlot7");
+			AbilitySlot8 = nbt.getString("AbilitySlot8");
+			AbilitySlot9 = nbt.getString("AbilitySlot9");
+			SwitcherSlot = nbt.getDouble("SwitcherSlot");
+			AbilitySelected = nbt.getString("AbilitySelected");
+			MovesUnlocked = nbt.getString("MovesUnlocked");
+			SetAbility1 = nbt.getString("SetAbility1");
+			SetAbility2 = nbt.getString("SetAbility2");
+			SetAbility3 = nbt.getString("SetAbility3");
+			SetAbility4 = nbt.getString("SetAbility4");
+			SetAbility5 = nbt.getString("SetAbility5");
+			SetAbility6 = nbt.getString("SetAbility6");
+			SetAbility7 = nbt.getString("SetAbility7");
+			SetAbility8 = nbt.getString("SetAbility8");
+			SetAbility9 = nbt.getString("SetAbility9");
+			StandColor = nbt.getString("StandColor");
+			UsingDisc = nbt.getBoolean("UsingDisc");
+			AddEXPAmount = nbt.getDouble("AddEXPAmount");
+			PlayerTitle = nbt.getString("PlayerTitle");
+			UnlockedTitles = nbt.getString("UnlockedTitles");
+			TitleColor = nbt.getString("TitleColor");
 		}
 	}
 
+	@SubscribeEvent
+	public static void registerMessage(FMLCommonSetupEvent event) {
+		JojowosMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
+	}
+
 	public static class PlayerVariablesSyncMessage {
+		private final int target;
 		private final PlayerVariables data;
 
 		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
 			this.data = new PlayerVariables();
 			this.data.readNBT(buffer.readNbt());
+			this.target = buffer.readInt();
 		}
 
-		public PlayerVariablesSyncMessage(PlayerVariables data) {
+		public PlayerVariablesSyncMessage(PlayerVariables data, int entityid) {
 			this.data = data;
+			this.target = entityid;
 		}
 
 		public static void buffer(PlayerVariablesSyncMessage message, FriendlyByteBuf buffer) {
 			buffer.writeNbt((CompoundTag) message.data.writeNBT());
+			buffer.writeInt(message.target);
 		}
 
 		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 			NetworkEvent.Context context = contextSupplier.get();
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
-					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level().getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.StandSummoned = message.data.StandSummoned;
 					variables.Stand = message.data.Stand;
 					variables.StandType = message.data.StandType;
@@ -868,14 +852,12 @@ public class JojowosModVariables {
 					variables.GATE = message.data.GATE;
 					variables.AttackLevel = message.data.AttackLevel;
 					variables.ItemStandSummoned = message.data.ItemStandSummoned;
-					variables.ArrowUsed = message.data.ArrowUsed;
 					variables.HermitSearch = message.data.HermitSearch;
 					variables.PolaroidGeneration = message.data.PolaroidGeneration;
 					variables.SpecialType = message.data.SpecialType;
 					variables.SelectedSkill = message.data.SelectedSkill;
 					variables.SkillNumber = message.data.SkillNumber;
 					variables.TimeStop = message.data.TimeStop;
-					variables.Evolved = message.data.Evolved;
 					variables.TimeStopLength = message.data.TimeStopLength;
 					variables.MaxExp = message.data.MaxExp;
 					variables.CurrentExp = message.data.CurrentExp;
@@ -884,41 +866,16 @@ public class JojowosModVariables {
 					variables.StandSpeed = message.data.StandSpeed;
 					variables.StandDurability = message.data.StandDurability;
 					variables.StandPrecision = message.data.StandPrecision;
-					variables.StandRange = message.data.StandRange;
 					variables.StandPotential = message.data.StandPotential;
 					variables.SkillPoints = message.data.SkillPoints;
 					variables.MaxPower = message.data.MaxPower;
 					variables.MaxSpeed = message.data.MaxSpeed;
 					variables.MaxDurability = message.data.MaxDurability;
-					variables.MaxRange = message.data.MaxRange;
 					variables.MaxPotential = message.data.MaxPotential;
 					variables.MaxPrecision = message.data.MaxPrecision;
 					variables.Karma = message.data.Karma;
 					variables.CurrentQuest = message.data.CurrentQuest;
 					variables.ArrowWorthy = message.data.ArrowWorthy;
-					variables.TangleUnlocked = message.data.TangleUnlocked;
-					variables.DivinationUnlocked = message.data.DivinationUnlocked;
-					variables.StarFingerUnlocked = message.data.StarFingerUnlocked;
-					variables.InhaleUnlocked = message.data.InhaleUnlocked;
-					variables.BearingShotUnlocked = message.data.BearingShotUnlocked;
-					variables.StarTimeSkipUnlocked = message.data.StarTimeSkipUnlocked;
-					variables.StarTimeStopUnlocked = message.data.StarTimeStopUnlocked;
-					variables.CrossfireSpecialUnlocked = message.data.CrossfireSpecialUnlocked;
-					variables.RedBindUnlocked = message.data.RedBindUnlocked;
-					variables.LifeDetectUnlocked = message.data.LifeDetectUnlocked;
-					variables.SwordLaunchUnlocked = message.data.SwordLaunchUnlocked;
-					variables.ArmorOffUnlocked = message.data.ArmorOffUnlocked;
-					variables.BladeCycloneUnlocked = message.data.BladeCycloneUnlocked;
-					variables.GreenGrappleUnlocked = message.data.GreenGrappleUnlocked;
-					variables.MeterEmeraldUnlocked = message.data.MeterEmeraldUnlocked;
-					variables.BodyControlUnlocked = message.data.BodyControlUnlocked;
-					variables.SandDomeUnlocked = message.data.SandDomeUnlocked;
-					variables.SandGlideUnlocked = message.data.SandGlideUnlocked;
-					variables.MudaKickUnlocked = message.data.MudaKickUnlocked;
-					variables.KnifeTossUnlocked = message.data.KnifeTossUnlocked;
-					variables.WorldTimeSkipUnlocked = message.data.WorldTimeSkipUnlocked;
-					variables.WorldTimeStopUnlocked = message.data.WorldTimeStopUnlocked;
-					variables.RoadRollerUnlocked = message.data.RoadRollerUnlocked;
 					variables.NPCIcon = message.data.NPCIcon;
 					variables.NPCTextLine1 = message.data.NPCTextLine1;
 					variables.NPCTextLine2 = message.data.NPCTextLine2;
@@ -961,9 +918,6 @@ public class JojowosModVariables {
 					variables.AvdolChatStage = message.data.AvdolChatStage;
 					variables.UseAbilityType = message.data.UseAbilityType;
 					variables.HEUseAbilityType = message.data.HEUseAbilityType;
-					variables.StandVisibleTeam = message.data.StandVisibleTeam;
-					variables.StandInvisibleTeam = message.data.StandInvisibleTeam;
-					variables.NonStandUserTeam = message.data.NonStandUserTeam;
 					variables.StandBlocking = message.data.StandBlocking;
 					variables.AttacksBlocked = message.data.AttacksBlocked;
 					variables.BlockingCooldown = message.data.BlockingCooldown;
@@ -984,13 +938,33 @@ public class JojowosModVariables {
 					variables.AbilityCooldown7 = message.data.AbilityCooldown7;
 					variables.AbilityCooldown8 = message.data.AbilityCooldown8;
 					variables.AbilityCooldown9 = message.data.AbilityCooldown9;
-					variables.StarPlatinumMovesUnlocked = message.data.StarPlatinumMovesUnlocked;
-					variables.MagiciansRedMovesUnlocked = message.data.MagiciansRedMovesUnlocked;
-					variables.HierophantGreenMovesUnlocked = message.data.HierophantGreenMovesUnlocked;
-					variables.SilverChariotMovesUnlocked = message.data.SilverChariotMovesUnlocked;
-					variables.HermitPurpleMovesUnlocked = message.data.HermitPurpleMovesUnlocked;
-					variables.TheFoolMovesUnlocked = message.data.TheFoolMovesUnlocked;
-					variables.TheWorldMovesUnlocked = message.data.TheWorldMovesUnlocked;
+					variables.AbilitySlot1 = message.data.AbilitySlot1;
+					variables.AbilitySlot2 = message.data.AbilitySlot2;
+					variables.AbilitySlot3 = message.data.AbilitySlot3;
+					variables.AbilitySlot4 = message.data.AbilitySlot4;
+					variables.AbilitySlot5 = message.data.AbilitySlot5;
+					variables.AbilitySlot6 = message.data.AbilitySlot6;
+					variables.AbilitySlot7 = message.data.AbilitySlot7;
+					variables.AbilitySlot8 = message.data.AbilitySlot8;
+					variables.AbilitySlot9 = message.data.AbilitySlot9;
+					variables.SwitcherSlot = message.data.SwitcherSlot;
+					variables.AbilitySelected = message.data.AbilitySelected;
+					variables.MovesUnlocked = message.data.MovesUnlocked;
+					variables.SetAbility1 = message.data.SetAbility1;
+					variables.SetAbility2 = message.data.SetAbility2;
+					variables.SetAbility3 = message.data.SetAbility3;
+					variables.SetAbility4 = message.data.SetAbility4;
+					variables.SetAbility5 = message.data.SetAbility5;
+					variables.SetAbility6 = message.data.SetAbility6;
+					variables.SetAbility7 = message.data.SetAbility7;
+					variables.SetAbility8 = message.data.SetAbility8;
+					variables.SetAbility9 = message.data.SetAbility9;
+					variables.StandColor = message.data.StandColor;
+					variables.UsingDisc = message.data.UsingDisc;
+					variables.AddEXPAmount = message.data.AddEXPAmount;
+					variables.PlayerTitle = message.data.PlayerTitle;
+					variables.UnlockedTitles = message.data.UnlockedTitles;
+					variables.TitleColor = message.data.TitleColor;
 				}
 			});
 			context.setPacketHandled(true);

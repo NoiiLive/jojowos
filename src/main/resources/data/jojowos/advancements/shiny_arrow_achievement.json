@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "shiny_arrow_achievement": {
+    "shiny_arrow_achievement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

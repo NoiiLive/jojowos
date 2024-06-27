@@ -5,6 +5,9 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.entity.vehicle.Minecart;
+import net.minecraft.world.entity.vehicle.ChestBoat;
+import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -40,6 +43,11 @@ public class NPCTickBadKarmaProcedure {
 		if (entity instanceof DIOEntity || entity instanceof DIOAwakenedEntity || entity instanceof DIOCapedEntity) {
 			if ((world instanceof Level _lvl12 && _lvl12.isDay()) == true && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) == true && entity.isInWaterRainOrBubble() == false) {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.ON_FIRE)), 2);
+			}
+		}
+		if (entity.isPassenger()) {
+			if ((entity.getVehicle()) instanceof Boat || (entity.getVehicle()) instanceof ChestBoat || (entity.getVehicle()) instanceof Minecart) {
+				entity.stopRiding();
 			}
 		}
 		{

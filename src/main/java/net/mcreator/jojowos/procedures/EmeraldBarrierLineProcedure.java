@@ -25,6 +25,7 @@ import net.minecraft.commands.arguments.EntityAnchorArgument;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.jojowos.network.JojowosModVariables;
 import net.mcreator.jojowos.init.JojowosModParticleTypes;
 import net.mcreator.jojowos.init.JojowosModEntities;
 import net.mcreator.jojowos.entity.EmeraldSplashItemProjectileEntity;
@@ -69,8 +70,14 @@ public class EmeraldBarrierLineProcedure {
 										entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())));
 										entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())));
 										for (int index0 = 0; index0 < (int) (mag * 10); index0++) {
-											world.addParticle((SimpleParticleType) (JojowosModParticleTypes.EMERALD_BARRIER_PARTICLE.get()), (x + entity.getLookAngle().x * distance), (y + entity.getLookAngle().y * distance),
-													(z + entity.getLookAngle().z * distance), 0, 0, 0);
+											if ((((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null).getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+													.orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Sero")) {
+												world.addParticle((SimpleParticleType) (JojowosModParticleTypes.EMERALD_BARRIER_TAPE.get()), (x + entity.getLookAngle().x * distance), (y + entity.getLookAngle().y * distance),
+														(z + entity.getLookAngle().z * distance), 0, 0, 0);
+											} else {
+												world.addParticle((SimpleParticleType) (JojowosModParticleTypes.EMERALD_BARRIER_PARTICLE.get()), (x + entity.getLookAngle().x * distance), (y + entity.getLookAngle().y * distance),
+														(z + entity.getLookAngle().z * distance), 0, 0, 0);
+											}
 											distance = distance + 0.1;
 										}
 										if (entity.getPersistentData().getDouble("DespawnTimer") == 0) {

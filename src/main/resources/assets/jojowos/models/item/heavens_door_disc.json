@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/heavensdoordisc",
+  "textures": {
+    "0": "jojowos:block/heavensdoordisctexture",
+    "particle": "jojowos:item/standdisc"
+  }
+}

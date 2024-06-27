@@ -1,0 +1,268 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_switch_display_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DontReturn"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnselected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotSelected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnStandSummoned"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

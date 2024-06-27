@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.HermitPurpleGigante",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "arm",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 0, -2], "size": [4, 12, 4], "uv": [12, 12]}
+					]
+				},
+				{
+					"name": "gigante",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [0, 0]},
+						{"origin": [-3, 1.5, -2.75], "size": [2, 5, 2], "pivot": [-2.5, 3.5, -1.75], "rotation": [49.01916, 11.43563, -9.77243], "uv": [14, 28]},
+						{"origin": [-2.5, 6.5158, -3.03837], "size": [3, 6, 4], "inflate": -0.01, "pivot": [-1.5, 10.0158, -2.03837], "rotation": [50, 0, 0], "uv": [0, 24]},
+						{"origin": [-2.5, 11.03882, -4.87534], "size": [3, 6, 3], "inflate": 0.01, "pivot": [-1, 14.03882, -2.87534], "rotation": [5, 0, 0], "uv": [27, 7]},
+						{"origin": [-2.5, 11.03882, 1.87534], "size": [3, 6, 3], "inflate": 0.01, "pivot": [-1, 14.03882, 2.87534], "rotation": [-5, 0, 0], "uv": [25, 25]},
+						{"origin": [-2.5, 6.5158, -0.96163], "size": [3, 6, 4], "inflate": -0.01, "pivot": [-1.5, 10.0158, 2.03837], "rotation": [-50, 0, 0], "uv": [16, 0]},
+						{"origin": [-3, 1.5, 0.75], "size": [2, 5, 2], "pivot": [-2.5, 3.5, 1.75], "rotation": [-49.01916, -11.43563, -9.77243], "uv": [0, 16]}
+					]
+				}
+			]
+		}
+	]
+}

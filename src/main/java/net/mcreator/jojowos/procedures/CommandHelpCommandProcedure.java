@@ -9,6 +9,22 @@ public class CommandHelpCommandProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l------[ /jojowos abilityswitch ]------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lwheel \u00A7f- Switches abilities by using the wheel"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lcycle \u00A7f- Switches abilities by cycling through them"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lkeybind \u00A7f- Switches abilities using only keybinds"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal(""), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A76\u00A7l------[ /jojowos help ]------"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lcommands \u00A7f- Brings up this menu"), false);
@@ -20,6 +36,26 @@ public class CommandHelpCommandProcedure {
 			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lwiki \u00A7f- Sends a link to the Trello for more information"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal(""), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l------[ /jojowos title ]------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lcolor \u00A7f- Sets your title color to whatever is chosen"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lcolor list \u00A7f- Lists all of the colors available, and the letter or number for it"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7e\u00A7llist \u00A7f- Lists all of your currently unlocked titles"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7e\u00A7lset \u00A7f- Sets your title to the title that you type, if it is unlocked"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A76\u00A7l----------------------------"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())

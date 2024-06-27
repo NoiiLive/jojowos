@@ -23,6 +23,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.jojowos.procedures.Part3NPCDeathProcedure;
 import net.mcreator.jojowos.procedures.IggySitProcedure;
 import net.mcreator.jojowos.init.JojowosModItems;
 import net.mcreator.jojowos.init.JojowosModEntities;
@@ -74,6 +75,12 @@ public class IggySittingEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:iggy_death"));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		Part3NPCDeathProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "config",
   "definition": {
     "pools": [
@@ -20,9 +20,7 @@
             "comment": "Changes how much EXP is added per level-up, high values may make leveling difficult (Default: 25)",
             "vardisplay": "EXP Multiplier",
             "varname": "expmultiplier",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -38,9 +36,7 @@
             "comment": "Changes how many Skill Points are given per level-up (Default: 5)",
             "vardisplay": "Skill Points Per Level",
             "varname": "levelskillpoints",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -56,14 +52,12 @@
             "comment": "Allows stand arrows to be re-usable (Default: false)",
             "vardisplay": "Re-useable Arrows",
             "varname": "reusablearrows",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           }
         ]
       },
       {
-        "category": "World Configuration",
+        "category": "World / NPC Configuration",
         "entries": [
           {
             "item": {
@@ -79,9 +73,7 @@
             "comment": "Enables or Disables spawning for Stand Meteorites (Default: true)",
             "vardisplay": "Meteorite Spawning",
             "varname": "meteoritespawning",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -97,9 +89,103 @@
             "comment": "Enables or Disables spawning for NPCs (Default: true)",
             "vardisplay": "NPC Spawning",
             "varname": "npcspawning",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Allows NPC's to manipulate time when fighting other NPCs (Will always be true against players) (Default: true)",
+            "vardisplay": "NPC Time Manipulation",
+            "varname": "npctimemanipulation",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Allows Boss NPCs to have a chance to drop regular or shiny arrows on death (Default: true)",
+            "vardisplay": "Boss Arrows",
+            "varname": "bossarrows",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 25.0,
+            "textDefault": "",
+            "comment": "The percentage chance for a boss to drop any stand arrow upon death (Default: 25)",
+            "vardisplay": "Stand Arrow Chance",
+            "varname": "standarrowchance",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "The percentage chance for a boss to drop shiny arrow upon death (Default: 10)",
+            "vardisplay": "Shiny Arrow Chance",
+            "varname": "shinyarrowchance",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Allows NPCs to have a chance to drop their stand disc on death (Default: true)",
+            "vardisplay": "Disc Drops",
+            "varname": "discdrops",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "The percentage chance for a stand user to drop their stand disc on death (Default: 1)",
+            "vardisplay": "Disc Drop Chance",
+            "varname": "discdropchance",
+            "enablecomment": true
           }
         ]
       },
@@ -120,9 +206,7 @@
             "comment": "Enables stands to break blocks/be destructive (Default: true)",
             "vardisplay": "Stand Block Breaking",
             "varname": "standblockbreaking",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -138,9 +222,7 @@
             "comment": "Allows the losing of Stands on death (Default: false)",
             "vardisplay": "Lose Stand On Death",
             "varname": "losestandondeath",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -156,9 +238,7 @@
             "comment": "Allows only one player to have a certain Stand at a time, disables Stand Disc crafting. (Default: false)",
             "vardisplay": "Single Stand Per Player",
             "varname": "singleplayerstand",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -174,9 +254,7 @@
             "comment": "Allows players to rarely spawn with a stand (Default: true)",
             "vardisplay": "Natural Stand Users",
             "varname": "naturalstandusers",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -192,9 +270,7 @@
             "comment": "Percentage chance of a player spawning with a stand (Default: 5)",
             "vardisplay": "Natural Stand Chance",
             "varname": "naturalstandchance",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -210,9 +286,7 @@
             "comment": "Percentage chance of a Hamon User recieving Hermit Purple (Default: 25)",
             "vardisplay": "Hamon Hermit Purple Chance",
             "varname": "hamonhp",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -228,9 +302,7 @@
             "comment": "Percentage chance of a Vampire recieving The World (Default: 25)",
             "vardisplay": "Vampire The World Chance",
             "varname": "vampiretw",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -246,9 +318,7 @@
             "comment": "The minimum amount of attacks a Stand User can block with 0 durability (Default: 5)",
             "vardisplay": "Minimum Block",
             "varname": "minimumblock",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -264,9 +334,7 @@
             "comment": "The amount of Skill Points it costs to change stand skins (Default: 3)",
             "vardisplay": "Skin Cost",
             "varname": "skincost",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
           },
           {
             "item": {
@@ -282,14 +350,28 @@
             "comment": "Allows rare skins to be available to everyone without unlocking (Default: false)",
             "vardisplay": "Rare Skins Unlocked",
             "varname": "rareskinsunlocked",
-            "enablecomment": true,
-            "onlyComment": false,
-            "entityType": "CUSTOM:AncientBowProjectile"
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Allows a stand with the time stop/time skip skill to evolve it by experiencing frozen time. (Default: true)",
+            "vardisplay": "Evolveable Time Stop",
+            "varname": "evolvetimestop",
+            "enablecomment": true
           }
         ]
       }
     ],
-    "file": "jojowos-main",
+    "file": "jojowos_main",
     "configType": 0
   }
 }

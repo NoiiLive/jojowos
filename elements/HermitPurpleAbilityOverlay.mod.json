@@ -1,0 +1,116 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_switch_display_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnHermitPurpleSummoned"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ReturnAbilityLockUnselected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_lock_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnAbilityLockSelected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 196
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_ability_time_left_display",
+          "text": {
+            "fixedValue": "",
+            "name": "AbilityTimeLeftDisplay"
+          },
+          "color": {
+            "value": -39322,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_overlay_hermitpurple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnHermitPurple"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 198
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnHermitPurpleSummoned"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

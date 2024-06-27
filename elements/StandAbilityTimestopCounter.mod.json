@@ -1,0 +1,268 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_switch_display_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DontReturn"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnselected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected2"
+          },
+          "anchorPoint": "CENTER",
+          "x": 44,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterSelected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnStandSummoned"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

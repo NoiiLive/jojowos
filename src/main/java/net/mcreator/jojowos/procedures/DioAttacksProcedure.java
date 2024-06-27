@@ -12,9 +12,9 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -43,6 +43,7 @@ import net.mcreator.jojowos.entity.InvisFistProjectileEntity;
 import net.mcreator.jojowos.entity.DIOEntity;
 import net.mcreator.jojowos.entity.DIOCapedEntity;
 import net.mcreator.jojowos.entity.DIOAwakenedEntity;
+import net.mcreator.jojowos.configuration.ConfigFilesConfiguration;
 import net.mcreator.jojowos.JojowosMod;
 
 import javax.annotation.Nullable;
@@ -91,26 +92,7 @@ public class DioAttacksProcedure {
 								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_world_atk_1")), SoundSource.HOSTILE, 1, 1, false);
 							}
 						}
-						if (entity instanceof LivingEntity _entity)
-							_entity.hurt(new DamageSource(_entity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)) {
-								@Override
-								public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
-									String _translatekey = "death.attack." + "stand";
-									if (this.getEntity() == null && this.getDirectEntity() == null) {
-										return _msgEntity.getKillCredit() != null
-												? Component.translatable(_translatekey + ".player", _msgEntity.getDisplayName(), _msgEntity.getKillCredit().getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName());
-									} else {
-										Component _component = this.getEntity() == null ? this.getDirectEntity().getDisplayName() : this.getEntity().getDisplayName();
-										ItemStack _itemstack = ItemStack.EMPTY;
-										if (this.getEntity() instanceof LivingEntity _livingentity)
-											_itemstack = _livingentity.getMainHandItem();
-										return !_itemstack.isEmpty() && _itemstack.hasCustomHoverName()
-												? Component.translatable(_translatekey + ".item", _msgEntity.getDisplayName(), _component, _itemstack.getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
-									}
-								}
-							}, 6);
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 6);
 					});
 					if (immediatesourceentity instanceof DIOEntity) {
 						((DIOEntity) immediatesourceentity).setAnimation("attack1");
@@ -141,26 +123,7 @@ public class DioAttacksProcedure {
 								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_world_atk_2")), SoundSource.HOSTILE, 1, 1, false);
 							}
 						}
-						if (entity instanceof LivingEntity _entity)
-							_entity.hurt(new DamageSource(_entity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)) {
-								@Override
-								public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
-									String _translatekey = "death.attack." + "stand";
-									if (this.getEntity() == null && this.getDirectEntity() == null) {
-										return _msgEntity.getKillCredit() != null
-												? Component.translatable(_translatekey + ".player", _msgEntity.getDisplayName(), _msgEntity.getKillCredit().getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName());
-									} else {
-										Component _component = this.getEntity() == null ? this.getDirectEntity().getDisplayName() : this.getEntity().getDisplayName();
-										ItemStack _itemstack = ItemStack.EMPTY;
-										if (this.getEntity() instanceof LivingEntity _livingentity)
-											_itemstack = _livingentity.getMainHandItem();
-										return !_itemstack.isEmpty() && _itemstack.hasCustomHoverName()
-												? Component.translatable(_translatekey + ".item", _msgEntity.getDisplayName(), _component, _itemstack.getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
-									}
-								}
-							}, 6);
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 6);
 					});
 					if (immediatesourceentity instanceof DIOEntity) {
 						((DIOEntity) immediatesourceentity).setAnimation("attack2");
@@ -191,26 +154,7 @@ public class DioAttacksProcedure {
 								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:the_world_atk_3")), SoundSource.HOSTILE, 1, 1, false);
 							}
 						}
-						if (entity instanceof LivingEntity _entity)
-							_entity.hurt(new DamageSource(_entity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)) {
-								@Override
-								public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
-									String _translatekey = "death.attack." + "stand";
-									if (this.getEntity() == null && this.getDirectEntity() == null) {
-										return _msgEntity.getKillCredit() != null
-												? Component.translatable(_translatekey + ".player", _msgEntity.getDisplayName(), _msgEntity.getKillCredit().getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName());
-									} else {
-										Component _component = this.getEntity() == null ? this.getDirectEntity().getDisplayName() : this.getEntity().getDisplayName();
-										ItemStack _itemstack = ItemStack.EMPTY;
-										if (this.getEntity() instanceof LivingEntity _livingentity)
-											_itemstack = _livingentity.getMainHandItem();
-										return !_itemstack.isEmpty() && _itemstack.hasCustomHoverName()
-												? Component.translatable(_translatekey + ".item", _msgEntity.getDisplayName(), _component, _itemstack.getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
-									}
-								}
-							}, 6);
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 6);
 					});
 					if (immediatesourceentity instanceof DIOEntity) {
 						((DIOEntity) immediatesourceentity).setAnimation("attack3");
@@ -268,7 +212,7 @@ public class DioAttacksProcedure {
 					JojowosMod.queueServerWork(4, () -> {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+									"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 						JojowosMod.queueServerWork(1, () -> {
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
@@ -298,7 +242,7 @@ public class DioAttacksProcedure {
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
 											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-											"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+											"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 								JojowosMod.queueServerWork(1, () -> {
 									if (world instanceof Level _level) {
 										if (!_level.isClientSide()) {
@@ -328,7 +272,7 @@ public class DioAttacksProcedure {
 										if (world instanceof ServerLevel _level)
 											_level.getServer().getCommands().performPrefixedCommand(
 													new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-													"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+													"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 										JojowosMod.queueServerWork(1, () -> {
 											if (world instanceof Level _level) {
 												if (!_level.isClientSide()) {
@@ -359,7 +303,7 @@ public class DioAttacksProcedure {
 												if (world instanceof ServerLevel _level)
 													_level.getServer().getCommands().performPrefixedCommand(
 															new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-															"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+															"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 												JojowosMod.queueServerWork(1, () -> {
 													if (world instanceof Level _level) {
 														if (!_level.isClientSide()) {
@@ -390,7 +334,7 @@ public class DioAttacksProcedure {
 														if (world instanceof ServerLevel _level)
 															_level.getServer().getCommands().performPrefixedCommand(
 																	new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-																	"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																	"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 														JojowosMod.queueServerWork(1, () -> {
 															if (world instanceof Level _level) {
 																if (!_level.isClientSide()) {
@@ -421,7 +365,7 @@ public class DioAttacksProcedure {
 																if (world instanceof ServerLevel _level)
 																	_level.getServer().getCommands().performPrefixedCommand(
 																			new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-																			"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																			"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 																JojowosMod.queueServerWork(1, () -> {
 																	if (world instanceof Level _level) {
 																		if (!_level.isClientSide()) {
@@ -452,7 +396,7 @@ public class DioAttacksProcedure {
 																		if (world instanceof ServerLevel _level)
 																			_level.getServer().getCommands().performPrefixedCommand(
 																					new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-																					"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																					"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 																		JojowosMod.queueServerWork(1, () -> {
 																			if (world instanceof Level _level) {
 																				if (!_level.isClientSide()) {
@@ -484,7 +428,7 @@ public class DioAttacksProcedure {
 																					_level.getServer().getCommands().performPrefixedCommand(
 																							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
 																									.withSuppressedOutput(),
-																							"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																							"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 																				JojowosMod.queueServerWork(1, () -> {
 																					if (world instanceof Level _level) {
 																						if (!_level.isClientSide()) {
@@ -517,7 +461,7 @@ public class DioAttacksProcedure {
 																							_level.getServer().getCommands().performPrefixedCommand(
 																									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
 																											.withSuppressedOutput(),
-																									"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																									"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 																						JojowosMod.queueServerWork(1, () -> {
 																							if (world instanceof Level _level) {
 																								if (!_level.isClientSide()) {
@@ -550,7 +494,7 @@ public class DioAttacksProcedure {
 																									_level.getServer().getCommands().performPrefixedCommand(
 																											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
 																													.withSuppressedOutput(),
-																											"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																											"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 																								JojowosMod.queueServerWork(1, () -> {
 																									if (world instanceof Level _level) {
 																										if (!_level.isClientSide()) {
@@ -581,7 +525,7 @@ public class DioAttacksProcedure {
 																									JojowosMod.queueServerWork(4, () -> {
 																										if (world instanceof ServerLevel _level)
 																											_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4,
-																													"", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																													"", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 																										JojowosMod.queueServerWork(1, () -> {
 																											if (world instanceof Level _level) {
 																												if (!_level.isClientSide()) {
@@ -615,7 +559,7 @@ public class DioAttacksProcedure {
 																													_level.getServer().getCommands()
 																															.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
 																																	Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-																																	"kill @e[type=jojowos:projectile_invis_fist,limit=3]");
+																																	"kill @e[type=jojowos:invis_fist_projectile,limit=3]");
 																											});
 																										});
 																									});
@@ -829,7 +773,7 @@ public class DioAttacksProcedure {
 					immediatesourceentity.getPersistentData().putDouble("AttackCooldown", 140);
 				}
 				if (randomnumber >= 19 && randomnumber <= 20) {
-					if (immediatesourceentity instanceof LivingEntity _livEnt285 && _livEnt285.hasEffect(JojowosModMobEffects.STOPPED_TIME.get()) && immediatesourceentity instanceof DIOAwakenedEntity) {
+					if (immediatesourceentity instanceof LivingEntity _livEnt288 && _livEnt288.hasEffect(JojowosModMobEffects.STOPPED_TIME.get()) && immediatesourceentity instanceof DIOAwakenedEntity) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_roadroller")), SoundSource.HOSTILE, 1, 1);
@@ -876,136 +820,154 @@ public class DioAttacksProcedure {
 				}
 			}
 			if (immediatesourceentity.getPersistentData().getDouble("Ability1Cooldown") == 0) {
-				if (randomnumber >= 19 && randomnumber <= 20) {
-					immediatesourceentity.getPersistentData().putDouble("Ability1Cooldown", 600);
-					gate = false;
-					if (entity instanceof DIOEntity) {
-						immediatesourceentity.getPersistentData().putDouble("TimeStopLength", 100);
-					}
-					if (entity instanceof DIOAwakenedEntity) {
-						immediatesourceentity.getPersistentData().putDouble("TimeStopLength", 180);
-					}
-					if (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") == 100) {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_shorttimestop")), SoundSource.HOSTILE, 1, 1);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_shorttimestop")), SoundSource.HOSTILE, 1, 1, false);
-							}
+				if (ConfigFilesConfiguration.NPCTIMEMANIPULATION.get() == true || entity instanceof Player) {
+					if (randomnumber >= 19 && randomnumber <= 20) {
+						immediatesourceentity.getPersistentData().putDouble("Ability1Cooldown", 600);
+						gate = false;
+						if (entity instanceof DIOEntity) {
+							immediatesourceentity.getPersistentData().putDouble("TimeStopLength", 100);
 						}
-						JojowosMod.queueServerWork(15, () -> {
-							{
-								final Vec3 _center = new Vec3(x, y, z);
-								List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(200 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-								for (Entity entityiterator : _entfound) {
-									if ((entityiterator == immediatesourceentity) == false && entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("jojowos:stand_mob"))) == false) {
-										entityiterator.getPersistentData().putDouble("TimeX", (entityiterator.getDeltaMovement().x()));
-										entityiterator.getPersistentData().putDouble("TimeY", (entityiterator.getDeltaMovement().y()));
-										entityiterator.getPersistentData().putDouble("TimeZ", (entityiterator.getDeltaMovement().z()));
-										entityiterator.getPersistentData().putBoolean("InitialStop", true);
-									}
+						if (entity instanceof DIOAwakenedEntity) {
+							immediatesourceentity.getPersistentData().putDouble("TimeStopLength", 180);
+						}
+						if (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") == 100) {
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_shorttimestop")), SoundSource.HOSTILE, 1, 1);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_shorttimestop")), SoundSource.HOSTILE, 1, 1, false);
 								}
 							}
-						});
-						JojowosMod.queueServerWork(16, () -> {
-							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-										"particle minecraft:dust 0.263 0.278 0.29 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
-							if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
-							if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.STOPPED_TIME.get(), (int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), 0, false, false));
-							JojowosMod.queueServerWork((int) (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") - 35), () -> {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntime")), SoundSource.HOSTILE, 1, 1);
-									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntime")), SoundSource.HOSTILE, 1, 1, false);
-									}
-								}
-							});
-							JojowosMod.queueServerWork((int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), () -> {
-								if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
+							JojowosMod.queueServerWork(15, () -> {
 								{
 									final Vec3 _center = new Vec3(x, y, z);
 									List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(200 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 											.toList();
 									for (Entity entityiterator : _entfound) {
 										if ((entityiterator == immediatesourceentity) == false && entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("jojowos:stand_mob"))) == false) {
-											entityiterator.setDeltaMovement(
-													new Vec3((entityiterator.getPersistentData().getDouble("TimeX")), (entityiterator.getPersistentData().getDouble("TimeY")), (entityiterator.getPersistentData().getDouble("TimeZ"))));
-											entityiterator.getPersistentData().putBoolean("InitialStop", false);
+											entityiterator.getPersistentData().putDouble("TimeX", (entityiterator.getDeltaMovement().x()));
+											entityiterator.getPersistentData().putDouble("TimeY", (entityiterator.getDeltaMovement().y()));
+											entityiterator.getPersistentData().putDouble("TimeZ", (entityiterator.getDeltaMovement().z()));
+											entityiterator.getPersistentData().putDouble("LookX", (entityiterator.level().clip(new ClipContext(entityiterator.getEyePosition(1f),
+													entityiterator.getEyePosition(1f).add(entityiterator.getViewVector(1f).scale(100)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entityiterator)).getBlockPos().getX()));
+											entityiterator.getPersistentData().putDouble("LookY", (entityiterator.level().clip(new ClipContext(entityiterator.getEyePosition(1f),
+													entityiterator.getEyePosition(1f).add(entityiterator.getViewVector(1f).scale(100)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entityiterator)).getBlockPos().getY()));
+											entityiterator.getPersistentData().putDouble("LookZ", (entityiterator.level().clip(new ClipContext(entityiterator.getEyePosition(1f),
+													entityiterator.getEyePosition(1f).add(entityiterator.getViewVector(1f).scale(100)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entityiterator)).getBlockPos().getZ()));
+											entityiterator.getPersistentData().putBoolean("InitialStop", true);
 										}
 									}
 								}
 							});
-						});
-						if (immediatesourceentity instanceof DIOEntity) {
-							((DIOEntity) immediatesourceentity).setAnimation("theworld");
-						}
-					}
-					if (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") == 180) {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_stoptime")), SoundSource.HOSTILE, 1, 1);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_stoptime")), SoundSource.HOSTILE, 1, 1, false);
-							}
-						}
-						JojowosMod.queueServerWork(25, () -> {
-							{
-								final Vec3 _center = new Vec3(x, y, z);
-								List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(200 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-								for (Entity entityiterator : _entfound) {
-									if ((entityiterator == immediatesourceentity) == false && entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("jojowos:stand_mob"))) == false) {
-										entityiterator.getPersistentData().putDouble("TimeX", (entityiterator.getDeltaMovement().x()));
-										entityiterator.getPersistentData().putDouble("TimeY", (entityiterator.getDeltaMovement().y()));
-										entityiterator.getPersistentData().putDouble("TimeZ", (entityiterator.getDeltaMovement().z()));
-										entityiterator.getPersistentData().putBoolean("InitialStop", true);
-									}
-								}
-							}
-						});
-						JojowosMod.queueServerWork(26, () -> {
-							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-										"particle minecraft:dust 0.263 0.278 0.29 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
-							if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
-							if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.STOPPED_TIME.get(), (int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), 0, false, false));
-							JojowosMod.queueServerWork((int) (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") - 30), () -> {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntimezero")), SoundSource.HOSTILE, 1, 1);
-									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntimezero")), SoundSource.HOSTILE, 1, 1, false);
-									}
-								}
-							});
-							JojowosMod.queueServerWork((int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), () -> {
+							JojowosMod.queueServerWork(16, () -> {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.263 0.278 0.29 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
 								if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 									_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
+								if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.STOPPED_TIME.get(), (int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), 0, false, false));
+								JojowosMod.queueServerWork((int) (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") - 35), () -> {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntime")), SoundSource.HOSTILE, 1, 1);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntime")), SoundSource.HOSTILE, 1, 1, false);
+										}
+									}
+								});
+								JojowosMod.queueServerWork((int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), () -> {
+									if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
+									{
+										final Vec3 _center = new Vec3(x, y, z);
+										List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(200 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+												.toList();
+										for (Entity entityiterator : _entfound) {
+											if ((entityiterator == immediatesourceentity) == false && entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("jojowos:stand_mob"))) == false) {
+												entityiterator.setDeltaMovement(
+														new Vec3((entityiterator.getPersistentData().getDouble("TimeX")), (entityiterator.getPersistentData().getDouble("TimeY")), (entityiterator.getPersistentData().getDouble("TimeZ"))));
+												entityiterator.getPersistentData().putBoolean("InitialStop", false);
+											}
+										}
+									}
+								});
+							});
+							if (immediatesourceentity instanceof DIOEntity) {
+								((DIOEntity) immediatesourceentity).setAnimation("theworld");
+							}
+						}
+						if (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") == 180) {
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_stoptime")), SoundSource.HOSTILE, 1, 1);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_stoptime")), SoundSource.HOSTILE, 1, 1, false);
+								}
+							}
+							JojowosMod.queueServerWork(25, () -> {
 								{
 									final Vec3 _center = new Vec3(x, y, z);
 									List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(200 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 											.toList();
 									for (Entity entityiterator : _entfound) {
 										if ((entityiterator == immediatesourceentity) == false && entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("jojowos:stand_mob"))) == false) {
-											entityiterator.setDeltaMovement(
-													new Vec3((entityiterator.getPersistentData().getDouble("TimeX")), (entityiterator.getPersistentData().getDouble("TimeY")), (entityiterator.getPersistentData().getDouble("TimeZ"))));
-											entityiterator.getPersistentData().putBoolean("InitialStop", false);
+											entityiterator.getPersistentData().putDouble("TimeX", (entityiterator.getDeltaMovement().x()));
+											entityiterator.getPersistentData().putDouble("TimeY", (entityiterator.getDeltaMovement().y()));
+											entityiterator.getPersistentData().putDouble("TimeZ", (entityiterator.getDeltaMovement().z()));
+											entityiterator.getPersistentData().putDouble("LookX", (entityiterator.level().clip(new ClipContext(entityiterator.getEyePosition(1f),
+													entityiterator.getEyePosition(1f).add(entityiterator.getViewVector(1f).scale(100)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entityiterator)).getBlockPos().getX()));
+											entityiterator.getPersistentData().putDouble("LookY", (entityiterator.level().clip(new ClipContext(entityiterator.getEyePosition(1f),
+													entityiterator.getEyePosition(1f).add(entityiterator.getViewVector(1f).scale(100)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entityiterator)).getBlockPos().getY()));
+											entityiterator.getPersistentData().putDouble("LookZ", (entityiterator.level().clip(new ClipContext(entityiterator.getEyePosition(1f),
+													entityiterator.getEyePosition(1f).add(entityiterator.getViewVector(1f).scale(100)), ClipContext.Block.COLLIDER, ClipContext.Fluid.ANY, entityiterator)).getBlockPos().getZ()));
+											entityiterator.getPersistentData().putBoolean("InitialStop", true);
 										}
 									}
 								}
 							});
-						});
-						JojowosMod.queueServerWork(10, () -> {
-							if (immediatesourceentity instanceof DIOAwakenedEntity) {
-								((DIOAwakenedEntity) immediatesourceentity).setAnimation("theworld");
-							}
-						});
+							JojowosMod.queueServerWork(26, () -> {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"particle minecraft:dust 0.263 0.278 0.29 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+								if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
+								if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.STOPPED_TIME.get(), (int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), 0, false, false));
+								JojowosMod.queueServerWork((int) (immediatesourceentity.getPersistentData().getDouble("TimeStopLength") - 30), () -> {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntimezero")), SoundSource.HOSTILE, 1, 1);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:theworld_returntimezero")), SoundSource.HOSTILE, 1, 1, false);
+										}
+									}
+								});
+								JojowosMod.queueServerWork((int) immediatesourceentity.getPersistentData().getDouble("TimeStopLength"), () -> {
+									if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
+									{
+										final Vec3 _center = new Vec3(x, y, z);
+										List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(200 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+												.toList();
+										for (Entity entityiterator : _entfound) {
+											if ((entityiterator == immediatesourceentity) == false && entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("jojowos:stand_mob"))) == false) {
+												entityiterator.setDeltaMovement(
+														new Vec3((entityiterator.getPersistentData().getDouble("TimeX")), (entityiterator.getPersistentData().getDouble("TimeY")), (entityiterator.getPersistentData().getDouble("TimeZ"))));
+												entityiterator.getPersistentData().putBoolean("InitialStop", false);
+											}
+										}
+									}
+								});
+							});
+							JojowosMod.queueServerWork(10, () -> {
+								if (immediatesourceentity instanceof DIOAwakenedEntity) {
+									((DIOAwakenedEntity) immediatesourceentity).setAnimation("theworld");
+								}
+							});
+						}
 					}
 				}
 			}

@@ -169,11 +169,6 @@ public class SideQuestGUIScreen extends AbstractContainerScreen<SideQuestGUIMenu
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_skillgui_button = new ImageButton(this.leftPos + 109, this.topPos + 70, 22, 22, 0, 0, 22, new ResourceLocation("jojowos:textures/screens/atlas/imagebutton_skillgui_button.png"), 22, 44, e -> {

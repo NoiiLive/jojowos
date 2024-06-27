@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/killerqueendisc",
+  "textures": {
+    "0": "jojowos:block/killerqueendisctexture",
+    "particle": "jojowos:item/standdisc"
+  }
+}

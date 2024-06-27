@@ -18,6 +18,7 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.jojowos.entity.SilverChariotOVAArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaArmorlessEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotArmorlessEntity;
 
@@ -69,6 +70,16 @@ public class ArmorlessEffectEndProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"particle minecraft:dust 0.859 0.725 0.322 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+					if (!entityiterator.level().isClientSide())
+						entityiterator.discard();
+				}
+				if (entityiterator instanceof SilverChariotKokushiboArmorlessEntity) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"particle minecraft:dust 0.529 0.416 0.82 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"particle minecraft:dust 0.271 0.247 0.263 1 ^0 ^1 ^ 1 1 1 0.05 40 force @a");
 					if (!entityiterator.level().isClientSide())
 						entityiterator.discard();
 				}

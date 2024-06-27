@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.effect.MobEffect;
 
+import net.mcreator.jojowos.potion.TimestopCounterMobEffect;
 import net.mcreator.jojowos.potion.TimeStoppedMobEffect;
 import net.mcreator.jojowos.potion.TimeStopVisualMobEffect;
 import net.mcreator.jojowos.potion.StoppedTimeMobEffect;
@@ -17,6 +18,7 @@ import net.mcreator.jojowos.potion.StandJumpEffectMobEffect;
 import net.mcreator.jojowos.potion.SandTrappedMobEffect;
 import net.mcreator.jojowos.potion.RedBindedMobEffect;
 import net.mcreator.jojowos.potion.NoArmorChariotMobEffect;
+import net.mcreator.jojowos.potion.GrapplingMobEffect;
 import net.mcreator.jojowos.potion.BurrowedEffectMobEffect;
 import net.mcreator.jojowos.JojowosMod;
 
@@ -30,4 +32,6 @@ public class JojowosModMobEffects {
 	public static final RegistryObject<MobEffect> NO_ARMOR_CHARIOT = REGISTRY.register("no_armor_chariot", () -> new NoArmorChariotMobEffect());
 	public static final RegistryObject<MobEffect> RED_BINDED = REGISTRY.register("red_binded", () -> new RedBindedMobEffect());
 	public static final RegistryObject<MobEffect> TIME_STOP_VISUAL = REGISTRY.register("time_stop_visual", () -> new TimeStopVisualMobEffect());
+	public static final RegistryObject<MobEffect> TIMESTOP_COUNTER = REGISTRY.register("timestop_counter", () -> new TimestopCounterMobEffect());
+	public static final RegistryObject<MobEffect> GRAPPLING = REGISTRY.register("grappling", () -> new GrapplingMobEffect());
 }

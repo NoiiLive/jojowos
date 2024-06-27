@@ -20,24 +20,11 @@ public class JojowosModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.jojowos.jo_jo_items")).icon(() -> new ItemStack(JojowosModItems.STAND_ARROW.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(JojowosModBlocks.METEORITE_ORE.get().asItem());
 				tabData.accept(JojowosModItems.METEORITE_BAR.get());
+				tabData.accept(JojowosModItems.ANCIENT_BOW.get());
 				tabData.accept(JojowosModItems.STAND_ARROW.get());
 				tabData.accept(JojowosModItems.SHINY_ARROW.get());
 				tabData.accept(JojowosModItems.CAMERA.get());
 				tabData.accept(JojowosModItems.COFFEE_GUM.get());
-				tabData.accept(JojowosModItems.ANCIENT_BOW.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> JO_JO_STANDS = REGISTRY.register("jo_jo_stands",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.jojowos.jo_jo_stands")).icon(() -> new ItemStack(JojowosModItems.EMPTY_STAND_DISC.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(JojowosModItems.EMPTY_STAND_DISC.get());
-				tabData.accept(JojowosModItems.STAR_PLATINUM_DISC.get());
-				tabData.accept(JojowosModItems.HIEROPHANT_GREEN_DISC.get());
-				tabData.accept(JojowosModItems.MAGICIANS_RED_DISC.get());
-				tabData.accept(JojowosModItems.SILVER_CHARIOT_DISC.get());
-				tabData.accept(JojowosModItems.HERMIT_PURPLE_DISC.get());
-				tabData.accept(JojowosModItems.THE_WORLD_DISC.get());
-				tabData.accept(JojowosModItems.THE_FOOL_DISC.get());
 			})
 
 					.build());
@@ -82,6 +69,19 @@ public class JojowosModTabs {
 				tabData.accept(JojowosModItems.JEAN_PIERRE_POLNAREFF_SPAWN_EGG.get());
 				tabData.accept(JojowosModItems.NORIAKI_KAKYOIN_SPAWN_EGG.get());
 				tabData.accept(JojowosModItems.MUHAMMED_AVDOL_SPAWN_EGG.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> JO_JO_STANDS = REGISTRY.register("jo_jo_stands",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.jojowos.jo_jo_stands")).icon(() -> new ItemStack(JojowosModItems.EMPTY_STAND_DISC.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(JojowosModItems.EMPTY_STAND_DISC.get());
+				tabData.accept(JojowosModItems.STAR_PLATINUM_DISC.get());
+				tabData.accept(JojowosModItems.HIEROPHANT_GREEN_DISC.get());
+				tabData.accept(JojowosModItems.MAGICIANS_RED_DISC.get());
+				tabData.accept(JojowosModItems.SILVER_CHARIOT_DISC.get());
+				tabData.accept(JojowosModItems.HERMIT_PURPLE_DISC.get());
+				tabData.accept(JojowosModItems.THE_WORLD_DISC.get());
+				tabData.accept(JojowosModItems.THE_FOOL_DISC.get());
 			})
 
 					.build());

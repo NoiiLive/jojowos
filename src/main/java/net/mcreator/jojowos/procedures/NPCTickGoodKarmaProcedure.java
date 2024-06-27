@@ -4,6 +4,9 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.entity.vehicle.Minecart;
+import net.minecraft.world.entity.vehicle.ChestBoat;
+import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -52,6 +55,11 @@ public class NPCTickGoodKarmaProcedure {
 						}
 					}
 				}
+			}
+		}
+		if (entity.isPassenger()) {
+			if ((entity.getVehicle()) instanceof Boat || (entity.getVehicle()) instanceof ChestBoat || (entity.getVehicle()) instanceof Minecart) {
+				entity.stopRiding();
 			}
 		}
 		if (entity instanceof JotaroKujoPart3Entity) {

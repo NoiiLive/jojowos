@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:jotaro_kujo_p_3_clothes_helmet"
+    },
+    "title": {
+      "translate": "advancements.stardust_crusaders.title"
+    },
+    "description": {
+      "translate": "advancements.stardust_crusaders.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stardust_crusaders_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "jojowos:stand_unlock_achivement"
+}

@@ -51,7 +51,6 @@ public class LifeDetectorEntity extends TamableAnimal {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setPersistenceRequired();
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -74,11 +73,6 @@ public class LifeDetectorEntity extends TamableAnimal {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
-	}
-
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
 	}
 
 	@Override
@@ -109,7 +103,7 @@ public class LifeDetectorEntity extends TamableAnimal {
 			return false;
 		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (damagesource.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
 			return false;
 		if (damagesource.is(DamageTypes.TRIDENT))
 			return false;
@@ -117,11 +111,19 @@ public class LifeDetectorEntity extends TamableAnimal {
 			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
-		if (damagesource.is(DamageTypes.WITHER))
-			return false;
-		if (damagesource.is(DamageTypes.WITHER_SKULL))
+		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public boolean ignoreExplosion() {
+		return true;
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
 	}
 
 	@Override
@@ -207,10 +209,45 @@ public class LifeDetectorEntity extends TamableAnimal {
 		super.setNoGravity(true);
 	}
 
-	public void aiStep() {
-		super.aiStep();
-		this.setNoGravity(true);
-	}
+@Override
+public void aiStep() {
+    super.aiStep();
+    this.updateSwingTime();
+    this.setNoGravity(true);
+
+    if (this.isTame() && this.getOwner() != null) {
+        Player owner = (Player) this.getOwner();
+
+        // Interpolate horizontal rotation (yaw) values for smoother and faster transitions
+        float interpolationFactor = 0.2f; // Higher value for quicker transition
+        this.setYRot(exponentialSmoothRotation(this.getYRot(), owner.getYRot(), interpolationFactor));
+        
+        // Update body rotation to match the entity's head rotation
+        this.yBodyRot = exponentialSmoothRotation(this.yBodyRot, this.getYRot(), interpolationFactor);
+        this.yBodyRotO = exponentialSmoothRotation(this.yBodyRotO, this.getYRot(), interpolationFactor);
+
+        // Update head rotation to match the player's head rotation
+        this.yHeadRot = exponentialSmoothRotation(this.yHeadRot, owner.getYRot(), interpolationFactor);
+        this.yHeadRotO = exponentialSmoothRotation(this.yHeadRotO, owner.getYRot(), interpolationFactor);
+    }
+}
+
+// Utility method for exponential smoothing of rotation values
+private float exponentialSmoothRotation(float from, float to, float factor) {
+    float delta = wrapDegrees(to - from);
+    return from + factor * delta;
+}
+
+// Wrap degrees to avoid overshooting
+private float wrapDegrees(float degrees) {
+    while (degrees < -180.0F) {
+        degrees += 360.0F;
+    }
+    while (degrees >= 180.0F) {
+        degrees -= 360.0F;
+    }
+    return degrees;
+}
 
 	public static void init() {
 	}

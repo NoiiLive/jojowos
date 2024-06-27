@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "jojowos:achievement_silver_chariot"
     },
@@ -16,8 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "silver_chariot_achievement": {
+    "silver_chariot_achievement_0": {
       "trigger": "minecraft:impossible"
     }
-  }
+  },
+  "parent": "jojowos:hierophant_green_achievement"
 }

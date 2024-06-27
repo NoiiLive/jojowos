@@ -77,7 +77,7 @@ public class TheFoolEntity extends TamableAnimal implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setPersistenceRequired();
+		setMaxUpStep(0.6f);
 	}
 
 	@Override
@@ -110,11 +110,6 @@ public class TheFoolEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
-	}
-
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
 	}
 
 	@Override
@@ -260,11 +255,45 @@ public class TheFoolEntity extends TamableAnimal implements GeoEntity {
 	protected void pushEntities() {
 	}
 
-	@Override
-	public void aiStep() {
-		super.aiStep();
-		this.updateSwingTime();
-	}
+@Override
+public void aiStep() {
+    super.aiStep();
+    this.updateSwingTime();
+    this.setNoGravity(true);
+
+    if (this.isTame() && this.getOwner() != null) {
+        Player owner = (Player) this.getOwner();
+
+        // Interpolate horizontal rotation (yaw) values for smoother and faster transitions
+        float interpolationFactor = 0.2f; // Higher value for quicker transition
+        this.setYRot(exponentialSmoothRotation(this.getYRot(), owner.getYRot(), interpolationFactor));
+        
+        // Update body rotation to match the entity's head rotation
+        this.yBodyRot = exponentialSmoothRotation(this.yBodyRot, this.getYRot(), interpolationFactor);
+        this.yBodyRotO = exponentialSmoothRotation(this.yBodyRotO, this.getYRot(), interpolationFactor);
+
+        // Update head rotation to match the player's head rotation
+        this.yHeadRot = exponentialSmoothRotation(this.yHeadRot, owner.getYRot(), interpolationFactor);
+        this.yHeadRotO = exponentialSmoothRotation(this.yHeadRotO, owner.getYRot(), interpolationFactor);
+    }
+}
+
+// Utility method for exponential smoothing of rotation values
+private float exponentialSmoothRotation(float from, float to, float factor) {
+    float delta = wrapDegrees(to - from);
+    return from + factor * delta;
+}
+
+// Wrap degrees to avoid overshooting
+private float wrapDegrees(float degrees) {
+    while (degrees < -180.0F) {
+        degrees += 360.0F;
+    }
+    while (degrees >= 180.0F) {
+        degrees -= 360.0F;
+    }
+    return degrees;
+}
 
 	public static void init() {
 	}

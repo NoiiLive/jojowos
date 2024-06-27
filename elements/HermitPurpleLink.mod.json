@@ -1,0 +1,68 @@
+{
+  "_fv": 60,
+  "_type": "animateditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "hermitpurplelinktexture",
+    "name": "§aKing Rauru's Right Arm",
+    "idle": "idle",
+    "rarity": "COMMON",
+    "displaySettings": "hermitpurplelink.item.json",
+    "leftArm": "arm",
+    "rightArm": "arm",
+    "perspective": "All Perspectives",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "firstPersonArms": true,
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "enableArmPose": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 4.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "HermitGrapple"
+    },
+    "onRightClickedOnBlock": {
+      "name": "HermitGrapple"
+    },
+    "onItemInInventoryTick": {
+      "name": "HermitPurpleNotInHand"
+    },
+    "onItemInUseTick": {
+      "name": "HermitPurpleSummonAnimation"
+    },
+    "onDroppedByPlayer": {
+      "name": "HermitPurpleDropped"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "normal": "hermitpurplelink.geo.json",
+    "armPoseList": [],
+    "disableSwing": false
+  }
+}

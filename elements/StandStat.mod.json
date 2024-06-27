@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -1085,6 +1085,81 @@
           "height": 18,
           "x": 305,
           "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_imposter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldImposterIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "theworldicon_shadow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TheWorldShadowIcon"
+          },
+          "x": 115,
+          "y": 82
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow1",
+          "image": "guiarrow.png",
+          "hoveredImage": "guiarrow_hover.png",
+          "onClick": {
+            "name": "SkillPointAddIncrease"
+          },
+          "x": 307,
+          "y": 211
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow_left",
+          "image": "guiarrow_left.png",
+          "hoveredImage": "guiarrow_left_h.png",
+          "onClick": {
+            "name": "SkillPointAddDecrease"
+          },
+          "x": 261,
+          "y": 211
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_skill_point_add",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSkillPointAdd"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 281,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "addpoint_box.png",
+          "use1Xscale": false,
+          "x": 273,
+          "y": 208
         }
       }
     ],

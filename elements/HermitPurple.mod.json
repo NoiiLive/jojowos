@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
@@ -59,6 +59,7 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "normal": "hermitpurple.geo.json",
-    "armPoseList": []
+    "armPoseList": [],
+    "disableSwing": false
   }
 }

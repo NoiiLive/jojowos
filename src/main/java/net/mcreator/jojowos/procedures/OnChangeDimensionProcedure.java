@@ -41,6 +41,7 @@ public class OnChangeDimensionProcedure {
 			}
 			if (!entity.level().isClientSide())
 				entity.discard();
+			StandDespawningProcedure.execute(world, x, y, z, entity);
 		}
 		if (entity instanceof Player) {
 			{

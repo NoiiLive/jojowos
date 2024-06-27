@@ -1,0 +1,268 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_switch_display_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DontReturn"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 198
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 27,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 46,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 65,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnselected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 217
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 196
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 25,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_overlay_selected_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashSelected9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 82,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnStandSummoned"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

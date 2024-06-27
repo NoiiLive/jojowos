@@ -1,4 +1,3 @@
-
 package net.mcreator.jojowos.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,14 +25,22 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
+import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.jojowos.procedures.PlayerDummyReturnProcedure;
 import net.mcreator.jojowos.init.JojowosModEntities;
 
+import java.util.UUID;
+
 public class PlayerDummyEntity extends TamableAnimal {
+	public static final EntityDataAccessor<String> DATA_OwnerUUID = SynchedEntityData.defineId(PlayerDummyEntity.class, EntityDataSerializers.STRING);
+
 	public PlayerDummyEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(JojowosModEntities.PLAYER_DUMMY.get(), world);
 	}
@@ -54,9 +61,14 @@ public class PlayerDummyEntity extends TamableAnimal {
 	}
 
 	@Override
+	protected void defineSynchedData() {
+		super.defineSynchedData();
+		this.entityData.define(DATA_OwnerUUID, "");
+	}
+
+	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 	}
 
 	@Override
@@ -96,6 +108,19 @@ public class PlayerDummyEntity extends TamableAnimal {
 
 		PlayerDummyReturnProcedure.execute(x, y, z, entity);
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putString("DataOwnerUUID", this.entityData.get(DATA_OwnerUUID));
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("DataOwnerUUID"))
+			this.entityData.set(DATA_OwnerUUID, compound.getString("DataOwnerUUID"));
 	}
 
 	@Override
@@ -177,5 +202,13 @@ public class PlayerDummyEntity extends TamableAnimal {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
+	}
+
+	public void setOwnerUUID(UUID ownerUUID) {
+		this.entityData.set(DATA_OwnerUUID, ownerUUID.toString());
+	}
+
+	public UUID getOwnerUUID() {
+		return UUID.fromString(this.entityData.get(DATA_OwnerUUID));
 	}
 }

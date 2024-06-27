@@ -5,11 +5,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.jojowos.entity.TheWorldSilverEntity;
+import net.mcreator.jojowos.entity.TheWorldShadowEntity;
 import net.mcreator.jojowos.entity.TheWorldOVAEntity;
 import net.mcreator.jojowos.entity.TheWorldMangaEntity;
 import net.mcreator.jojowos.entity.TheWorldImposterEntity;
 import net.mcreator.jojowos.entity.TheWorldEntity;
 import net.mcreator.jojowos.entity.TheWorldBlackEntity;
+import net.mcreator.jojowos.entity.TheHandEntity;
 import net.mcreator.jojowos.entity.TheFoolOVAEntity;
 import net.mcreator.jojowos.entity.TheFoolMangaEntity;
 import net.mcreator.jojowos.entity.TheFoolEntity;
@@ -25,6 +27,8 @@ import net.mcreator.jojowos.entity.SilverChariotOVAEntity;
 import net.mcreator.jojowos.entity.SilverChariotOVAArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaArmorlessEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotEntity;
@@ -32,6 +36,7 @@ import net.mcreator.jojowos.entity.SilverChariotArmorlessEntity;
 import net.mcreator.jojowos.entity.OldJosephJoestarEntity;
 import net.mcreator.jojowos.entity.NoriakiKakyoinEntity;
 import net.mcreator.jojowos.entity.MuhammedAvdolEntity;
+import net.mcreator.jojowos.entity.MagiciansRedRinOkumuraEntity;
 import net.mcreator.jojowos.entity.MagiciansRedOVAEntity;
 import net.mcreator.jojowos.entity.MagiciansRedMangaEntity;
 import net.mcreator.jojowos.entity.MagiciansRedEntity;
@@ -40,89 +45,32 @@ import net.mcreator.jojowos.entity.MagiciansGreenEntity;
 import net.mcreator.jojowos.entity.JotaroKujoPart3Entity;
 import net.mcreator.jojowos.entity.JeanPierrePolnareffEntity;
 import net.mcreator.jojowos.entity.IggyEntity;
+import net.mcreator.jojowos.entity.HierophantGreenSeroEntity;
 import net.mcreator.jojowos.entity.HierophantGreenOVAEntity;
 import net.mcreator.jojowos.entity.HierophantGreenMangaEntity;
 import net.mcreator.jojowos.entity.HierophantGreenEntity;
 import net.mcreator.jojowos.entity.HierophantGreenBlueEntity;
+import net.mcreator.jojowos.entity.HermitVenomTangleEntity;
+import net.mcreator.jojowos.entity.HermitSpiritTangleEntity;
 import net.mcreator.jojowos.entity.HermitRopeTangleEntity;
 import net.mcreator.jojowos.entity.HermitRedTangleEntity;
 import net.mcreator.jojowos.entity.HermitPurpleTangleEntity;
 import net.mcreator.jojowos.entity.HermitPart4TangleEntity;
 import net.mcreator.jojowos.entity.HermitMangaTangleEntity;
 import net.mcreator.jojowos.entity.HermitGoldTangleEntity;
+import net.mcreator.jojowos.entity.HermitEnergyTangleEntity;
 import net.mcreator.jojowos.entity.HermitBlueTangleEntity;
+import net.mcreator.jojowos.entity.HeavensDoorEntity;
 import net.mcreator.jojowos.entity.DIOEntity;
 import net.mcreator.jojowos.entity.DIOCapedEntity;
 import net.mcreator.jojowos.entity.DIOAwakenedEntity;
+import net.mcreator.jojowos.entity.CrazyDiamondEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
 		if (event != null && event.getEntity() != null) {
-			if (event.getEntity() instanceof JotaroKujoPart3Entity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof DIOCapedEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof DIOEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof DIOAwakenedEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof IggyEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof OldJosephJoestarEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof JeanPierrePolnareffEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof NoriakiKakyoinEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof MuhammedAvdolEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
 			if (event.getEntity() instanceof StarPlatinumP3Entity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
@@ -389,6 +337,69 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
+			if (event.getEntity() instanceof JotaroKujoPart3Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DIOEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DIOCapedEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DIOAwakenedEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof IggyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof OldJosephJoestarEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof JeanPierrePolnareffEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NoriakiKakyoinEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MuhammedAvdolEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
 			if (event.getEntity() instanceof StarPlatinumUltraInstinctEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
@@ -404,6 +415,83 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof HermitRopeTangleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CrazyDiamondEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TheHandEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof HeavensDoorEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TheWorldShadowEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof HermitSpiritTangleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof HermitEnergyTangleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof HermitVenomTangleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SilverChariotKokushiboEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SilverChariotKokushiboArmorlessEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MagiciansRedRinOkumuraEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof HierophantGreenSeroEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

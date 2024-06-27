@@ -1,0 +1,3341 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ability_grid.png",
+          "use1Xscale": false,
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guiarrow_up",
+          "image": "guiarrow_up.png",
+          "hoveredImage": "guiarrow_up_h.png",
+          "onClick": {
+            "name": "WheelSwitcher"
+          },
+          "displayCondition": {
+            "name": "WheelSwitchDisplay"
+          },
+          "x": 204,
+          "y": 54
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select_blank",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility1"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility2"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select1",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility3"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select2",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility4"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select3",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility5"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select4",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility6"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select5",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility7"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select6",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility8"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_ability_select7",
+          "image": "ability_select_blank.png",
+          "hoveredImage": "ability_select.png",
+          "onClick": {
+            "name": "WheelAbility9"
+          },
+          "displayCondition": {
+            "name": "ReturnAbilityUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_fistbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FistBarrageUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_kickbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KickBarrageUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bearingshot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BearingShotUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_inhale.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InhaleUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_starfinger.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "StarFingerUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timeskip.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeSkipUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_shorttimestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShortTimestopUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked1"
+          },
+          "x": 163,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked2"
+          },
+          "x": 197,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked3"
+          },
+          "x": 231,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked4"
+          },
+          "x": 163,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked5"
+          },
+          "x": 197,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked6"
+          },
+          "x": 231,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked7"
+          },
+          "x": 163,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked8"
+          },
+          "x": 197,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_zoom.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZoomUnlocked9"
+          },
+          "x": 231,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestopcounter.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimestopCounterUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_timestop.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TimeStopUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked3"
+          },
+          "x": 229,
+          "y": 68
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_knifethrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "KnifeThrowUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_roadroller.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RoadRollerUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfire.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireHurricaneUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_crossfirespecial.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CrossfireSpecialUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magiciansred_redbind.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "RedBindUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_lifedetect.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LifeDetectorUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_tangle.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TangleUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_grapple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GrappleUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldsplash.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldSplashUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked1"
+          },
+          "x": 163,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked2"
+          },
+          "x": 197,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked3"
+          },
+          "x": 231,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked4"
+          },
+          "x": 163,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked5"
+          },
+          "x": 197,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked6"
+          },
+          "x": 231,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked7"
+          },
+          "x": 163,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked8"
+          },
+          "x": 197,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_emeraldbarrier.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EmeraldBarrierUnlocked9"
+          },
+          "x": 231,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bodycontrol.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BodyControlUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordbarrage.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordBarrageUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_swordlaunch.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SwordLaunchUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_bladecyclone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BladeCycloneUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_armoroff.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArmorOffUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_quicksand.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuicksandUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sanddome.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandDomeUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove1"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 163,
+          "y": 71
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove2"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 197,
+          "y": 71
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_3",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove3"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 231,
+          "y": 71
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_4",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove4"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 163,
+          "y": 105
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_5",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove5"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 197,
+          "y": 105
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_6",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove6"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 231,
+          "y": 105
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_7",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove7"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 163,
+          "y": 139
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_8",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove8"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 197,
+          "y": 139
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_return_move_9",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMove9"
+          },
+          "width": 32,
+          "height": 32,
+          "x": 231,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked1"
+          },
+          "x": 161,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked2"
+          },
+          "x": 195,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked3"
+          },
+          "x": 229,
+          "y": 69
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked4"
+          },
+          "x": 161,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked5"
+          },
+          "x": 195,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked6"
+          },
+          "x": 229,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked7"
+          },
+          "x": 161,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked8"
+          },
+          "x": 195,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stand_ability_sandglider.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SandGliderUnlocked9"
+          },
+          "x": 229,
+          "y": 137
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

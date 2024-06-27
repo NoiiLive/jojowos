@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/echoesact0disc",
+  "textures": {
+    "0": "jojowos:block/echoesact0disctexture",
+    "particle": "jojowos:item/standdisc"
+  }
+}

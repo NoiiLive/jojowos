@@ -57,6 +57,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.jojowos.procedures.Part3NPCDeathProcedure;
 import net.mcreator.jojowos.procedures.NoAttackTimestopProcedure;
 import net.mcreator.jojowos.procedures.NPCTickIggyProcedure;
 import net.mcreator.jojowos.procedures.NPCSpawnProcedure;
@@ -86,6 +87,7 @@ public class IggyEntity extends TamableAnimal implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+		setMaxUpStep(0.6f);
 	}
 
 	@Override
@@ -236,6 +238,12 @@ public class IggyEntity extends TamableAnimal implements GeoEntity {
 		if (source.is(DamageTypes.FALL))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		Part3NPCDeathProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

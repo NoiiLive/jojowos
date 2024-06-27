@@ -11,8 +11,10 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.jojowos.world.inventory.StandStatMenu;
 import net.mcreator.jojowos.procedures.TheWorldSilverIconProcedure;
+import net.mcreator.jojowos.procedures.TheWorldShadowIconProcedure;
 import net.mcreator.jojowos.procedures.TheWorldOVAIconProcedure;
 import net.mcreator.jojowos.procedures.TheWorldMangaIconProcedure;
+import net.mcreator.jojowos.procedures.TheWorldImposterIconProcedure;
 import net.mcreator.jojowos.procedures.TheWorldBlackIconProcedure;
 import net.mcreator.jojowos.procedures.TheWorldBaseIconProcedure;
 import net.mcreator.jojowos.procedures.TheFoolOVAIconProcedure;
@@ -61,6 +63,7 @@ import net.mcreator.jojowos.procedures.SilverChariotOVAIconProcedure;
 import net.mcreator.jojowos.procedures.SilverChariotMangaIconProcedure;
 import net.mcreator.jojowos.procedures.SilverChariotGoldIconProcedure;
 import net.mcreator.jojowos.procedures.SilverChariotBaseIconProcedure;
+import net.mcreator.jojowos.procedures.ReturnSkillPointAddProcedure;
 import net.mcreator.jojowos.procedures.PrecisionStatAddDisplayProcedure;
 import net.mcreator.jojowos.procedures.PowerStatAddDisplayProcedure;
 import net.mcreator.jojowos.procedures.PotentialStatAddDisplayProcedure;
@@ -101,6 +104,8 @@ public class StandStatScreen extends AbstractContainerScreen<StandStatMenu> {
 	ImageButton imagebutton_guiarrow;
 	ImageButton imagebutton_questgui_button;
 	ImageButton imagebutton_standstat_skintab;
+	ImageButton imagebutton_guiarrow1;
+	ImageButton imagebutton_guiarrow_left;
 
 	public StandStatScreen(StandStatMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -322,6 +327,15 @@ public class StandStatScreen extends AbstractContainerScreen<StandStatMenu> {
 		if (TheFoolOVAIconProcedure.execute(entity)) {
 			guiGraphics.blit(new ResourceLocation("jojowos:textures/screens/thefoolicon_ova.png"), this.leftPos + -98, this.topPos + -38, 0, 0, 32, 32, 32, 32);
 		}
+		if (TheWorldImposterIconProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("jojowos:textures/screens/theworldicon_imposter.png"), this.leftPos + -98, this.topPos + -38, 0, 0, 32, 32, 32, 32);
+		}
+		if (TheWorldShadowIconProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("jojowos:textures/screens/theworldicon_shadow.png"), this.leftPos + -98, this.topPos + -38, 0, 0, 32, 32, 32, 32);
+		}
+
+		guiGraphics.blit(new ResourceLocation("jojowos:textures/screens/addpoint_box.png"), this.leftPos + 60, this.topPos + 88, 0, 0, 35, 23, 35, 23);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -368,11 +382,9 @@ public class StandStatScreen extends AbstractContainerScreen<StandStatMenu> {
 		guiGraphics.drawString(this.font,
 
 				StatSkillPointDisplayProcedure.execute(entity), -57, -16, -1, false);
-	}
+		guiGraphics.drawString(this.font,
 
-	@Override
-	public void onClose() {
-		super.onClose();
+				ReturnSkillPointAddProcedure.execute(entity), 68, 97, -1, false);
 	}
 
 	@Override
@@ -472,5 +484,21 @@ public class StandStatScreen extends AbstractContainerScreen<StandStatMenu> {
 		});
 		guistate.put("button:imagebutton_standstat_skintab", imagebutton_standstat_skintab);
 		this.addRenderableWidget(imagebutton_standstat_skintab);
+		imagebutton_guiarrow1 = new ImageButton(this.leftPos + 94, this.topPos + 91, 13, 19, 0, 0, 19, new ResourceLocation("jojowos:textures/screens/atlas/imagebutton_guiarrow1.png"), 13, 38, e -> {
+			if (true) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new StandStatButtonMessage(8, x, y, z));
+				StandStatButtonMessage.handleButtonAction(entity, 8, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_guiarrow1", imagebutton_guiarrow1);
+		this.addRenderableWidget(imagebutton_guiarrow1);
+		imagebutton_guiarrow_left = new ImageButton(this.leftPos + 48, this.topPos + 91, 13, 19, 0, 0, 19, new ResourceLocation("jojowos:textures/screens/atlas/imagebutton_guiarrow_left.png"), 13, 38, e -> {
+			if (true) {
+				JojowosMod.PACKET_HANDLER.sendToServer(new StandStatButtonMessage(9, x, y, z));
+				StandStatButtonMessage.handleButtonAction(entity, 9, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_guiarrow_left", imagebutton_guiarrow_left);
+		this.addRenderableWidget(imagebutton_guiarrow_left);
 	}
 }

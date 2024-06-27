@@ -17,6 +17,8 @@ import net.mcreator.jojowos.procedures.StatAddPrecisionProcedure;
 import net.mcreator.jojowos.procedures.StatAddPowerProcedure;
 import net.mcreator.jojowos.procedures.StatAddPotentialProcedure;
 import net.mcreator.jojowos.procedures.StatAddDurabilityProcedure;
+import net.mcreator.jojowos.procedures.SkillPointAddIncreaseProcedure;
+import net.mcreator.jojowos.procedures.SkillPointAddDecreaseProcedure;
 import net.mcreator.jojowos.procedures.OpenStandSkinGUIProcedure;
 import net.mcreator.jojowos.procedures.OpenSkillTreeGUIProcedure;
 import net.mcreator.jojowos.procedures.OpenMainQuestProcedure;
@@ -100,6 +102,14 @@ public class StandStatButtonMessage {
 		if (buttonID == 7) {
 
 			OpenStandSkinGUIProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 8) {
+
+			SkillPointAddIncreaseProcedure.execute(entity);
+		}
+		if (buttonID == 9) {
+
+			SkillPointAddDecreaseProcedure.execute(entity);
 		}
 	}
 

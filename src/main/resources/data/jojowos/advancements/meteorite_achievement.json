@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "meteorite_achievement": {
+    "meteorite_achievement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

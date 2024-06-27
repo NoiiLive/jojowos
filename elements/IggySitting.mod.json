@@ -1,13 +1,25 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "livingentity",
   "definition": {
     "mobName": "Iggy Sitting",
     "mobLabel": "",
     "mobModelName": "ModelIggySit",
     "mobModelTexture": "iggysittexture.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.6,
@@ -60,6 +72,9 @@
     "health": 60,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -100,6 +115,9 @@
       "value": ""
     },
     "entityDataEntries": [],
+    "whenMobDies": {
+      "name": "Part3NPCDeath"
+    },
     "onRightClickedOn": {
       "name": "IggySit"
     },

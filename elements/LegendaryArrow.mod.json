@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 1,
@@ -28,18 +28,24 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§c§oAwakens §7§oyour fighting spirit.",
+        "§4§oAwakens §7§oyour fighting spirit.",
         "§8§oHigher Chance for a Legendary Stand Skin."
       ]
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "ShinyArrowUsed"
+      "name": "LegendaryArrowUsed"
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:EmeraldSplashItemProjectile"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

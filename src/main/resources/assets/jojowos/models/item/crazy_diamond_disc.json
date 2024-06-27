@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/crazydiamonddisc",
+  "textures": {
+    "0": "jojowos:block/crazydiamonddisctexture",
+    "particle": "jojowos:item/standdisc"
+  }
+}

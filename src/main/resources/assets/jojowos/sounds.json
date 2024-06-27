@@ -1537,5 +1537,149 @@
         "stream": false
       }
     ]
+  },
+  "stw_short_timestop": {
+    "subtitle": "subtitles.stw_short_timestop",
+    "sounds": [
+      {
+        "name": "jojowos:stw_short_timestop",
+        "stream": false
+      }
+    ]
+  },
+  "stw_long_timestop": {
+    "subtitle": "subtitles.stw_long_timestop",
+    "sounds": [
+      {
+        "name": "jojowos:stw_long_timestop",
+        "stream": false
+      }
+    ]
+  },
+  "stw_time_resume": {
+    "subtitle": "subtitles.stw_time_resume",
+    "sounds": [
+      {
+        "name": "jojowos:stw_time_resume",
+        "stream": false
+      }
+    ]
+  },
+  "stw_stand_jump": {
+    "subtitle": "subtitles.stw_stand_jump",
+    "sounds": [
+      {
+        "name": "jojowos:stw_stand_jump",
+        "stream": false
+      }
+    ]
+  },
+  "stw_fist_barrage": {
+    "subtitle": "subtitles.stw_fist_barrage",
+    "sounds": [
+      {
+        "name": "jojowos:stw_fist_barrage",
+        "stream": false
+      }
+    ]
+  },
+  "stw_kick_barrage": {
+    "subtitle": "subtitles.stw_kick_barrage",
+    "sounds": [
+      {
+        "name": "jojowos:stw_kick_barrage",
+        "stream": false
+      }
+    ]
+  },
+  "stw_time_skip": {
+    "subtitle": "subtitles.stw_time_skip",
+    "sounds": [
+      {
+        "name": "jojowos:stw_time_skip",
+        "stream": false
+      }
+    ]
+  },
+  "stw_road_roller": {
+    "subtitle": "subtitles.stw_road_roller",
+    "sounds": [
+      {
+        "name": "jojowos:stw_road_roller",
+        "stream": false
+      }
+    ]
+  },
+  "stw_knife_throw": {
+    "subtitle": "subtitles.stw_knife_throw",
+    "sounds": [
+      {
+        "name": "jojowos:stw_knife_throw",
+        "stream": false
+      }
+    ]
+  },
+  "stw_atk_3": {
+    "subtitle": "subtitles.stw_atk_3",
+    "sounds": [
+      {
+        "name": "jojowos:stw_atk_3",
+        "stream": false
+      }
+    ]
+  },
+  "stw_atk_2": {
+    "subtitle": "subtitles.stw_atk_2",
+    "sounds": [
+      {
+        "name": "jojowos:stw_atk_2",
+        "stream": false
+      }
+    ]
+  },
+  "gigante_activate": {
+    "subtitle": "subtitles.gigante_activate",
+    "sounds": [
+      {
+        "name": "jojowos:gigante_activate",
+        "stream": false
+      }
+    ]
+  },
+  "kokushibo_unsummon": {
+    "subtitle": "subtitles.kokushibo_unsummon",
+    "sounds": [
+      {
+        "name": "jojowos:kokushibo_unsummon",
+        "stream": false
+      }
+    ]
+  },
+  "kokushibo_summon": {
+    "subtitle": "subtitles.kokushibo_summon",
+    "sounds": [
+      {
+        "name": "jojowos:kokushib_summon",
+        "stream": false
+      }
+    ]
+  },
+  "sero_summon": {
+    "subtitle": "subtitles.sero_summon",
+    "sounds": [
+      {
+        "name": "jojowos:sero_summon",
+        "stream": false
+      }
+    ]
+  },
+  "sero_grapple": {
+    "subtitle": "subtitles.sero_grapple",
+    "sounds": [
+      {
+        "name": "jojowos:sero_grapple",
+        "stream": false
+      }
+    ]
   }
 }

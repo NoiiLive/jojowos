@@ -1,7 +1,6 @@
 package net.mcreator.jojowos.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -14,6 +13,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -63,9 +63,9 @@ public class StandBurrowProcedure {
 						&& (entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandGuarding == false) {
 					if (entity.isShiftKeyDown()) {
 						if (!((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.AIR || (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.CAVE_AIR)) {
-							if (entity.getPersistentData().getDouble("leapPower") < 60) {
+							if (entity.getPersistentData().getDouble("leapPower") < 30) {
 								entity.getPersistentData().putDouble("leapPower", (entity.getPersistentData().getDouble("leapPower") + 1));
-							} else if (entity.getPersistentData().getDouble("leapPower") >= 60) {
+							} else if (entity.getPersistentData().getDouble("leapPower") >= 30) {
 								entity.getPersistentData().putDouble("leapPower", (entity.getPersistentData().getDouble("leapPower") + 1));
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
@@ -74,7 +74,7 @@ public class StandBurrowProcedure {
 							}
 						}
 					} else {
-						if (entity.getPersistentData().getDouble("leapPower") >= 60) {
+						if (entity.getPersistentData().getDouble("leapPower") >= 30) {
 							entity.getPersistentData().putDouble("leapPower", 0);
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
@@ -94,25 +94,25 @@ public class StandBurrowProcedure {
 									}
 								}
 							}
-							if (entity instanceof Player _player) {
-								ItemStack _setstack = ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy());
-								_setstack.setCount(1);
-								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).copy()));
+								entityToSpawn.setPickUpDelay(0);
+								_level.addFreshEntity(entityToSpawn);
 							}
-							if (entity instanceof Player _player) {
-								ItemStack _setstack = ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy());
-								_setstack.setCount(1);
-								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).copy()));
+								entityToSpawn.setPickUpDelay(0);
+								_level.addFreshEntity(entityToSpawn);
 							}
-							if (entity instanceof Player _player) {
-								ItemStack _setstack = ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy());
-								_setstack.setCount(1);
-								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).copy()));
+								entityToSpawn.setPickUpDelay(0);
+								_level.addFreshEntity(entityToSpawn);
 							}
-							if (entity instanceof Player _player) {
-								ItemStack _setstack = ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy());
-								_setstack.setCount(1);
-								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).copy()));
+								entityToSpawn.setPickUpDelay(0);
+								_level.addFreshEntity(entityToSpawn);
 							}
 							JojowosMod.queueServerWork(10, () -> {
 								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

@@ -13,11 +13,6 @@ public class RedBindedMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.jojowos.red_binded";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		RedBindEffectProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}

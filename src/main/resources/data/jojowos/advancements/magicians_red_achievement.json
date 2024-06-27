@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "jojowos:achievement_magicians_red"
     },
@@ -16,8 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "magicians_red_achievement": {
+    "magicians_red_achievement_0": {
       "trigger": "minecraft:impossible"
     }
-  }
+  },
+  "parent": "jojowos:star_platinum_achievement"
 }

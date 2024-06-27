@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "jo_jo_world_of_stands_achievement": {
+    "jo_jo_world_of_stands_achievement_0": {
       "trigger": "minecraft:tick"
     }
   }

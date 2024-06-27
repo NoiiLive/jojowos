@@ -1,0 +1,2000 @@
+{
+  "_fv": 60,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Creator's Note",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "The cost of the skill in the skill tree",
+            "comment": "",
+            "vardisplay": "Stand Costs",
+            "varname": "creatornote1",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "The amount of potential stat needed to unlock the move",
+            "comment": "",
+            "vardisplay": "Stand Potential",
+            "varname": "creatornote3",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 2,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "Cooldowns are in ticks, (Seconds * 20 = ticks)",
+            "comment": "",
+            "vardisplay": "Stand Cooldowns",
+            "varname": "creatornote2",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Fist Barrage",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "fistbarragecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "fistbarragepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "fistbarragecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 150.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "fistbarragecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Kick Barrage",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "kickbarragecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 30.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "kickbarragepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "kickbarragecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 150.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "kickbarragecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Bearing Shot",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "bearingshotcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 35.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "bearingshotpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "bearingshotcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "bearingshotcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Inhale",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "inhalecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "inhalepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "inhalecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 150.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "inhalecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Star Finger",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "starfingercost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "starfingerpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "starfingercdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 150.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "starfingercdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Time Skip",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "timeskipcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 60.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "timeskippotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 500.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "timeskipcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "timeskipcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Short Timestop",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "shorttimestopcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "shorttimestoppotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "shorttimestopcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "shorttimestopcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Time Stop",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "timestopcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 70.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "timestoppotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "timestopcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "timestopcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Knife Throw",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "knifethrowcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "knifethrowpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 250.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "knifethrowcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "knifethrowcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Road Roller",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "roadrollercost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "roadrollerpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "roadrollercdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "roadrollercdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Crossfire Hurricane",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "crossfirehurricanecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "crossfirehurricanepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 450.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "crossfirehurricanecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 300.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "crossfirehurricanecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Crossfire: Special",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "crossfirespecialcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 40.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "crossfirespecialpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 350.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "crossfirespecialcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 250.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "crossfirespecialcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Red Bind",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "redbindcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 25.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "redbindpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "redbindcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 300.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "redbindcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Life Detector",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "lifedetectorcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "lifedetectorpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 600.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "lifedetectorcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "lifedetectorcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Tangle",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "tanglecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 20.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "tanglepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "tanglecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "tanglecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Grapple",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "grapplecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "grapplepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "grapplecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 40.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "grapplecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Emerald Splash",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "emeraldsplashcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "emeraldsplashpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 300.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "emeraldsplashcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "emeraldsplashcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Emerald Barrier",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "emeraldbarriercost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 30.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "emeraldbarrierpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "emeraldbarriercdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "emeraldbarriercdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Body Control",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "bodycontrolcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 40.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "bodycontrolpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2000.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "bodycontrolcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1500.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "bodycontrolcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Sword Launch",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "swordlaunchcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "swordlaunchpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "swordlaunchcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 100.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "swordlaunchcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Blade Cyclone",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "bladecyclonecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 30.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "bladecyclonepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "bladecyclonecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "bladecyclonecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Armor Off",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "armoroffcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 50.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "armoroffpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 2400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "armoroffcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "armoroffcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Quicksand",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "quicksandcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "quicksandpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 300.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "quicksandcdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "quicksandcdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Sand Dome",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "sanddomecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 30.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "sanddomepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 450.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "sanddomecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 350.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "sanddomecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Sand Glider",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "sandglidercost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "sandgliderpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "sandglidercdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 300.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "sandglidercdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Sword Barrage",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "swordbarragecost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 5.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "swordbarragepotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 400.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "swordbarragecdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 150.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "swordbarragecdmin",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Divination",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "divinationcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "divinationpotential",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Zoom",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 3.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "zoomcost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "zoompotential",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "Timestop Counter",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 10.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cost",
+            "varname": "timestopcountercost",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 80.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Potential",
+            "varname": "timestopcounterpotential",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1200.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Max",
+            "varname": "timestopcountercdmax",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 600.0,
+            "textDefault": "",
+            "comment": "",
+            "vardisplay": "Cooldown Min",
+            "varname": "timestopcountercdmin",
+            "enablecomment": false
+          }
+        ]
+      }
+    ],
+    "file": "jojowos_moves",
+    "configType": 0
+  }
+}

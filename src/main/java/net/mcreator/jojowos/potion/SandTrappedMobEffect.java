@@ -13,11 +13,6 @@ public class SandTrappedMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.jojowos.sand_trapped";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		BurrowedEffectActiveProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
 	}

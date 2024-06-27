@@ -37,7 +37,7 @@ public class HermitGrappleProcedure {
 		double mag = 0;
 		double distance = 0;
 		double dampen = 0;
-		if (entity.getPersistentData().getDouble("PassiveCooldown") == 0) {
+		if ((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).AbilityCooldown1 == 0) {
 			if (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getType() == HitResult.Type.BLOCK) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
@@ -70,17 +70,27 @@ public class HermitGrappleProcedure {
 						}
 					}
 				}
-				entity.getPersistentData().putDouble("PassiveCooldown", 40);
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
+				{
+					double _setval = 40;
+					entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.AbilityCooldown1 = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.STAND_JUMP_EFFECT.get(), 60, 0, false, false));
+				entity.getPersistentData().putDouble("SwingBlockX",
+						(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()));
+				entity.getPersistentData().putDouble("SwingBlockY",
+						(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY()));
+				entity.getPersistentData().putDouble("SwingBlockZ",
+						(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()));
 				deltax = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX() - x;
 				deltay = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY() - y;
 				deltaz = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(30)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ() - z;
 				mag = Math.sqrt(deltax * deltax + deltay * deltay + deltaz * deltaz);
-				dampen = Math.sqrt(mag) * 2;
-				entity.setDeltaMovement(new Vec3((deltax / dampen), (deltay / dampen), (deltaz / dampen)));
 				for (int index0 = 0; index0 < (int) mag; index0++) {
 					if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Base")) {
 						world.addParticle((SimpleParticleType) (JojowosModParticleTypes.HERMIT_VINE.get()), (x + entity.getLookAngle().x * distance), (y + 1.2 + entity.getLookAngle().y * distance), (z + entity.getLookAngle().z * distance), 0, 0, 0);
@@ -116,7 +126,34 @@ public class HermitGrappleProcedure {
 								0);
 						distance = distance + 1;
 					}
+					if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Gigante")) {
+						world.addParticle((SimpleParticleType) (JojowosModParticleTypes.HERMIT_VINE_RED.get()), (x + entity.getLookAngle().x * distance), (y + 1.2 + entity.getLookAngle().y * distance), (z + entity.getLookAngle().z * distance), 0, 0,
+								0);
+						distance = distance + 1;
+					}
+					if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Venom")) {
+						world.addParticle((SimpleParticleType) (JojowosModParticleTypes.HERMIT_VINE_VENOM.get()), (x + entity.getLookAngle().x * distance), (y + 1.2 + entity.getLookAngle().y * distance), (z + entity.getLookAngle().z * distance), 0,
+								0, 0);
+						distance = distance + 1;
+					}
+					if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Link")) {
+						world.addParticle((SimpleParticleType) (JojowosModParticleTypes.HERMIT_VINE_ENERGY.get()), (x + entity.getLookAngle().x * distance), (y + 1.2 + entity.getLookAngle().y * distance), (z + entity.getLookAngle().z * distance), 0,
+								0, 0);
+						distance = distance + 1;
+					}
+					if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Nero")) {
+						world.addParticle((SimpleParticleType) (JojowosModParticleTypes.HERMIT_VINE_BLUE.get()), (x + entity.getLookAngle().x * distance), (y + 1.2 + entity.getLookAngle().y * distance), (z + entity.getLookAngle().z * distance), 0, 0,
+								0);
+						distance = distance + 1;
+					}
+					if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).StandSkin).equals("Luck")) {
+						world.addParticle((SimpleParticleType) (JojowosModParticleTypes.HERMIT_VINE_BLUE.get()), (x + entity.getLookAngle().x * distance), (y + 1.2 + entity.getLookAngle().y * distance), (z + entity.getLookAngle().z * distance), 0, 0,
+								0);
+						distance = distance + 1;
+					}
 				}
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(JojowosModMobEffects.GRAPPLING.get(), 5, 0, false, false));
 			}
 		}
 	}

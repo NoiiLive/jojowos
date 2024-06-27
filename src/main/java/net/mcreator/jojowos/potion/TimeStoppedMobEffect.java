@@ -15,11 +15,6 @@ public class TimeStoppedMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.jojowos.time_stopped";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		EntityTimeFrozenTickProcedure.execute(entity);
 	}
@@ -27,7 +22,7 @@ public class TimeStoppedMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		EntityTimeFrozenEndProcedure.execute(entity);
+		EntityTimeFrozenEndProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

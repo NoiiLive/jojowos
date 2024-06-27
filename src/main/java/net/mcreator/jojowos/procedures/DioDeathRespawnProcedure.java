@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.jojowos.init.JojowosModEntities;
 import net.mcreator.jojowos.entity.DIOEntity;
 import net.mcreator.jojowos.entity.DIOCapedEntity;
-import net.mcreator.jojowos.entity.DIOAwakenedEntity;
 
 public class DioDeathRespawnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -47,15 +46,6 @@ public class DioDeathRespawnProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:dio_awaken")), SoundSource.NEUTRAL, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:dio_awaken")), SoundSource.NEUTRAL, 1, 1, false);
-				}
-			}
-		}
-		if (entity instanceof DIOAwakenedEntity) {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:dio_death")), SoundSource.NEUTRAL, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jojowos:dio_death")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 		}

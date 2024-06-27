@@ -15,11 +15,6 @@ public class NoArmorChariotMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.jojowos.no_armor_chariot";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		ArmorlessEffectProcedure.execute(entity);
 	}

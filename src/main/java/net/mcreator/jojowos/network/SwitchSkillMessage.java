@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.jojowos.procedures.OpenAbilityWheelProcedure;
+import net.mcreator.jojowos.procedures.ChangeAbilitiesProcedure;
 import net.mcreator.jojowos.JojowosMod;
 
 import java.util.function.Supplier;
@@ -52,7 +52,7 @@ public class SwitchSkillMessage {
 			return;
 		if (type == 0) {
 
-			OpenAbilityWheelProcedure.execute(world, x, y, z, entity);
+			ChangeAbilitiesProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

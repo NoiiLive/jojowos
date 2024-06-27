@@ -1,0 +1,21 @@
+{
+  "_fv": 60,
+  "_type": "particle",
+  "definition": {
+    "texture": "orange_aura.png",
+    "animate": true,
+    "frameDuration": 2,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 2.0,
+    "speedFactor": 0.1,
+    "gravity": -0.1,
+    "maxAge": 15,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
+    "alwaysShow": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

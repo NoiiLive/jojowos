@@ -33,7 +33,22 @@ public class HermitPurpleDroppedProcedure {
 					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_gold\"}}]");
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_automail\"}}]");
+					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_purple_automail\"}}]");
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_purple_gigante\"}}]");
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_purple_venom\"}}]");
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_purple_link\"}}]");
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_purple_nero\"}}]");
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=item,nbt={Item:{id:\"jojowos:hermit_purple_luck\"}}]");
 		StandDespawningProcedure.execute(world, x, y, z, entity);
 	}
 }

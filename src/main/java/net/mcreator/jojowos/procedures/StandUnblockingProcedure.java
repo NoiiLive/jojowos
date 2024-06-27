@@ -12,6 +12,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.jojowos.network.JojowosModVariables;
 import net.mcreator.jojowos.entity.TheWorldSilverEntity;
+import net.mcreator.jojowos.entity.TheWorldShadowEntity;
 import net.mcreator.jojowos.entity.TheWorldOVAEntity;
 import net.mcreator.jojowos.entity.TheWorldMangaEntity;
 import net.mcreator.jojowos.entity.TheWorldImposterEntity;
@@ -26,14 +27,22 @@ import net.mcreator.jojowos.entity.StarPlatinumMangaEntity;
 import net.mcreator.jojowos.entity.StarPlatinumGreenEntity;
 import net.mcreator.jojowos.entity.StarPlatinumBlueEntity;
 import net.mcreator.jojowos.entity.SilverChariotOVAEntity;
+import net.mcreator.jojowos.entity.SilverChariotOVAArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotMangaEntity;
+import net.mcreator.jojowos.entity.SilverChariotMangaArmorlessEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboEntity;
+import net.mcreator.jojowos.entity.SilverChariotKokushiboArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotGoldEntity;
+import net.mcreator.jojowos.entity.SilverChariotGoldArmorlessEntity;
 import net.mcreator.jojowos.entity.SilverChariotEntity;
+import net.mcreator.jojowos.entity.SilverChariotArmorlessEntity;
+import net.mcreator.jojowos.entity.MagiciansRedRinOkumuraEntity;
 import net.mcreator.jojowos.entity.MagiciansRedOVAEntity;
 import net.mcreator.jojowos.entity.MagiciansRedMangaEntity;
 import net.mcreator.jojowos.entity.MagiciansRedEntity;
 import net.mcreator.jojowos.entity.MagiciansRedASBEntity;
 import net.mcreator.jojowos.entity.MagiciansGreenEntity;
+import net.mcreator.jojowos.entity.HierophantGreenSeroEntity;
 import net.mcreator.jojowos.entity.HierophantGreenOVAEntity;
 import net.mcreator.jojowos.entity.HierophantGreenMangaEntity;
 import net.mcreator.jojowos.entity.HierophantGreenEntity;
@@ -147,6 +156,33 @@ public class StandUnblockingProcedure {
 						}
 						if (entityiterator instanceof TheWorldImposterEntity) {
 							((TheWorldImposterEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof TheWorldShadowEntity) {
+							((TheWorldShadowEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof SilverChariotKokushiboEntity) {
+							((SilverChariotKokushiboEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof SilverChariotKokushiboArmorlessEntity) {
+							((SilverChariotKokushiboArmorlessEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof SilverChariotArmorlessEntity) {
+							((SilverChariotArmorlessEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof SilverChariotGoldArmorlessEntity) {
+							((SilverChariotGoldArmorlessEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof SilverChariotMangaArmorlessEntity) {
+							((SilverChariotMangaArmorlessEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof SilverChariotOVAArmorlessEntity) {
+							((SilverChariotOVAArmorlessEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof MagiciansRedRinOkumuraEntity) {
+							((MagiciansRedRinOkumuraEntity) entityiterator).setAnimation("empty");
+						}
+						if (entityiterator instanceof HierophantGreenSeroEntity) {
+							((HierophantGreenSeroEntity) entityiterator).setAnimation("empty");
 						}
 					}
 				}

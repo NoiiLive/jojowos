@@ -8,9 +8,14 @@ import net.minecraft.client.player.AbstractClientPlayer;
 
 import net.mcreator.jojowos.network.JojowosModVariables;
 import net.mcreator.jojowos.item.HermitRedItem;
+import net.mcreator.jojowos.item.HermitPurpleVenomItem;
 import net.mcreator.jojowos.item.HermitPurplePart4Item;
+import net.mcreator.jojowos.item.HermitPurpleNeroItem;
 import net.mcreator.jojowos.item.HermitPurpleMangaItem;
+import net.mcreator.jojowos.item.HermitPurpleLuckItem;
+import net.mcreator.jojowos.item.HermitPurpleLinkItem;
 import net.mcreator.jojowos.item.HermitPurpleItem;
+import net.mcreator.jojowos.item.HermitPurpleGiganteItem;
 import net.mcreator.jojowos.item.HermitPurpleAutomailItem;
 import net.mcreator.jojowos.item.HermitGoldItem;
 import net.mcreator.jojowos.item.HermitBlueItem;
@@ -56,6 +61,16 @@ public class HermitPurpleSummonAnimationProcedure {
 			if (itemstack.getItem() instanceof HermitGoldItem)
 				itemstack.getOrCreateTag().putString("geckoAnim", "summon");
 			if (itemstack.getItem() instanceof HermitPurpleAutomailItem)
+				itemstack.getOrCreateTag().putString("geckoAnim", "summon");
+			if (itemstack.getItem() instanceof HermitPurpleGiganteItem)
+				itemstack.getOrCreateTag().putString("geckoAnim", "summon");
+			if (itemstack.getItem() instanceof HermitPurpleVenomItem)
+				itemstack.getOrCreateTag().putString("geckoAnim", "summon");
+			if (itemstack.getItem() instanceof HermitPurpleLinkItem)
+				itemstack.getOrCreateTag().putString("geckoAnim", "summon");
+			if (itemstack.getItem() instanceof HermitPurpleNeroItem)
+				itemstack.getOrCreateTag().putString("geckoAnim", "summon");
+			if (itemstack.getItem() instanceof HermitPurpleLuckItem)
 				itemstack.getOrCreateTag().putString("geckoAnim", "summon");
 		}
 	}

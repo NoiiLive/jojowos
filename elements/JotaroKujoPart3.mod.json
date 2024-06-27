@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Jotaro Kujo (Part 3)",
@@ -17,6 +17,7 @@
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -12041414,
@@ -39,16 +40,16 @@
       "value": ""
     },
     "equipmentHelmet": {
-      "value": "CUSTOM:JotaroKujoP3Clothes.helmet"
+      "value": ""
     },
     "equipmentBody": {
-      "value": "CUSTOM:JotaroKujoP3Clothes.body"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "CUSTOM:JotaroKujoP3Clothes.legs"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "CUSTOM:JotaroKujoP3Clothes.boots"
+      "value": ""
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
@@ -99,6 +100,9 @@
     },
     "stepSound": {
       "value": ""
+    },
+    "whenMobDies": {
+      "name": "Part3NPCDeath"
     },
     "onRightClickedOn": {
       "name": "JotaroOpenChatbox"

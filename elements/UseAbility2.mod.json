@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NUMPAD2",
+    "keyBindingName": "Use Ability 2",
+    "keyBindingCategoryKey": "jojowos",
+    "onKeyPressed": {
+      "name": "AbilityKeybind2"
+    }
+  }
+}

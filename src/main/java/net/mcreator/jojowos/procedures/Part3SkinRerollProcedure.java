@@ -16,7 +16,7 @@ public class Part3SkinRerollProcedure {
 		double random_number = 0;
 		logic_gate = false;
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("StarPlatinum")) {
-			random_number = Mth.nextInt(RandomSource.create(), 1, 56);
+			random_number = Mth.nextInt(RandomSource.create(), 1, 51);
 			if (logic_gate == false) {
 				if (random_number >= 1 && random_number <= 50) {
 					{
@@ -26,84 +26,29 @@ public class Part3SkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
 			if (logic_gate == false) {
 				if (random_number == 51) {
-					{
-						String _setval = "Part4";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 52) {
-					{
-						String _setval = "Part6";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 53) {
-					{
-						String _setval = "Manga";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 54) {
-					{
-						String _setval = "OVA";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 55) {
-					{
-						String _setval = "Blue";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 56) {
-					{
-						String _setval = "Green";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+					if (Math.random() <= 0.1) {
+						Part3LegendarySkinRerollProcedure.execute(world, entity);
+					} else {
+						Part3ShinySkinRerollProcedure.execute(world, entity);
 					}
 					logic_gate = true;
 				}
 			}
 		}
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("HierophantGreen")) {
-			random_number = Mth.nextInt(RandomSource.create(), 1, 53);
+			random_number = Mth.nextInt(RandomSource.create(), 1, 51);
 			if (logic_gate == false) {
 				if (random_number >= 1 && random_number <= 50) {
 					{
@@ -113,48 +58,29 @@ public class Part3SkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Green";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
 			if (logic_gate == false) {
 				if (random_number == 51) {
-					{
-						String _setval = "Manga";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 52) {
-					{
-						String _setval = "OVA";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 53) {
-					{
-						String _setval = "Blue";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+					if (Math.random() <= 0.1) {
+						Part3LegendarySkinRerollProcedure.execute(world, entity);
+					} else {
+						Part3ShinySkinRerollProcedure.execute(world, entity);
 					}
 					logic_gate = true;
 				}
 			}
 		}
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("SilverChariot")) {
-			random_number = Mth.nextInt(RandomSource.create(), 1, 53);
+			random_number = Mth.nextInt(RandomSource.create(), 1, 51);
 			if (logic_gate == false) {
 				if (random_number >= 1 && random_number <= 50) {
 					{
@@ -164,48 +90,29 @@ public class Part3SkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "White";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
 			if (logic_gate == false) {
 				if (random_number == 51) {
-					{
-						String _setval = "OVA";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 52) {
-					{
-						String _setval = "Manga";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 53) {
-					{
-						String _setval = "Gold";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+					if (Math.random() <= 0.1) {
+						Part3LegendarySkinRerollProcedure.execute(world, entity);
+					} else {
+						Part3ShinySkinRerollProcedure.execute(world, entity);
 					}
 					logic_gate = true;
 				}
 			}
 		}
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("MagiciansRed")) {
-			random_number = Mth.nextInt(RandomSource.create(), 1, 54);
+			random_number = Mth.nextInt(RandomSource.create(), 1, 51);
 			if (logic_gate == false) {
 				if (random_number >= 1 && random_number <= 50) {
 					{
@@ -215,60 +122,29 @@ public class Part3SkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Red";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
 			if (logic_gate == false) {
 				if (random_number == 51) {
-					{
-						String _setval = "OVA";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 52) {
-					{
-						String _setval = "Manga";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 53) {
-					{
-						String _setval = "ASB";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 54) {
-					{
-						String _setval = "Green";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+					if (Math.random() <= 0.1) {
+						Part3LegendarySkinRerollProcedure.execute(world, entity);
+					} else {
+						Part3ShinySkinRerollProcedure.execute(world, entity);
 					}
 					logic_gate = true;
 				}
 			}
 		}
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("HermitPurple")) {
-			random_number = Mth.nextInt(RandomSource.create(), 1, 55);
+			random_number = Mth.nextInt(RandomSource.create(), 1, 51);
 			if (logic_gate == false) {
 				if (random_number >= 1 && random_number <= 50) {
 					{
@@ -278,72 +154,29 @@ public class Part3SkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Purple";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
 			if (logic_gate == false) {
 				if (random_number == 51) {
-					{
-						String _setval = "Part4";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 52) {
-					{
-						String _setval = "Manga";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 53) {
-					{
-						String _setval = "Red";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 54) {
-					{
-						String _setval = "Blue";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 55) {
-					{
-						String _setval = "Gold";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+					if (Math.random() <= 0.1) {
+						Part3LegendarySkinRerollProcedure.execute(world, entity);
+					} else {
+						Part3ShinySkinRerollProcedure.execute(world, entity);
 					}
 					logic_gate = true;
 				}
 			}
 		}
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("TheWorld")) {
-			random_number = Mth.nextInt(RandomSource.create(), 1, 54);
+			random_number = Mth.nextInt(RandomSource.create(), 1, 51);
 			if (logic_gate == false) {
 				if (random_number >= 1 && random_number <= 50) {
 					{
@@ -353,60 +186,29 @@ public class Part3SkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
+					{
+						String _setval = "Yellow";
+						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.StandColor = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					logic_gate = true;
 				}
 			}
 			if (logic_gate == false) {
 				if (random_number == 51) {
-					{
-						String _setval = "Black";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 52) {
-					{
-						String _setval = "Manga";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 53) {
-					{
-						String _setval = "OVA";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 54) {
-					{
-						String _setval = "Dark";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+					if (Math.random() <= 0.1) {
+						Part3LegendarySkinRerollProcedure.execute(world, entity);
+					} else {
+						Part3ShinySkinRerollProcedure.execute(world, entity);
 					}
 					logic_gate = true;
 				}
 			}
 		}
 		if (((entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new JojowosModVariables.PlayerVariables())).Stand).equals("TheFool")) {
-			random_number = Mth.nextInt(RandomSource.create(), 1, 52);
+			random_number = Mth.nextInt(RandomSource.create(), 1, 51);
 			if (logic_gate == false) {
 				if (random_number >= 1 && random_number <= 50) {
 					{
@@ -416,15 +218,10 @@ public class Part3SkinRerollProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					logic_gate = true;
-				}
-			}
-			if (logic_gate == false) {
-				if (random_number == 51) {
 					{
-						String _setval = "OVA";
+						String _setval = "White";
 						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
+							capability.StandColor = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
@@ -432,13 +229,11 @@ public class Part3SkinRerollProcedure {
 				}
 			}
 			if (logic_gate == false) {
-				if (random_number == 52) {
-					{
-						String _setval = "Manga";
-						entity.getCapability(JojowosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.StandSkin = _setval;
-							capability.syncPlayerVariables(entity);
-						});
+				if (random_number == 51) {
+					if (Math.random() <= 0.1) {
+						Part3LegendarySkinRerollProcedure.execute(world, entity);
+					} else {
+						Part3ShinySkinRerollProcedure.execute(world, entity);
 					}
 					logic_gate = true;
 				}

@@ -186,4 +186,20 @@ public class JojowosModSounds {
 	public static final RegistryObject<SoundEvent> AUTOMAIL_DESUMMON = REGISTRY.register("automail_desummon", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "automail_desummon")));
 	public static final RegistryObject<SoundEvent> AUTOMAIL_SUMMON = REGISTRY.register("automail_summon", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "automail_summon")));
 	public static final RegistryObject<SoundEvent> HIEROPHANT_BARRIER = REGISTRY.register("hierophant_barrier", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "hierophant_barrier")));
+	public static final RegistryObject<SoundEvent> STW_SHORT_TIMESTOP = REGISTRY.register("stw_short_timestop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_short_timestop")));
+	public static final RegistryObject<SoundEvent> STW_LONG_TIMESTOP = REGISTRY.register("stw_long_timestop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_long_timestop")));
+	public static final RegistryObject<SoundEvent> STW_TIME_RESUME = REGISTRY.register("stw_time_resume", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_time_resume")));
+	public static final RegistryObject<SoundEvent> STW_STAND_JUMP = REGISTRY.register("stw_stand_jump", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_stand_jump")));
+	public static final RegistryObject<SoundEvent> STW_FIST_BARRAGE = REGISTRY.register("stw_fist_barrage", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_fist_barrage")));
+	public static final RegistryObject<SoundEvent> STW_KICK_BARRAGE = REGISTRY.register("stw_kick_barrage", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_kick_barrage")));
+	public static final RegistryObject<SoundEvent> STW_TIME_SKIP = REGISTRY.register("stw_time_skip", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_time_skip")));
+	public static final RegistryObject<SoundEvent> STW_ROAD_ROLLER = REGISTRY.register("stw_road_roller", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_road_roller")));
+	public static final RegistryObject<SoundEvent> STW_KNIFE_THROW = REGISTRY.register("stw_knife_throw", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_knife_throw")));
+	public static final RegistryObject<SoundEvent> STW_ATK_3 = REGISTRY.register("stw_atk_3", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_atk_3")));
+	public static final RegistryObject<SoundEvent> STW_ATK_2 = REGISTRY.register("stw_atk_2", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "stw_atk_2")));
+	public static final RegistryObject<SoundEvent> GIGANTE_ACTIVATE = REGISTRY.register("gigante_activate", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "gigante_activate")));
+	public static final RegistryObject<SoundEvent> KOKUSHIBO_UNSUMMON = REGISTRY.register("kokushibo_unsummon", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "kokushibo_unsummon")));
+	public static final RegistryObject<SoundEvent> KOKUSHIBO_SUMMON = REGISTRY.register("kokushibo_summon", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "kokushibo_summon")));
+	public static final RegistryObject<SoundEvent> SERO_SUMMON = REGISTRY.register("sero_summon", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "sero_summon")));
+	public static final RegistryObject<SoundEvent> SERO_GRAPPLE = REGISTRY.register("sero_grapple", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("jojowos", "sero_grapple")));
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "jojowos:custom/emptydisc",
+  "textures": {
+    "0": "jojowos:block/emptydisctexture",
+    "particle": "jojowos:item/standdisc"
+  }
+}

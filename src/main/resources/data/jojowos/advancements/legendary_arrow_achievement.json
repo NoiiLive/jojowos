@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "jojowos:legendary_arrow"
+    },
+    "title": {
+      "translate": "advancements.legendary_arrow_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.legendary_arrow_achievement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "legendary_arrow_achievement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jojowos:legendary_arrow"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "jojowos:shiny_arrow_achievement"
+}
